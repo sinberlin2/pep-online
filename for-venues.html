@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="PEP for venues — pilot program, serving ideas, and how to join. Premium protein drink for health-minded guests."
+    />
+    <title>For venues | PEP pilot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="index.html" class="logo logo--image" aria-label="PEP home">
+        <img src="brand/identity/logo-pep.png" alt="PEP" width="120" height="48" />
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        ☰
+      </button>
+      <nav class="site-nav" aria-label="Main">
+        <a href="index.html">The drink</a>
+        <a href="for-venues.html" class="active">For venues</a>
+        <a href="#join-pilot" class="nav-cta">Join the pilot</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="page-intro" style="padding-top: 2rem">
+        <h1>For venues</h1>
+        <p>
+          Bring something more exciting than standard non-alcoholic options — a fun, social drink
+          for health-minded guests. Here’s how PEP works during our pilot.
+        </p>
+      </div>
+
+      <div class="venues-grid venues-grid--top">
+        <article class="info-card info-card--yellow">
+          <h3>Why venues love PEP</h3>
+          <ul class="info-list">
+            <li>
+              <span class="info-icon" aria-hidden="true">✨</span>
+              <span>More exciting than standard non-alcoholic drinks</span>
+            </li>
+            <li>
+              <span class="info-icon" aria-hidden="true">🌿</span>
+              <span>For health-minded people</span>
+            </li>
+            <li>
+              <span class="info-icon" aria-hidden="true">🥂</span>
+              <span>A fun, social drink</span>
+            </li>
+          </ul>
+        </article>
+
+        <article class="info-card info-card--peach">
+          <h3>How to serve</h3>
+          <ul class="info-list">
+            <li>
+              <span class="info-icon" aria-hidden="true">🍋</span>
+              <span>Lemonade — <span class="serve-price">SRP €4</span></span>
+            </li>
+            <li>
+              <span class="info-icon" aria-hidden="true">🍹</span>
+              <span>Mocktail — <span class="serve-price">SRP €6</span></span>
+            </li>
+            <li>
+              <span class="info-icon" aria-hidden="true">🍸</span>
+              <span>Cocktail, add shot — <span class="serve-price">SRP €9</span></span>
+            </li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="venues-grid venues-grid--bottom" style="margin-top: 1.25rem">
+        <article class="info-card info-card--cream">
+          <h3>Perfect for</h3>
+          <ul class="info-list">
+            <li>
+              <span class="info-icon" aria-hidden="true">☕</span>
+              <span>Morning and brunch</span>
+            </li>
+            <li>
+              <span class="info-icon" aria-hidden="true">🏖️</span>
+              <span>Summery terrace moments</span>
+            </li>
+            <li>
+              <span class="info-icon" aria-hidden="true">🧘</span>
+              <span>Post-workout</span>
+            </li>
+            <li>
+              <span class="info-icon" aria-hidden="true">🥂</span>
+              <span>Social occasions</span>
+            </li>
+          </ul>
+        </article>
+
+        <article class="info-card info-card--yellow">
+          <h3>How it works during our pilot</h3>
+          <ol class="info-list" style="list-style: none; counter-reset: step">
+            <li style="counter-increment: step">
+              <span class="info-icon" aria-hidden="true">💧</span>
+              <span
+                ><strong>1.</strong> Mix the pre-made formula with water and coconut water</span
+              >
+            </li>
+            <li style="counter-increment: step">
+              <span class="info-icon" aria-hidden="true">🧊</span>
+              <span><strong>2.</strong> Serve chilled with ice</span>
+            </li>
+          </ol>
+        </article>
+
+        <article class="info-card info-card--cream pilot-cta-block" id="join-pilot">
+          <span class="coming-soon-badge">Pilot</span>
+          <h3 style="margin: 0 0 0.5rem">Join the PEP pilot</h3>
+          <p style="margin: 0 0 1.5rem; font-size: 0.95rem; max-width: 20rem">
+            Tell us about your venue and we’ll get back to you with next steps.
+          </p>
+          <div class="inquiry-section" style="width: 100%; max-width: none; box-shadow: none; padding: 0">
+            <form id="inquiry-form" class="inquiry-form" novalidate>
+              <div class="form-group">
+                <label for="name">Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="venue">Venue name <span class="optional">(optional)</span></label>
+                <input type="text" id="venue" name="venue" autocomplete="organization" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" required autocomplete="email" />
+              </div>
+              <div class="form-group">
+                <label for="interest">I’m interested in</label>
+                <select id="interest" name="interest">
+                  <option value="pilot">Joining the venue pilot</option>
+                  <option value="general">General enquiry</option>
+                  <option value="stockist">Becoming a stockist</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Tell us about your venue, location, and when you’d like to start…"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn-primary">Send enquiry</button>
+              <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </article>
+      </div>
+
+    </main>
+
+    <footer class="site-footer">
+      <p class="tagline-script">Feel good. Have fun.<span class="leaf-dot">🌿</span></p>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/inquiry.js"></script>
+  </body>
+</html>

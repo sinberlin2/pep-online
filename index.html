@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="PEP — a light, refreshing premium drink with added protein boost. Coconut Mango. Feel good. Have fun."
+    />
+    <title>PEP — Coconut Mango | Feel good. Have fun.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="index.html" class="logo logo--image" aria-label="PEP home">
+        <img src="brand/identity/logo-pep.png" alt="PEP" width="120" height="48" />
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        ☰
+      </button>
+      <nav class="site-nav" aria-label="Main">
+        <a href="index.html" class="active">The drink</a>
+        <a href="for-venues.html">For venues</a>
+        <a href="for-venues.html#join-pilot" class="nav-cta">Join the pilot</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-tagline">
+        <div class="hero-content">
+          <p class="hero-brand logo" aria-hidden="true">
+            <span class="logo-leaves">
+              <span class="logo-leaf"></span>
+              <span class="logo-leaf logo-leaf--orange"></span>
+            </span>
+            PEP
+          </p>
+          <h1 id="hero-tagline" class="tagline-script">
+            A light, refreshing premium drink with added protein boost
+          </h1>
+
+          <div class="stat-row">
+            <div class="stat-card">
+              <strong>7</strong>
+              <span>gr protein</span>
+            </div>
+            <div class="stat-card">
+              <strong>49</strong>
+              <span>calories</span>
+            </div>
+            <div class="stat-card stat-card--compact">
+              <strong class="stat-icon" aria-hidden="true">🌾</strong>
+              <span>Gluten-free</span>
+            </div>
+          </div>
+
+          <div class="product-strip" style="margin-top: 0">
+            <div>
+              <h2 style="font-family: var(--font-serif); margin: 0 0 0.75rem">Coconut Mango</h2>
+              <p style="margin: 0 0 1rem; opacity: 0.9">
+                Feel good. Have fun. A premium sip with 7g protein, no added sugar, and only 49
+                calories per 330&nbsp;ml can.
+              </p>
+              <ul class="product-bullets">
+                <li>7g protein</li>
+                <li>No added sugar</li>
+                <li>49 calories</li>
+                <li>Light &amp; refreshing</li>
+                <li>330 ml</li>
+              </ul>
+            </div>
+            <p style="margin: 0; font-family: var(--font-script); font-size: 1.35rem; color: var(--pep-orange)">
+              Perfect for mornings, terraces, workouts, and nights out — without the heaviness.
+            </p>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img
+            class="hero-can"
+            src="brand/product/pep-can.png?v=5"
+            alt="PEP Coconut Mango can"
+            width="430"
+            height="990"
+            fetchpriority="high"
+          />
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="perfect-for-title">
+        <h2 id="perfect-for-title" class="section-title">Perfect for</h2>
+        <div class="card-grid card-grid--4">
+          <article class="info-card info-card--cream">
+            <span class="info-icon" aria-hidden="true">☕</span>
+            <h3 style="margin: 0.5rem 0 0; font-size: 1rem">Morning and brunch</h3>
+          </article>
+          <article class="info-card info-card--yellow">
+            <span class="info-icon" aria-hidden="true">🏖️</span>
+            <h3 style="margin: 0.5rem 0 0; font-size: 1rem">Summery terrace moments</h3>
+          </article>
+          <article class="info-card info-card--peach">
+            <span class="info-icon" aria-hidden="true">🧘</span>
+            <h3 style="margin: 0.5rem 0 0; font-size: 1rem">Post-workout</h3>
+          </article>
+          <article class="info-card info-card--cream">
+            <span class="info-icon" aria-hidden="true">🥂</span>
+            <h3 style="margin: 0.5rem 0 0; font-size: 1rem">Social occasions</h3>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 0">
+        <div class="info-card info-card--yellow" style="text-align: center; max-width: 36rem; margin: 0 auto">
+          <p style="margin: 0 0 1rem">Running a café, bar, or terrace?</p>
+          <a href="for-venues.html" class="btn-primary" style="width: auto; padding-left: 2rem; padding-right: 2rem">
+            See PEP for venues
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="tagline-script">Feel good. Have fun.<span class="leaf-dot">🌿</span></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
