@@ -1,0 +1,161 @@
+{
+  "version": 1,
+  "activeId": 2,
+  "activeSlug": "lifestyle",
+  "activeName": "Lifestyle upgrade",
+  "brand": "PEP",
+  "domain": "pep-drink.com",
+  "oneLiner": "Healthy, refreshing protein drinks that fit beautifully into your everyday lifestyle.",
+  "positioningStatement": "PEP is a premium protein drink designed as a lifestyle accessory for wellness-focused individuals seeking a healthy, refreshing treat in their daily routines. With light, vibrant flavours and a visual identity rooted in minimal, pastel aesthetics, PEP supports balance and self-image without the heaviness or seriousness of gym drinks.",
+  "audience": [
+    "Wellness-focused city dwellers",
+    "Young professionals and creatives",
+    "Brunch and café culture enthusiasts",
+    "People who value health without sacrificing fun"
+  ],
+  "occasions": [
+    "Morning or weekend brunch at cafés",
+    "Afternoon refreshment during coworking or meetings",
+    "Post-yoga, pilates or gentle movement session",
+    "Beach days or picnics",
+    "As a daily treat or accessory for healthy routines"
+  ],
+  "personalityAdjectives": [
+    "healthy",
+    "refreshing",
+    "probiotic",
+    "natural",
+    "rejuvenating"
+  ],
+  "voice": {
+    "tone": "Bright, light-hearted, friendly, stylish but not pretentious, casually uplifting. Use clear, easy language with warmth and a hint of aspiration.",
+    "tagline": "Feel good. Have fun.",
+    "avoidWords": [
+      "Bulk",
+      "Mass gainer",
+      "Shred",
+      "Beast",
+      "Performance",
+      "Hardcore",
+      "Extreme",
+      "Bro",
+      "Maximize gains",
+      "Pump",
+      "Energy blast",
+      "Supplements",
+      "Gym",
+      "Ripped",
+      "Sports nutrition"
+    ]
+  },
+  "visual": {
+    "colorsFromBrandJson": true,
+    "mood": "Minimal, pastel, serene. Calm energy that feels modern, with subtle pops of tropical color for approachability.",
+    "photography": "Bright, natural light. Candid, real-life moments at cafés, beaches, parks – people enjoying the drink with food or friends, never overly staged or posed.",
+    "typography": "Elegant serif for the wordmark (Didot/GFS Didot), clean sans-serif for body (Montserrat), expressive script (Brittany Signature) for detail and warmth.",
+    "designConcept": "minimal, pastel",
+    "rejectLooks": [
+      "Aggressively bold gym branding",
+      "Dark, moody, or neon energy drink palettes",
+      "Overly techie or data-driven presentations",
+      "Primary color blocks (childish or generic)",
+      "Festival/rave visuals"
+    ]
+  },
+  "inLineBrands": [
+    {
+      "name": "POPP",
+      "url": "",
+      "category": "Prebiotic",
+      "why": "Focuses on wellness and refreshing taste with a bright, pastel, minimal aesthetic—mirrors PEP’s approach to being a treat for healthy habits.",
+      "adjectives": [
+        "healthy",
+        "refreshing"
+      ],
+      "designPatterns": [
+        "bright, pastel design",
+        "clean look",
+        "positive, wellness-forward language"
+      ]
+    },
+    {
+      "name": "RITA",
+      "url": "",
+      "category": "Kombucha",
+      "why": "Emphasizes natural, probiotic, and lifestyle-driven benefits. Uses hip, modern designs with earthy, pastel colors, making it approachable in wellness occasions.",
+      "adjectives": [
+        "probiotic",
+        "natural"
+      ],
+      "designPatterns": [
+        "earthy tones",
+        "hip, light design"
+      ]
+    },
+    {
+      "name": "AUNE & KEVAI",
+      "url": "",
+      "category": "Recovery Tonics",
+      "why": "Serene, pastel design and a rejuvenating, health-focused proposition ideal for the lifestyle upgrade set.",
+      "adjectives": [
+        "rejuvenating",
+        "healthy"
+      ],
+      "designPatterns": [
+        "serene design",
+        "pastel shades"
+      ]
+    }
+  ],
+  "peerBrandsOtherPositionings": [
+    {
+      "name": "VITAMIN WELL",
+      "positioning_id": 1,
+      "whyNotActive": "Positioned as a hydration/energy functional drink for people chasing specific physical goals; more functional and less lifestyle-aspirational than PEP."
+    },
+    {
+      "name": "NOCCO",
+      "positioning_id": 1,
+      "whyNotActive": "Focused on BCAA energy and fitness routines (gym market), lacking the lifestyle and everyday wellness positioning PEP aims for."
+    },
+    {
+      "name": "PROSIP",
+      "positioning_id": 1,
+      "whyNotActive": "Combines protein and alcohol with a functional, bold look targeting gym goers or party/fitness fusions, not lifestyle or wellness upgrade."
+    },
+    {
+      "name": "FISHERS ISLAND",
+      "positioning_id": 3,
+      "whyNotActive": "Geared toward the social drinking set, replacing cocktails and positioning for nightlife or party occasions; too event-specific for lifestyle routine."
+    },
+    {
+      "name": "LYRE'S",
+      "positioning_id": 3,
+      "whyNotActive": "Non-alcoholic spirits for replacing social drinks — focuses on the ritual of social occasions rather than daily wellbeing. More about social mimicry, less about everyday health."
+    },
+    {
+      "name": "RECIPES",
+      "positioning_id": 3,
+      "whyNotActive": "Cocktail and fun beverage positioning for people wanting excitement; not centered on wellness or lightness for daily healthy habits."
+    }
+  ],
+  "antiReferences": [
+    {
+      "name": "Lean Body/gym RTD",
+      "why": "Protein-focused functional drinks with aggressive, masculine gym-bro branding and bulk imagery; the opposite of a stylish lifestyle drink."
+    },
+    {
+      "name": "drinkpep.com",
+      "why": "Name collision (US probiotic/energy drink); overlaps but does not fit the premium, lifestyle wellness positioning and could confuse market identity."
+    }
+  ],
+  "layoutOnlyReferences": [],
+  "brandFitRules": [
+    "Does the brand or design use minimal, pastel, or earthy tones? (YES for fit)",
+    "Does the copy reference wellness, balance, refreshment, or daily routines? (YES for fit)",
+    "Is the target context a relaxed, stylish or wellness-aspirational moment (e.g. brunch, café, coworking, gentle recovery)? (YES for fit)",
+    "Does the visual identity avoid bold, aggressive or neon gym/energy drink codes? (NO gym-bro or techy looks allowed)",
+    "Does the copy avoid words associated with heavy workouts, maximizing gains, or sports nutrition? (NO functional/protein-bro language)",
+    "Is the overall impression approachable, inviting, and visually calm—not nightlife or festival-centric? (YES for fit)"
+  ]
+}

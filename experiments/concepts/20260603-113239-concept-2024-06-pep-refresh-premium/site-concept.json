@@ -1,0 +1,210 @@
+{
+  "id": "concept-2024-06-pep-refresh-premium",
+  "positioning": "PEP is a premium, light, and refreshing protein drink designed for sociable, out-of-home venues like cafés, bars, and terraces. It is a modern, flavour-forward alternative to gym shakes: vibrant, inviting, and effortlessly fitting into everyday occasions, with a clear nutritional edge and a feel-good story.",
+  "inspiredBy": [
+    "Revized",
+    "drinkpep.com (layout patterns only—name collision)",
+    "Current DTC beverage design patterns",
+    "Premium, light protein RTD (see discovered references)"
+  ],
+  "differentiators": [
+    "Protein, not caffeine, as functional benefit",
+    "Designed for non-gym, social out-of-home settings (café/bar/terrace)",
+    "True lightness—7g protein, 49 calories, no added sugar",
+    "Premium, friendly, and inclusive aesthetic using calm greens, creams, with a personal story (Lou & Shannon)",
+    "Flavour-forward, flavour voting, and clear occasion cues"
+  ],
+  "anchoredReferences": [
+    {
+      "url": "https://www.revized-seltzer.com/",
+      "label": "Revized",
+      "nameCollision": false,
+      "patternsToAdapt": [
+        "Concise hero with key proof points",
+        "Flavour grid with short sensory copy",
+        "Drinking ritual/serving suggestions",
+        "Founder story as own section",
+        "Clean DTC navigation"
+      ]
+    },
+    {
+      "url": "https://drinkpep.com/",
+      "label": "drinkpep.com",
+      "nameCollision": true,
+      "patternsToAdapt": [
+        "Benefit blocks (nutrition, benefits)",
+        "Testimonials carousel",
+        "Lifestyle photography on location",
+        "Email signup/contact band"
+      ]
+    }
+  ],
+  "pages": {
+    "index": {
+      "narrativeArc": [
+        "Immediate hero: light, refreshing, protein-forward proposition; proof points",
+        "Explore flavour(s): Coconut Mango now, others 'coming soon' with visual voting",
+        "Serving/enjoy moments: where and how to drink PEP (café, terrace, brunch, post-workout, social, etc.)",
+        "About: founder story and social origin",
+        "Venue pilot call-to-action band"
+      ],
+      "sections": [
+        {
+          "id": "hero",
+          "purpose": "Instantly communicate PEP’s premium, light, refreshing, protein-boosted nature. Show off product and nutritional value. Reinforce social serving context.",
+          "layoutPattern": "Split hero: main copy + key claims + product shot (can, glass, citrus) — Revized-inspired but softer, more social aesthetic",
+          "copyTone": "Warm, aspirational, light, inviting. Not technical or gym-bro.",
+          "imagery": [
+            "PEP can and glass on a soft, luminous background with citrus garnish",
+            "Light daytime social vibe"
+          ],
+          "notes": "All benefit badges styled with Montserrat, numeric claims in Montserrat 800"
+        },
+        {
+          "id": "drinks",
+          "purpose": "Let visitors browse the current and future PEP flavours. Encourage flavour discovery and collect preferences.",
+          "layoutPattern": "Horizontal scroll or grid with large can images, colour-coded backgrounds (from flavours.json), badge for 'Available now' and 'Coming soon'. Sensory microcopy per flavour.",
+          "copyTone": "Descriptions are sensory, bright, flavourful. 'Vote' or 'anticipate' copy for unlaunched SKUs.",
+          "imagery": [
+            "Flavour can images with distinctive background colours",
+            "Micro-illustrations of fruits (consistent with can art)"
+          ],
+          "notes": "Only Coconut Mango is active; others show 'coming soon'. Each card can have a 'vote for next'."
+        },
+        {
+          "id": "enjoy",
+          "purpose": "Showcase PEP’s fit for day-to-night, post-workout, and social moments—framing the product as part of enjoyable, real-life occasions.",
+          "layoutPattern": "Grid of occasion cards (icon, headline, microcopy), inspired by Revized's serving beats and functional beverage use-case grids",
+          "copyTone": "Inclusive, light, lifestyle—not prescriptive.",
+          "imagery": [
+            "Line icons or simple illustrations (coffee cup, terrace, yoga mat, cheers, etc.)"
+          ],
+          "notes": "Consider a soft hover/active state on each card."
+        },
+        {
+          "id": "about",
+          "purpose": "Share the founders’ story and social origin of PEP, building warmth and trust. Show faces and personal touch.",
+          "layoutPattern": "Side-by-side: photo of Lou & Shannon, plus copy block. Script font for taglines.",
+          "copyTone": "Personal, authentic, aspirational—but grounded.",
+          "imagery": [
+            "Portrait or candid of Lou & Shannon",
+            "Supporting lifestyle images if available"
+          ],
+          "notes": "Draws from Revized and current PEP about section."
+        },
+        {
+          "id": "cta-band",
+          "purpose": "Capture interest from venue operators; funnel to pilot program.",
+          "layoutPattern": "Full-width band with short, clear copy. Button to for-venues.html.",
+          "copyTone": "Invitational, 'exclusive but friendly'.",
+          "imagery": [],
+          "notes": "Background cream or soft green; brand primary button."
+        },
+        {
+          "id": "footer",
+          "purpose": "Brand recall, closing brand line, light contact touchpoints.",
+          "layoutPattern": "Script tag, leaf-dot, soft band",
+          "copyTone": "Friendly, reassuring.",
+          "imagery": [],
+          "notes": "Can extend with email field if future growth."
+        }
+      ],
+      "visualLinkToIndex": "Logo (Didot) always links 'home'; highlight Drinks/Flavours section in nav"
+    },
+    "forVenues": {
+      "narrativeArc": [
+        "Venue-facing hero: PEP as a point-of-difference on your menu",
+        "Why PEP? (Benefits for venues: margin, uniqueness, guest appeal, light nutrition, daytime-to-evening)",
+        "Pilot: explanation + how to join",
+        "Inquiry/contact form for pilot program",
+        "Optional: testimonials from venues or guests if available",
+        "Back-to-consumer site CTA"
+      ],
+      "sections": [
+        {
+          "id": "venues-hero",
+          "purpose": "Appeal to operators with the business/social value of adding PEP.",
+          "layoutPattern": "Hero with concise, benefit-driven proposition; product + lifestyle image",
+          "copyTone": "Business-friendly but warm ('stand out, delight guests, try PEP first')",
+          "imagery": [
+            "PEP can or product on bar/café table (social context)"
+          ],
+          "notes": "Immediate button: Join pilot, scroll to form"
+        },
+        {
+          "id": "venues-benefits",
+          "purpose": "List why PEP is a strong add for venues (unique offer, fits health trends, lightweight supply/stock, Instagrammable, modern, margin-friendly)",
+          "layoutPattern": "3–5 benefit cards/badges, icons + label + supportive microcopy",
+          "copyTone": "Conversational, positive, business-aware.",
+          "imagery": [
+            "Simple icons (leaf, profit, calendar, sparkle, etc.)"
+          ],
+          "notes": "Mirrors DTC benefit bar but reframed for business"
+        },
+        {
+          "id": "venues-how",
+          "purpose": "Explains the pilot: how venues can try PEP, support/resources, exclusive feedback window.",
+          "layoutPattern": "Step-by-step or timeline, matching the style of the 'serving ritual' from Revized",
+          "copyTone": "Supportive, clear ('as easy as stocking, serving, feedback')",
+          "imagery": [],
+          "notes": "Short, linear, no hard sell"
+        },
+        {
+          "id": "venues-form",
+          "purpose": "Collect inquiries for the PEP pilot: venue name, contact, location, volume/interest notes, optional remarks.",
+          "layoutPattern": "Vertical form, separated by soft panel/box. Success state after submit.",
+          "copyTone": "Friendly, succinct, no jargon.",
+          "imagery": [],
+          "notes": "Labelled form, visually matches rest of site."
+        },
+        {
+          "id": "venues-testimonials",
+          "purpose": "Optional: Social proof if testimonials exist; else placeholder for future.",
+          "layoutPattern": "Slider/carousel or card grid with quote + venue or guest name.",
+          "copyTone": "Real, positive.",
+          "imagery": [
+            "Soft quote mark icon"
+          ],
+          "notes": "Can start as static or disabled if no content yet."
+        },
+        {
+          "id": "venues-footer",
+          "purpose": "Close with a graceful path back to consumer site; reinforce brand connection.",
+          "layoutPattern": "Soft CTA bar, link out to index",
+          "copyTone": "Friendly, warm.",
+          "imagery": [],
+          "notes": "Script font, possibly button"
+        }
+      ],
+      "visualLinkToIndex": "Logo home-link, plus 'Explore flavours' or 'Consumer site' secondary button"
+    }
+  },
+  "designTokens": {
+    "colorsFromBrandJson": true,
+    "spacingScale": "4, 8, 16, 24, 32, 48, 64px — airy, medium vertical space; hero up to 96px, occasion/benefit grids 32–48px between cards",
+    "heroDensity": "Open, premium, not dense—ample breathing room around can/glass; clear contrast foreground/background (cream, green, white, peach/yellow for highlights)",
+    "sectionRhythm": "Clear vertical cadence, soft fade transitions or subtle color changes for section breaks, with occasional background tint shifts (use cream, yellow, peach for lively but calm energy, dark green for high-read contrast bands e.g. CTA, footer)"
+  },
+  "typography": {
+    "display": "Didot (logo, H1s); fallback GFS Didot/Georgia",
+    "badges": "Bebas Neue, capsule-style, all-caps for 'NEW', 'AVAILABLE NOW', etc.",
+    "script": "Brittany Signature where licensed, fallback Segoe Script/cursive for subtitles, closing tags",
+    "body": "Montserrat, regular/medium; badge numbers (e.g. 7g/49cal) extra-bold 800"
+  },
+  "harmonyPrinciples": [
+    "Light, inviting color fields with product and occasion-hinting pastels",
+    "Strictly avoid neon/seltzer club palette; always use brand green/cream/orange/peach/yellow",
+    "Flavour cards color-matched from flavours.json, not arbitrary",
+    "Soft drop shadows, never hard lines; all edges slightly rounded unless intentionally square (e.g. can images)",
+    "Whitespace around display elements; never wall-to-wall content blocks",
+    "Consistent, airy section rhythm—each section is distinct, but connected via palette and type"
+  ],
+  "avoid": [
+    "Aggressive, technical, or gym-bro language or visuals",
+    "Children's juice or cartoonish elements",
+    "Edgy/angry energy-drink aesthetics (black, red, metallic, 'crash' motion, lightning etc.)",
+    "Icons or layouts copied from competitors (adapt concepts only)",
+    "Direct reference to collagen/meal replacement/diet language",
+    "Overwhelming fitness/athletic positioning—focus stays on social, out-of-home"
+  ]
+}

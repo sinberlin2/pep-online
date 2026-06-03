@@ -6,43 +6,50 @@
 cd c:\Users\doyle\projects\pep-online
 conda activate pep-online
 pip install -r requirements-agents.txt
-copy .env.example .env
-# Edit .env — put OPENAI_API_KEY there only (never in .env.example)
+# .env with OPENAI_API_KEY only (never commit .env)
 ```
 
-## Pass 1 — Whole-site concept
+## Full workflow (3 positionings + PDF table)
+
+See `brand/research/WORKFLOW.md`.
 
 ```powershell
-python -m agents.concept_run --brief "Premium light protein, venue pilot, flavour-forward"
+npm run brand:parse
+# Add brand/research/competition-table.pdf then:
+npm run brand:extract-pdf -- --max-pages 12 --tile-rows 2 --tile-cols 2
+npm run brand:merge
+npm run brand:all
+
+# Build website concept for selected direction
+python -m agents.concept_run --positioning 2
 ```
 
-Uses:
+| ID | Direction | CLI |
+|----|-----------|-----|
+| 1 | Functional protein | `--positioning 1` |
+| 2 | Lifestyle / wellness | `--positioning 2` or `lifestyle` |
+| 3 | Better social drink | `--positioning 3` |
 
-- Anchors: `experiments/references/competitors.md` (Revized + drinkpep.com)
-- Web search (default on) to find 5–8 similar drink sites
-- `brand.json`, `flavours.json`, current `index.html`
+All direction packs:
+- `brand/research/directions/functional-protein/`
+- `brand/research/directions/lifestyle/`
+- `brand/research/directions/social/`
 
-Outputs under `experiments/concepts/<timestamp>-<id>/`:
+Current active selection:
+- `brand/research/active/positioning.json`
 
-| File | Content |
-|------|---------|
-| `site-concept.json` | Full IA + sections + tokens |
-| `discovered-references.json` | URLs the agent found |
-| `concept.md` | Readable brief |
-| `research-memo.txt` | Raw web research (if search ran) |
-
-Skip web search:
+## Pass 1 — Site concept
 
 ```powershell
-python -m agents.concept_run --brief "..." --no-web-search
+python -m agents.concept_run --brief "..." --positioning 2
 ```
+
+Outputs go to `experiments/website-concepts/` to keep website work separate from branding files.
+
+Shareable brand exports: `npm run brand:export` → HTML, PDF, and PNGs in `brand/research/exports/`
+
+**Schema reminder:** planned per-brand fields `drinkTypeFit` + `positioningMismatch` — see `docs/BRAND-OUTPUT-SCHEMA-TODO.md`.
 
 ## Pass 2 — Design critic
 
-`review_run` — not built yet. Run after you implement the concept on `dev` and capture screenshots.
-
-## npm
-
-```bash
-npm run concept
-```
+`review_run` — not built yet.

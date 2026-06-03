@@ -1,0 +1,106 @@
+{
+  "searchQueriesUsed": [
+    "premium ready-to-drink protein beverage brand",
+    "light functional beverage DTC",
+    "multi-flavor drink brand website",
+    "beverage brand positioning for bars and terraces"
+  ],
+  "discovered": [
+    {
+      "url": "https://www.nestlehealthscience.us/stories/vital-proteinsr-introduces-its-first-ever-ready-drink-protein-shake-featuring-best-selling",
+      "brandName": "Vital Proteins Collagen & Protein Shake",
+      "lane": "Protein RTD",
+      "relevance": "Communicates high protein, clean ingredient, easy usage — appeals to consumers interested in light, convenient functional drinks.",
+      "patternsToAdapt": [
+        "Product benefit highlights/bar",
+        "Usage/occasion suggestions as microcopy"
+      ],
+      "avoid": [
+        "Emphasis on collagen or meal replacement",
+        "Heavy-handed nutritionist language"
+      ]
+    },
+    {
+      "url": "https://leanbody.com/",
+      "brandName": "Lean Body RTD",
+      "lane": "Protein RTD",
+      "relevance": "Standard-setting for the nutrition-block, benefit carousel, and credibility through customer proof, but too fitness-heavy visually.",
+      "patternsToAdapt": [
+        "Customer testimonials for social proof",
+        "Subscription/buy options (future feature)"
+      ],
+      "avoid": [
+        "Bodybuilder/gym-centric photos",
+        "Aggressive/masculine energy"
+      ]
+    },
+    {
+      "url": "https://huel.com/en-US/products/huel-ready-to-drink",
+      "brandName": "Huel Ready-to-Drink",
+      "lane": "Meal-replacement chic",
+      "relevance": "Strong on minimalist bottle-lineup, clear nutrition info, and accessible variety presentation.",
+      "patternsToAdapt": [
+        "Flavour side-scroll visual",
+        "Transparency of nutrition and composition"
+      ],
+      "avoid": [
+        "Positioning as total meal replacement",
+        "Greyed backgrounds (prefer PEP’s brighter palette)"
+      ]
+    },
+    {
+      "url": "https://www.drinklumio.com/",
+      "brandName": "Lumio",
+      "lane": "Functional refreshment",
+      "relevance": "Vivid, bright copy focused on social, lively drinking occasions. Sensory flavour language. Emphasis on 'lightness'.",
+      "patternsToAdapt": [
+        "Sensory copy for flavours",
+        "Lifestyle/occasion illustration and copy"
+      ],
+      "avoid": [
+        "Direct energy drink language",
+        "Overpromise on wellness claims"
+      ]
+    },
+    {
+      "url": "https://getrawnutrition.com/products/protein-isolate-rtd",
+      "brandName": "RAW Nutrition RTD",
+      "lane": "Premium protein",
+      "relevance": "Clear, minimalist benefit communication with ingredient integrity; however, more gym-nuanced.",
+      "patternsToAdapt": [
+        "Minimalist ingredient panels",
+        "Transparent claims (no 'magic' marketing)"
+      ],
+      "avoid": [
+        "Technical ingredient breakdowns",
+        "Lab/fitness visual tropes"
+      ]
+    },
+    {
+      "url": "https://tcknutritionllc.com/products/ryse-clear-protein-rtd-country-time-lemonade",
+      "brandName": "Ryse Clear Protein RTD",
+      "lane": "Clear protein",
+      "relevance": "Focuses on the light/refreshing nature of clear protein drinks and unique flavour spins.",
+      "patternsToAdapt": [
+        "Highlight 'light/clear' aspect",
+        "Flavour/innovation as hero"
+      ],
+      "avoid": [
+        "Caffeinated/energy cues",
+        "Black/yellow athletic motif"
+      ]
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/elmhurst-1925-launches-clean-protein-to-redefine-ready-to-drink-nutrition-302711152.html",
+      "brandName": "Elmhurst 1925 Clean Protein",
+      "lane": "Clean-label protein RTD",
+      "relevance": "Spotlights ingredient simplicity and modern beverage relevance (plant-based).",
+      "patternsToAdapt": [
+        "Clean label emphasis block"
+      ],
+      "avoid": [
+        "Plant-based as sole value; PEP is not exclusive plant-based"
+      ]
+    }
+  ]
+}

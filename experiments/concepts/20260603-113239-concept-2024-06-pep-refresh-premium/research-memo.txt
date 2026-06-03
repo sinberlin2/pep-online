@@ -1,0 +1,103 @@
+**Research Memo: Website Redesign Concepts for PEP**
+
+**Objective:**
+To gather insights from existing beverage brand websites to inform the redesign of PEP's website, focusing on premium, light, and refreshing protein drinks suitable for social and out-of-home consumption.
+
+**Anchored References:**
+
+1. **Revized (https://www.revized-seltzer.com/):**
+   - **Product:** Hard seltzer combining sparkling water, fruit flavors, and alcohol.
+   - **Relevant Patterns:**
+     - **Hero Section:** A concise tagline paired with product highlights such as calorie count, natural ingredients, and no added sugar.
+     - **Flavour Grid:** A visual display of each SKU accompanied by brief sensory descriptions.
+     - **Drinking Ritual:** Step-by-step serving suggestions, including glassware, ice, and garnishes, which PEP can adapt to showcase consumption occasions.
+     - **About & Founder Story:** Dedicated sections providing brand background and founder narratives.
+     - **Navigation:** Clean and direct links to Flavours, Serving, About, and Contact pages.
+   - **Considerations for PEP:** Emphasize protein content and suitability for out-of-home venues. Incorporate the unique story of founders Lou & Shannon. Utilize PEP's brand palette of greens and creams, avoiding neon tones associated with seltzers.
+
+2. **drinkpep.com (https://drinkpep.com/):**
+   - **Product:** "Platinum Energy Probiotics" – an energy drink focusing on gut health.
+   - **Relevant Patterns:**
+     - **Benefit Blocks:** Sections highlighting product benefits like probiotics, B vitamins, and electrolytes. PEP can adapt this to emphasize protein content, calorie information, absence of added sugars, and gluten-free attributes.
+     - **Product Cards:** Visual representations of flavors with concise descriptions.
+     - **Testimonials Carousel:** Rotating customer reviews to build trust.
+     - **Email Subscription Band:** A section encouraging visitors to stay connected via email.
+     - **Lifestyle Photography:** Images showcasing the product in various settings.
+   - **Caution for PEP:** Ensure clear differentiation from this brand due to the name similarity. Avoid replicating their copy, ingredients, founders, or positioning.
+
+**Discovered References:**
+
+1. **Vital Proteins Collagen & Protein Shake (https://www.nestlehealthscience.us/stories/vital-proteinsr-introduces-its-first-ever-ready-drink-protein-shake-featuring-best-selling):**
+   - **Product:** Ready-to-drink shake with 30g of protein and 10g of collagen peptides.
+   - **Relevance:** Demonstrates the appeal of high-protein, convenient beverages.
+   - **Adaptable Patterns:**
+     - **Product Benefits Highlight:** Emphasis on protein content and additional health benefits.
+     - **Usage Scenarios:** Suggestions for integrating the product into daily routines.
+   - **Avoid:** Overemphasis on collagen, as PEP focuses on protein.
+
+2. **Lean Body Ready-to-Drink Protein Shake (https://leanbody.com/):**
+   - **Product:** RTD protein shake offering 40g of protein per serving.
+   - **Relevance:** Showcases a high-protein beverage targeting fitness enthusiasts.
+   - **Adaptable Patterns:**
+     - **Customer Testimonials:** Featuring user reviews to build credibility.
+     - **Subscription Options:** Offering discounts for recurring orders.
+   - **Avoid:** Overly fitness-centric imagery; PEP should maintain a broader appeal.
+
+3. **Huel Ready-to-Drink (https://huel.com/en-US/products/huel-ready-to-drink):**
+   - **Product:** Meal replacement shakes with up to 22g of protein and 27 essential vitamins and minerals.
+   - **Relevance:** Highlights the trend of nutritionally complete, convenient beverages.
+   - **Adaptable Patterns:**
+     - **Flavor Variety Display:** Showcasing multiple flavors with clear visuals.
+     - **Nutritional Information:** Transparent display of ingredients and benefits.
+   - **Avoid:** Positioning as a meal replacement; PEP is a light protein drink.
+
+4. **Elmhurst 1925 Clean Protein (https://www.prnewswire.com/news-releases/elmhurst-1925-launches-clean-protein-to-redefine-ready-to-drink-nutrition-302711152.html):**
+   - **Product:** Plant-based protein beverage with 27g of protein and minimal sugar.
+   - **Relevance:** Emphasizes clean ingredients and high protein content.
+   - **Adaptable Patterns:**
+     - **Clean Label Emphasis:** Highlighting natural ingredients and absence of artificial additives.
+     - **Award Recognition:** Showcasing accolades to build trust.
+   - **Avoid:** Overemphasis on plant-based aspects if not aligned with PEP's formulation.
+
+5. **Lumio (https://www.drinklumio.com/):**
+   - **Product:** Functional energy drink with clean ingredients and low sugar.
+   - **Relevance:** Focus on light, refreshing beverages suitable for social settings.
+   - **Adaptable Patterns:**
+     - **Brand Messaging:** "Drink Bright. Live Light." aligns with PEP's positioning.
+     - **Flavor Descriptions:** Engaging sensory language for each variant.
+   - **Avoid:** Energy drink connotations; PEP is a protein beverage.
+
+6. **RAW Nutrition Protein Isolate RTD (https://getrawnutrition.com/products/protein-isolate-rtd):**
+   - **Product:** Ready-to-drink protein shake with 30g of grass-fed protein isolate.
+   - **Relevance:** Highlights premium protein sourcing and clean formulation.
+   - **Adaptable Patterns:**
+     - **Ingredient Transparency:** Detailed breakdown of protein sources and benefits.
+     - **Minimalist Design:** Clean aesthetics focusing on product quality.
+   - **Avoid:** Overly technical language; maintain accessibility for a broad audience.
+
+7. **Ryse Clear Protein RTD (https://tcknutritionllc.com/products/ryse-clear-protein-rtd-country-time-lemonade):**
+   - **Product:** Clear protein drink with 22g of whey isolate protein and zero sugar.
+   - **Relevance:** Demonstrates the market for light, refreshing protein beverages.
+   - **Adaptable Patterns:**
+     - **Flavor Innovation:** Unique flavor offerings like Country Time Lemonade.
+     - **Clear Beverage Appeal:** Emphasizing the light and refreshing nature.
+   - **Avoid:** Association with traditional protein shakes; PEP should highlight its unique positioning.
+
+**Search Queries Used:**
+
+- "premium ready-to-drink protein beverage brand"
+- "light functional beverage DTC"
+- "multi-flavor drink brand website"
+- "beverage brand positioning for bars and terraces"
+
+**Summary of Adaptable Patterns:**
+
+- **Hero Section:** Concise tagline with key product benefits.
+- **Flavor Showcase:** Visual grid with sensory descriptions.
+- **Consumption Occasions:** Guidance on serving and suitable settings.
+- **Brand Storytelling:** Dedicated sections for brand history and founders.
+- **Transparent Nutrition:** Clear display of ingredients and health benefits.
+- **Customer Engagement:** Testimonials and subscription options.
+- **Clean Design:** Minimalist aesthetics focusing on product quality.
+
+By integrating these insights, PEP can develop a website that effectively communicates its brand values and appeals to its target audience.

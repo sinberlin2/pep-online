@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "activeId": 1,
+  "activeSlug": "functional-protein",
+  "activeName": "Functional protein drink",
+  "brand": "PEP",
+  "domain": "pep-drink.com",
+  "oneLiner": "The light, refreshing way to hit your protein target—without the gym-bro vibe.",
+  "positioningStatement": "PEP is a premium, out-of-home protein drink for people who value health, efficiency, and routine. Designed as a functional nutrition tool, PEP helps disciplined, active individuals meet their protein goals with a light taste, not heaviness—supporting daily performance, hydration, and recovery with a clean, modern look.",
+  "audience": [
+    "Fitness-minded professionals",
+    "Routine-driven urbanites",
+    "Recreational athletes and gym-goers",
+    "People seeking function and efficiency in nutrition—not fads"
+  ],
+  "occasions": [
+    "After gym session",
+    "Post-run recovery",
+    "Mid-morning or afternoon at work",
+    "On the go between meetings",
+    "After yoga or pilates"
+  ],
+  "personalityAdjectives": [
+    "functional",
+    "light",
+    "vitamin-enriched",
+    "health",
+    "energy",
+    "hydrating",
+    "disciplined",
+    "efficient"
+  ],
+  "voice": {
+    "tone": "Clean, rational, direct, optimistic, subtly energetic",
+    "tagline": "Feel good. Have fun.",
+    "avoidWords": [
+      "bulking",
+      "jacked",
+      "gains",
+      "bro",
+      "hardcore",
+      "party",
+      "probiotics",
+      "cocktail",
+      "detox",
+      "treat",
+      "spirit",
+      "mocktail"
+    ]
+  },
+  "visual": {
+    "colorsFromBrandJson": true,
+    "mood": "Clean, functional, fresh, trustworthy",
+    "photography": "Minimal social cues, focus on solo or quiet active moments; product in clean, bright settings—never dark, crowded gyms or nightlife.",
+    "typography": "Didot (logo), Brittany Signature (tagline), Montserrat (numbers/labels), Bebas Neue (badges)",
+    "designConcept": "clean",
+    "rejectLooks": [
+      "Gym-bro aesthetics (black/red, muscle graphics, shaker imagery)",
+      "Lifestyle pastels or soft, playful cartoonish packaging",
+      "Party/festival visual tropes (metallics, bold vibrant cocktail cues)",
+      "Kids’ juice or soda vibes",
+      "Alcoholic spirit/mocktail cues"
+    ]
+  },
+  "inLineBrands": [
+    {
+      "name": "HOLY",
+      "url": "https://www.drinkholy.com/",
+      "category": "Vitamin Drink",
+      "why": "Functional focus on health, lightness, and vitamin-enriched profile with a simple, informative layout.",
+      "adjectives": [
+        "vitamin-enriched",
+        "light",
+        "health"
+      ],
+      "designPatterns": [
+        "simple design",
+        "functional info highlights",
+        "clean color blocking"
+      ]
+    },
+    {
+      "name": "LMNT",
+      "url": "https://www.drinklmnt.com/",
+      "category": "Hydration",
+      "why": "Clinical, rational packaging for performance and hydration—directly communicates function and efficiency.",
+      "adjectives": [
+        "functional",
+        "electrolytes",
+        "hydrate"
+      ],
+      "designPatterns": [
+        "clinical type",
+        "straightforward info blocks",
+        "functional icons"
+      ]
+    },
+    {
+      "name": "NOCCO",
+      "url": "https://nocco.com/",
+      "category": "BCAA/Energy",
+      "why": "Supports sports and active lifestyles with bold but not 'bro-ish' branding; highlights functional benefit (BCAA, energy) over heavy aesthetics.",
+      "adjectives": [
+        "energy",
+        "BCAA",
+        "sports"
+      ],
+      "designPatterns": [
+        "sporty striping",
+        "ingredient focus",
+        "clear callouts"
+      ]
+    },
+    {
+      "name": "VITAMIN WELL",
+      "url": "https://www.vitaminwell.com/",
+      "category": "Hydration",
+      "why": "Clean, clear labeling with high utility and vitamin positioning—trustworthy and functional over lifestyle.",
+      "adjectives": [
+        "vitamin-enriched",
+        "functional",
+        "hydrating"
+      ],
+      "designPatterns": [
+        "clean white or light backgrounds",
+        "big stat numbers",
+        "ingredient list foregrounded"
+      ]
+    }
+  ],
+  "peerBrandsOtherPositionings": [
+    {
+      "name": "PROTOCHOL",
+      "positioning_id": 3,
+      "whyNotActive": "Blends protein with alcohol—a niche for social events, not day-to-day functional use; emphasizes social/party context over functional solo nutrition."
+    },
+    {
+      "name": "BLOOM",
+      "positioning_id": 2,
+      "whyNotActive": "Prebiotic focus with playful lifestyle branding; targets wellness-treat and 'fun' occasions, not disciplined, goal-driven routines."
+    },
+    {
+      "name": "EVER TREE",
+      "positioning_id": 2,
+      "whyNotActive": "Minimalist, natural soft drinks with a lifestyle relaxation angle—not functional, protein-based nutrition."
+    },
+    {
+      "name": "OLIPOP",
+      "positioning_id": 2,
+      "whyNotActive": "Prebiotic sodas promoting gut health in a 'friendly' visual style; conceptually wellness/lifestyle, not a functional protein target."
+    },
+    {
+      "name": "POPP",
+      "positioning_id": 2,
+      "whyNotActive": "Prebiotic 'refreshing' drink, wellness lifestyle design—leans playful and health, but not driven by function or routine."
+    },
+    {
+      "name": "Kin Euphorics",
+      "positioning_id": 3,
+      "whyNotActive": "Social 'euphoric' drinks supporting mood and group experience, not solo or discipline-driven use cases."
+    },
+    {
+      "name": "Lyre's",
+      "positioning_id": 3,
+      "whyNotActive": "Alcohol-free spirits for social and ritual occasions; all branding references social drinking, not protein-driven nutrition."
+    },
+    {
+      "name": "Seedlip",
+      "positioning_id": 3,
+      "whyNotActive": "Premium non-alcoholic spirits for upscale social moments—not relevant to functional, performance-optimized routines."
+    }
+  ],
+  "antiReferences": [
+    {
+      "name": "Lean Body (gym RTDs and similar)",
+      "why": "Stereotypically fitness-bro protein shakes: bulk cues, aggressive marketing, 'jacked' themes—alienates broader, functional-focused audience."
+    },
+    {
+      "name": "drinkpep.com",
+      "why": "Name collision; US product focused on energy/probiotic with very different positioning and legal/brand confusion risk."
+    },
+    {
+      "name": "Kids’ juice/energy drinks",
+      "why": "Too playful, artificial, or sugary—undermines the rational, disciplined, aspirational core."
+    }
+  ],
+  "layoutOnlyReferences": [],
+  "brandFitRules": [
+    "Design must communicate functionality, health, and efficiency first.",
+    "Visuals should be clean, structured, and avoid party/lifestyle cues.",
+    "Never use gym-bro, 'jacked' or overly masculine protein tropes.",
+    "Avoid mocktail, spirit, or festival-drink looks.",
+    "Copy must emphasize solo performance, daily routine, and nutritional benefit—not social ritual or relaxation.",
+    "Never reference or imply the drink is intended for partying, nightlife, or as a treat.",
+    "No playful cartoon graphics, script overload, or pastel lifestyle visuals.",
+    "Do not use 'probiotic', 'cocktail', 'detox', or 'spirit' language.",
+    "Avoid any design or copy that could be confused with kids’ drinks or energy sodas.",
+    "PEP is always pep-drink.com—never reference or draw inspiration from drinkpep.com."
+  ]
+}

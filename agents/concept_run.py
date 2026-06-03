@@ -20,6 +20,9 @@ from agents.schemas import CONCEPT_BUNDLE_SCHEMA
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 PROMPT_PATH = Path(__file__).resolve().parent / "prompts" / "concept_director.md"
 REFERENCES_PATH = PROJECT_ROOT / "experiments" / "references" / "competitors.md"
+ACTIVE_POSITIONING_PATH = PROJECT_ROOT / "brand" / "research" / "active" / "positioning.json"
+DIRECTIONS_ROOT = PROJECT_ROOT / "brand" / "research" / "directions"
+WEBSITE_CONCEPTS_DIR = PROJECT_ROOT / "experiments" / "website-concepts"
 DEFAULT_BRIEF = (
     "Premium light protein drink for cafés, bars, and terraces. "
     "Whole-site concept: Revized-level clarity, PEP warmth and venue pilot. "
@@ -45,39 +48,80 @@ def _current_site_summary() -> str:
     return index[:12000] + ("\n...(truncated)" if len(index) > 12000 else "")
 
 
-def _research_instructions(brief: str, references: str) -> str:
-    return f"""Research similar beverage brand websites for a redesign concept.
+def _resolve_positioning_path(positioning_arg: str | None) -> Path:
+    if not positioning_arg:
+        return ACTIVE_POSITIONING_PATH
+    key = positioning_arg.strip().lower()
+    aliases = {
+        "1": "functional-protein",
+        "functional": "functional-protein",
+        "functional-protein": "functional-protein",
+        "2": "lifestyle",
+        "lifestyle": "lifestyle",
+        "wellness": "lifestyle",
+        "3": "social",
+        "social": "social",
+    }
+    slug = aliases.get(key, key)
+    return DIRECTIONS_ROOT / slug / "positioning.json"
 
-## PEP (our client)
-- Domain: pep-drink.com
-- Product: premium protein drink, light and refreshing, social/out-of-home
-- Founders: Lou & Shannon (NOT the Beasleys on drinkpep.com)
+
+def _active_positioning_block(positioning_path: Path) -> str:
+    if not positioning_path.is_file():
+        return (
+            "_No positioning file found. Run: python -m agents.brand_run --positioning 2 "
+            "(or 1/3) first._"
+        )
+    pos = _read_json(positioning_path)
+    peers = pos.get("inLineBrands", [])
+    peer_lines = "\n".join(
+        f"- {p.get('name', '?')}: {p.get('why', '')}" for p in peers[:12]
+    )
+    return f"""Active product direction: **{pos.get('activeName', '?')}** (id {pos.get('activeId', '?')})
+One-liner: {pos.get('oneLiner', '')}
+Statement: {pos.get('positioningStatement', '')}
+Design concept: {pos.get('visual', {}).get('designConcept', '')}
+In-line brands from research (search for sites like these, not gym RTD):
+{peer_lines or '- (see positioning.json)'}
+Anti-references: {', '.join(a.get('name', '') for a in pos.get('antiReferences', [])[:8])}
+"""
+
+
+def _research_instructions(brief: str, references: str, positioning: str) -> str:
+    return f"""Research beverage brand **websites** for a redesign concept.
+
+## PEP active brand direction (must follow)
+{positioning}
 
 ## User brief
 {brief}
 
-## Anchored references (visit / consider these)
+## Anchored references
 {references}
 
 ## Your task
-1. Search the web for 5–8 additional sites in these lanes:
-   - premium RTD / clear protein drinks
-   - light functional beverage DTC
-   - flavour-forward drink brand websites
-   - optional: out-of-home / café-friendly beverage brands
-2. For each site found, note URL, brand, why it is relevant, layout patterns worth adapting, and what to avoid.
-3. Summarize patterns from Revized (revized-seltzer.com) and drinkpep.com (name collision — IA only).
-4. List the search queries you used.
+1. Search for 5–8 sites similar to **in-line brands** and the active positioning — NOT generic gym protein RTD.
+2. Use lanes from active positioning (occasions, competitors listed in positioning.json).
+3. Prefer brands with URLs you can verify; include layout patterns to adapt.
+4. Revized = layout-only reference; drinkpep.com = name collision (IA only).
+5. List search queries used.
 
-Write a detailed research memo (plain text). Do not invent URLs — only include sites you actually found via search."""
+Plain-text research memo. No invented URLs."""
 
 
-def _concept_user_message(brief: str, references: str, research: str) -> str:
+def _concept_user_message(brief: str, references: str, research: str, positioning: str) -> str:
     brand = _read_json(PROJECT_ROOT / "brand" / "brand.json")
     flavours = _read_json(PROJECT_ROOT / "brand" / "product" / "flavours" / "flavours.json")
     site_excerpt = _current_site_summary()
+    guidelines = _read_text(PROJECT_ROOT / "brand" / "research" / "active" / "brand-guidelines.md")
 
     return f"""Create a whole-site concept bundle for PEP (pep-drink.com).
+
+## Active brand positioning (required)
+{positioning}
+
+## Brand guidelines excerpt
+{guidelines[:8000] if guidelines else '_Run brand_run first._'}
 
 ## User brief
 {brief}
@@ -118,6 +162,7 @@ def run_concept(
     use_web_search: bool,
     model: str,
     research_model: str,
+    positioning_arg: str | None = None,
 ) -> Path:
     load_project_env()
     get_openai_api_key()
@@ -125,6 +170,8 @@ def run_concept(
 
     references = _read_text(REFERENCES_PATH)
     system = _read_text(PROMPT_PATH)
+    positioning_path = _resolve_positioning_path(positioning_arg)
+    positioning = _active_positioning_block(positioning_path)
 
     research = ""
     web_ok = False
@@ -133,7 +180,7 @@ def run_concept(
         research, web_ok = web_research(
             client,
             model=research_model,
-            instructions=_research_instructions(brief, references),
+            instructions=_research_instructions(brief, references, positioning),
         )
         print("Web search:", "ok" if web_ok else "fallback")
     else:
@@ -144,14 +191,14 @@ def run_concept(
         client,
         model=model,
         system=system,
-        user=_concept_user_message(brief, references, research),
+        user=_concept_user_message(brief, references, research, positioning),
         schema_name="pep_concept_bundle",
         schema=CONCEPT_BUNDLE_SCHEMA,
     )
 
     stamp = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S")
     slug = bundle["siteConcept"].get("id", "concept").replace(" ", "-")[:48]
-    out_dir = PROJECT_ROOT / "experiments" / "concepts" / f"{stamp}-{slug}"
+    out_dir = WEBSITE_CONCEPTS_DIR / f"{stamp}-{slug}"
     out_dir.mkdir(parents=True, exist_ok=True)
 
     (out_dir / "site-concept.json").write_text(
@@ -171,6 +218,9 @@ def run_concept(
         "webSearchOk": web_ok,
         "conceptModel": model,
         "researchModel": research_model,
+        "positioningSource": positioning_path.relative_to(PROJECT_ROOT).as_posix()
+        if positioning_path.is_file()
+        else None,
         "createdAt": datetime.now(timezone.utc).isoformat(),
     }
     (out_dir / "meta.json").write_text(
@@ -201,6 +251,10 @@ def main() -> None:
         default=os.environ.get("REVIEW_AGENT_MODEL", "gpt-4o"),
         help="Model for web search step",
     )
+    parser.add_argument(
+        "--positioning",
+        help="Optional positioning to use: 1,2,3 or functional-protein/lifestyle/social",
+    )
     args = parser.parse_args()
 
     use_web = env_bool("CONCEPT_AGENT_WEB_SEARCH", True) and not args.no_web_search
@@ -209,6 +263,7 @@ def main() -> None:
         use_web_search=use_web,
         model=args.model,
         research_model=args.research_model,
+        positioning_arg=args.positioning,
     )
     print(f"\nDone. Outputs in:\n  {out_dir}\n")
     print("  site-concept.json")

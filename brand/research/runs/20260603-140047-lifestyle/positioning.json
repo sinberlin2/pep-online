@@ -1,0 +1,196 @@
+{
+  "version": 1,
+  "activeId": 2,
+  "activeSlug": "lifestyle",
+  "activeName": "Lifestyle upgrade",
+  "brand": "PEP",
+  "domain": "pep-drink.com",
+  "oneLiner": "Light, refreshing protein that fits your everyday healthy lifestyle—wellness without sacrifice.",
+  "positioningStatement": "PEP helps people make healthier everyday choices with a light, refreshing protein drink that feels like a treat—never a chore. Designed as a lifestyle accessory for wellness-focused, identity-driven people who want health without effort. PEP stands out for its minimal, pastel aesthetic and a taste experience worthy of the best moments of your day: café brunches, sunny co-working sessions, and afternoon refreshment.",
+  "audience": [
+    "Wellness-focused professionals and creatives",
+    "Health-conscious young adults (urban millennial/gen Z)",
+    "People upgrading from Kombucha, OLIPOP, or sparkling iced tea",
+    "Consumers seeking non-sugary, not-overly functional drinks that feel like a lifestyle choice, not a supplement"
+  ],
+  "occasions": [
+    "Brunch at a café with friends",
+    "Coworking in a creative space",
+    "Beach day or outdoor picnic",
+    "Afternoon pick-me-up at work",
+    "Healthy snack or treat replacement"
+  ],
+  "personalityAdjectives": [
+    "refreshing",
+    "natural",
+    "subtle",
+    "vibrant",
+    "lively",
+    "soft",
+    "health-focused",
+    "prebiotic",
+    "friendly"
+  ],
+  "voice": {
+    "tone": "Upbeat, light, warm, welcoming, subtly premium; modern and unfussy—never gym-focused or clinical.",
+    "tagline": "Feel good. Have fun.",
+    "avoidWords": [
+      "bulk",
+      "ripped",
+      "gains",
+      "protein punch",
+      "intense",
+      "energy boost",
+      "supplement",
+      "bodybuilder",
+      "hardcore",
+      "grit",
+      "discipline",
+      "performance"
+    ]
+  },
+  "visual": {
+    "colorsFromBrandJson": true,
+    "mood": "Minimal, pastel, elegant with a soft, natural palette. Clean but lively—a gentle blend of fresh and sophisticated.",
+    "photography": "Bright, airy, real-life moments around cafés, coworking spaces, beaches, and relaxed lifestyle settings. People look healthy, social, and stylish but never posed or fitness-driven.",
+    "typography": "Blend of sophisticated serif (Didot), friendly sans-serif (Montserrat), and playful script (Brittany Signature)—as detailed in brand.json.",
+    "designConcept": "minimal, pastel,",
+    "rejectLooks": [
+      "Sporty, bold, gym-focused branding",
+      "Energy drink visuals (neon, metallic, high contrast, 'extreme' effects)",
+      "Clinical or pharmaceutical aesthetic",
+      "Festival/party-centric (ultra-vibrant, crowded layouts)",
+      "Childish/kids’ juice codes"
+    ]
+  },
+  "inLineBrands": [
+    {
+      "name": "BLOOM",
+      "url": "https://bloom.com/",
+      "category": "Prebiotic",
+      "why": "Integrates prebiotic benefits with fun, lively lifestyle branding, appealing to health-conscious consumers seeking trendy, day-to-day wellness.",
+      "adjectives": [
+        "prebiotic",
+        "lively",
+        "vibrant"
+      ],
+      "designPatterns": [
+        "Bright, playful packaging",
+        "Lifestyle moments",
+        "Wellness-oriented copy"
+      ]
+    },
+    {
+      "name": "EVER TREE",
+      "url": "https://fevertree.com/",
+      "category": "Soft Drinks",
+      "why": "Minimalist, elegant design and natural ingredient focus encourage healthy choices without feeling clinical. Resonates with café and brunch occasions.",
+      "adjectives": [
+        "refreshing",
+        "natural",
+        "subtle"
+      ],
+      "designPatterns": [
+        "Minimalist layout",
+        "Ingredient-forward visuals",
+        "Light pastel palette"
+      ]
+    },
+    {
+      "name": "OLIPOP",
+      "url": "https://drinkolipop.com/",
+      "category": "Prebiotic",
+      "why": "Soft, approachable lifestyle branding with health-first messaging. Appeals to wellness-focused, identity-driven consumers.",
+      "adjectives": [
+        "prebiotic",
+        "soft",
+        "health-focused"
+      ],
+      "designPatterns": [
+        "Soft, friendly branding",
+        "Health utility meets delight"
+      ]
+    },
+    {
+      "name": "POPP",
+      "url": "https://www.popsop.com/",
+      "category": "Prebiotic",
+      "why": "Refreshing, lively wellness drink designed for everyday moments—matches PEP's ambitions for café and coworking occasions.",
+      "adjectives": [
+        "prebiotic",
+        "refreshing",
+        "health"
+      ],
+      "designPatterns": [
+        "Lively color accents",
+        "Everyday lifestyle photography"
+      ]
+    }
+  ],
+  "peerBrandsOtherPositionings": [
+    {
+      "name": "HOLY",
+      "positioning_id": 1,
+      "whyNotActive": "Targets functional vitamin-need states with vitamin-forward messaging and clinical visuals — lacks PEP's lifestyle/aspirational, treat-like appeal."
+    },
+    {
+      "name": "LMNT",
+      "positioning_id": 1,
+      "whyNotActive": "Focused on functional hydration & electrolytes; branding is utilitarian, functional, and not lifestyle or wellness aspirational."
+    },
+    {
+      "name": "NOCCO",
+      "positioning_id": 1,
+      "whyNotActive": "Athlete-optimized BCAA/energy product; gym- and performance-centric, incompatible with PEP’s relaxed, lifestyle-forward context."
+    },
+    {
+      "name": "PROTOCHOL",
+      "positioning_id": 1,
+      "whyNotActive": "Protein plus alcohol fusion aimed at the social/experimental segment; neither lifestyle nor pure wellness, and risks confusing PEP's 'everyday treat' focus."
+    },
+    {
+      "name": "VITAMIN WELL",
+      "positioning_id": 1,
+      "whyNotActive": "Functional hydration and vitamin focus, more conventional and less emotionally resonant than PEP's 'fits my lifestyle' proposition."
+    },
+    {
+      "name": "Kin Euphorics",
+      "positioning_id": 3,
+      "whyNotActive": "Purpose-built social mood drink, designed for gatherings and experience, with high-concept, party-centric branding. Not focused on day-to-day lifestyle enhancement."
+    },
+    {
+      "name": "Lyre's",
+      "positioning_id": 3,
+      "whyNotActive": "Alcohol replacement for classic cocktail occasions—sophisticated but clearly social; not everyday or lifestyle upgrade."
+    },
+    {
+      "name": "Seedlip",
+      "positioning_id": 3,
+      "whyNotActive": "Premium non-alcoholic spirit for the social ritual, not habitual wellness. High-end party/host occasions rather than daily café or cowork."
+    }
+  ],
+  "antiReferences": [
+    {
+      "name": "Lean Body / gym RTD",
+      "why": "Strongly ‘gym-bro’, bulk/protein-first, and masculine/functional. Violates lifestyle and approachable emotional fit for PEP."
+    },
+    {
+      "name": "drinkpep.com",
+      "why": "Different product (energy/probiotic), name collision, branding and messaging incompatible with premium, pastel, lifestyle/social context."
+    },
+    {
+      "name": "Anything with sports/energy positioning",
+      "why": "Confuses the approachable, aspirational lifestyle upgrade with functional or performance claims."
+    }
+  ],
+  "layoutOnlyReferences": [],
+  "brandFitRules": [
+    "Reject overtly functional, bold, gym-oriented visuals, words, or headlines.",
+    "Only approve brands with soft, pastel palettes and minimal, elegant layouts.",
+    "Photography must portray aspirational but achievable everyday moments (no staged fitness or party scenes).",
+    "Brand tone should always be light, joyful, and subtly premium—not intense, performative, or hyper-energetic.",
+    "No clinical, pharmaceutical, or performance-first copy or iconography.",
+    "Any website or packaging must reflect clarity, negative space, and warm minimalism.",
+    "Never use: neon, metallic, or ‘extreme’ color combos; ‘ripped’, ‘max out’, or similar words."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "manualAdded": 2,
+  "attempted": 3,
+  "updated": 3,
+  "errors": [],
+  "brands": [
+    {
+      "brand": "PROTOCHOL",
+      "url": ""
+    },
+    {
+      "brand": "Ole cocktails",
+      "url": "https://olecocktails.com/"
+    },
+    {
+      "brand": "Ish",
+      "url": "https://ishspirits.com/"
+    }
+  ],
+  "competitionJsonUrlsUpdated": 0,
+  "competitionJsonBrandsAddedFromManual": 2,
+  "manualRemovedAfterMerge": 2
+}

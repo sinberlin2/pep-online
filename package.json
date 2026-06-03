@@ -8,6 +8,14 @@
     "dev": "npm run start",
     "bg:remove": "python scripts/bg_remove.py",
     "segment:flavors": "python scripts/segment_flavors.py",
-    "concept": "python -m agents.concept_run"
+    "concept": "python -m agents.concept_run",
+    "brand:merge": "python scripts/merge_brand_research.py",
+    "brand:parse": "python scripts/parse_positioning_options.py",
+    "brand:extract-pdf": "python scripts/extract_competition_pdf.py",
+    "brand:enrich": "python scripts/enrich_competitors.py",
+    "brand": "python -m agents.brand_run --positioning 2",
+    "brand:all": "python -m agents.brand_all --set-active 2",
+    "brand:export": "python scripts/export_brand_guidelines.py",
+    "brand:pdf": "python scripts/export_brand_guidelines.py"
   }
 }

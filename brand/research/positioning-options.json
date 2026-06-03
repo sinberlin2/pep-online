@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "sourceCsv": "brand/research/Product positioning options - from Mural - Sheet1.csv",
+  "options": [
+    {
+      "id": 1,
+      "slug": "functional-protein",
+      "name": "Functional protein drink",
+      "aliases": [
+        "functional",
+        "protein",
+        "1"
+      ],
+      "dimensions": {
+        "Core problem": "“I struggle to hit my protein target.”",
+        "Core purpose": "Help people reach protein goals conveniently",
+        "Main customer mindset": "Disciplined, routine driven, gym oriented",
+        "Main value proposition": "Protein without heaviness",
+        "Product role": "Functional nutrition tool",
+        "Consumption context": "Mostly alone, routine based",
+        "Typical moments": "After gym, between meals, at work, post run",
+        "Emotional driver": "Optimization, discipline, efficiency",
+        "Competes against": "Protein shakes, bars, sports drinks",
+        "Buying logic": "Rational: “Is this useful?”",
+        "Importance of nutrition": "Very high",
+        "Importance of taste": "High",
+        "Importance of branding": "Medium",
+        "Pricing power": "Medium",
+        "Typical price range": "Retail €3 to €5, cafés €4 to €6",
+        "Best early channels": "Gyms, wellness studios, healthy cafés",
+        "Main risk": "Commoditization",
+        "What success looks like": "“I drink this 4 times per week.”",
+        "Fit with current idea": "Strong",
+        "Sweetness level": "Medium -High",
+        "Design concept": "clean,"
+      }
+    },
+    {
+      "id": 2,
+      "slug": "lifestyle",
+      "name": "Lifestyle upgrade",
+      "aliases": [
+        "wellness",
+        "lifestyle",
+        "wellness/lifestyle",
+        "2"
+      ],
+      "dimensions": {
+        "Core problem": "“I want something healthy and refreshing that feels like a treat.”",
+        "Core purpose": "Help people make healthier everyday choices",
+        "Main customer mindset": "Wellness focused, identity driven, wants health without effort",
+        "Main value proposition": "Wellness without sacrifice",
+        "Product role": "Lifestyle accessory or habit",
+        "Consumption context": "Everyday lifestyle moments",
+        "Typical moments": "Brunch, coworking, beach, afternoon refreshment",
+        "Emotional driver": "Balance, wellness, self image",
+        "Competes against": "Kombucha, iced tea, healthy drinks, snacks",
+        "Buying logic": "Semi emotional: “This fits my lifestyle.”",
+        "Importance of nutrition": "Medium",
+        "Importance of taste": "Very high",
+        "Importance of branding": "High",
+        "Pricing power": "Medium to high",
+        "Typical price range": "€4 to €7",
+        "Best early channels": "Specialty cafés, coworking spaces, wellness retail",
+        "Main risk": "Becoming vague or generic",
+        "What success looks like": "“This brand feels like me.”",
+        "Fit with current idea": "Strong",
+        "Sweetness level": "Low to moderate",
+        "Design concept": "minimal, pastel,"
+      }
+    },
+    {
+      "id": 3,
+      "slug": "social",
+      "name": "Better social drink",
+      "aliases": [
+        "social",
+        "3"
+      ],
+      "dimensions": {
+        "Core problem": "“I want a better drink option when I am out.”",
+        "Core purpose": "Replace alcohol or boring soft drinks in social settings",
+        "Main customer mindset": "Social, aesthetic, experiential",
+        "Main value proposition": "Social ritual without alcohol",
+        "Product role": "Social experience",
+        "Consumption context": "Group and social settings",
+        "Typical moments": "Bars, dinners, festivals, dates, rooftop events",
+        "Emotional driver": "Pleasure, belonging, experience",
+        "Competes against": "Cocktails, beer, wine, mocktails",
+        "Buying logic": "Emotional and social: “This feels exciting.”",
+        "Importance of nutrition": "Low",
+        "Importance of taste": "Extremely high",
+        "Importance of branding": "Extremely high",
+        "Pricing power": "High",
+        "Typical price range": "€6 to €10 plus in hospitality",
+        "Best early channels": "Bars, restaurants, hotels, festivals",
+        "Main risk": "Protein feels strange in a social context",
+        "What success looks like": "“I order this when I go out.”",
+        "Fit with current idea": "Moderate, but useful as inspiration",
+        "Sweetness level": "Moderate to high",
+        "Design concept": "fun, premium packaging, vibrant, festival vibe, fruity"
+      }
+    }
+  ],
+  "colorLegendHint": "In the competition PDF, brand cell background color maps to positioning: match colors to the three columns above (functional / lifestyle pastel / social vibrant)."
+}
