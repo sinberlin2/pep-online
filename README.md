@@ -23,6 +23,19 @@ Open **http://localhost:3000** — save files and refresh; the live site does no
 
 See **[DEVELOPMENT.md](DEVELOPMENT.md)** — **`dev`** for local WIP, **`main`** updates **pep-drink.com** when you merge and push.
 
+## API keys (local only)
+
+Copy `.env.example` to **`.env`** and add your keys there. **`.env` is gitignored** and must never be pushed to GitHub—only `.env.example` (placeholders, no secrets) is committed.
+
+## AI site concept (Pass 1)
+
+```powershell
+pip install -r requirements-agents.txt
+npm run concept
+```
+
+See **[agents/README.md](agents/README.md)** — OpenAI proposes a whole-site concept (Revized + drinkpep anchors, web search for more references). Outputs go to `experiments/concepts/`.
+
 ## Customer inquiry form
 
 The form on **For venues → Join the PEP pilot** collects:

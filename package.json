@@ -7,6 +7,7 @@
     "start": "npx --yes serve . -l 3000",
     "dev": "npm run start",
     "bg:remove": "python scripts/bg_remove.py",
-    "segment:flavors": "python scripts/segment_flavors.py"
+    "segment:flavors": "python scripts/segment_flavors.py",
+    "concept": "python -m agents.concept_run"
   }
 }
