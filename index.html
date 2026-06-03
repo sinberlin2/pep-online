@@ -7,11 +7,12 @@
       name="description"
       content="PEP — a light, refreshing premium drink with added protein boost. Coconut Mango. Feel good. Have fun."
     />
-    <title>PEP — Coconut Mango | Feel good. Have fun.</title>
+    <link rel="canonical" href="https://pep-drink.com/" />
+    <title>PEP — Feel good. Have fun.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=GFS+Didot&family=Montserrat:wght@500;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
@@ -25,102 +26,236 @@
         ☰
       </button>
       <nav class="site-nav" aria-label="Main">
-        <a href="index.html" class="active">The drink</a>
+        <a href="#drinks">Drinks</a>
+        <a href="#enjoy">Enjoy</a>
+        <a href="#about">About</a>
         <a href="for-venues.html">For venues</a>
         <a href="for-venues.html#join-pilot" class="nav-cta">Join the pilot</a>
       </nav>
     </header>
 
     <main>
-      <section class="hero" aria-labelledby="hero-tagline">
+      <section class="hero" aria-labelledby="hero-headline">
         <div class="hero-content">
-          <p class="hero-brand logo" aria-hidden="true">
-            <span class="logo-leaves">
-              <span class="logo-leaf"></span>
-              <span class="logo-leaf logo-leaf--orange"></span>
-            </span>
-            PEP
-          </p>
-          <h1 id="hero-tagline" class="tagline-script">
-            A light, refreshing premium drink with added protein boost
+          <p class="hero-eyebrow">Premium protein drink</p>
+          <h1 id="hero-headline" class="hero-display">
+            Light.<br />
+            Refreshing.
           </h1>
+          <p class="hero-script">
+            A light, refreshing premium drink with added protein boost.
+          </p>
 
-          <div class="stat-row">
-            <div class="stat-card">
-              <strong>7</strong>
-              <span>gr protein</span>
-            </div>
-            <div class="stat-card">
-              <strong>49</strong>
-              <span>calories</span>
-            </div>
-            <div class="stat-card stat-card--compact">
-              <strong class="stat-icon" aria-hidden="true">🌾</strong>
-              <span>Gluten-free</span>
-            </div>
-          </div>
+          <ul class="benefit-bar" aria-label="Product benefits">
+            <li>7g protein</li>
+            <li>49 calories</li>
+            <li>No added sugar</li>
+            <li>Gluten-free</li>
+            <li>330 ml</li>
+          </ul>
 
-          <div class="product-strip" style="margin-top: 0">
-            <div>
-              <h2 style="font-family: var(--font-serif); margin: 0 0 0.75rem">Coconut Mango</h2>
-              <p style="margin: 0 0 1rem; opacity: 0.9">
-                Feel good. Have fun. A premium sip with 7g protein, no added sugar, and only 49
-                calories per 330&nbsp;ml can.
-              </p>
-              <ul class="product-bullets">
-                <li>7g protein</li>
-                <li>No added sugar</li>
-                <li>49 calories</li>
-                <li>Light &amp; refreshing</li>
-                <li>330 ml</li>
-              </ul>
-            </div>
-            <p style="margin: 0; font-family: var(--font-script); font-size: 1.35rem; color: var(--pep-orange)">
-              Perfect for mornings, terraces, workouts, and nights out — without the heaviness.
-            </p>
-          </div>
+          <a href="#drinks" class="btn-primary hero-cta">Explore flavours</a>
         </div>
 
         <div class="hero-visual">
-          <img
-            class="hero-can"
-            src="brand/product/pep-can.png?v=5"
-            alt="PEP Coconut Mango can"
-            width="430"
-            height="990"
-            fetchpriority="high"
-          />
+          <div class="hero-product" role="img" aria-label="PEP Coconut Mango can with a glass of sparkling drink">
+            <img
+              class="hero-can"
+              src="brand/product/bg_removed/pep-can-background-removed.png?v=2"
+              alt=""
+              width="430"
+              height="990"
+              fetchpriority="high"
+            />
+            <img
+              class="hero-glass"
+              src="brand/product/bg_removed/pep-glass-background-removed.png?v=2"
+              alt=""
+              width="350"
+              height="890"
+            />
+            <img
+              class="hero-citrus"
+              src="brand/marketing/bg_removed/garnishes-citrus-background-removed.png?v=1"
+              alt=""
+              width="400"
+              height="200"
+            />
+          </div>
         </div>
       </section>
 
-      <section class="section" aria-labelledby="perfect-for-title">
-        <h2 id="perfect-for-title" class="section-title">Perfect for</h2>
-        <div class="card-grid card-grid--4">
-          <article class="info-card info-card--cream">
-            <span class="info-icon" aria-hidden="true">☕</span>
-            <h3 style="margin: 0.5rem 0 0; font-size: 1rem">Morning and brunch</h3>
+      <section id="drinks" class="section section--drinks" aria-labelledby="drinks-title">
+        <div class="flavours-header">
+          <h2 id="drinks-title" class="flavours-title">
+            <span class="flavours-title__line">Find your</span>
+            <span class="flavours-title__script">favourite</span>
+          </h2>
+          <p class="section-lead flavours-lead">
+            Delicious flavours. Real ingredients. Made to make you feel good. Vote for what we
+            launch next — Coconut Mango is here now.
+          </p>
+        </div>
+
+        <div class="flavour-scroll" role="list">
+          <article
+            class="flavour-card flavour-card--active"
+            style="--flavour-bg: #fff4d6"
+            role="listitem"
+          >
+            <span class="flavour-card__badge">Available now</span>
+            <img
+              class="flavour-card__can"
+              src="brand/product/bg_removed/pep-can-background-removed.png?v=2"
+              alt="PEP Coconut Mango can"
+              width="200"
+              height="460"
+            />
+            <h3 class="flavour-card__name">Coconut Mango</h3>
           </article>
-          <article class="info-card info-card--yellow">
-            <span class="info-icon" aria-hidden="true">🏖️</span>
-            <h3 style="margin: 0.5rem 0 0; font-size: 1rem">Summery terrace moments</h3>
+
+          <article class="flavour-card flavour-card--soon" style="--flavour-bg: #fff0a8" role="listitem">
+            <span class="flavour-card__badge">Coming soon</span>
+            <img
+              class="flavour-card__can"
+              src="brand/product/flavours/bg_removed/pineapple-lime-background-removed.png"
+              alt="PEP Pineapple Lime can"
+              width="200"
+              height="460"
+              onerror="this.hidden=true;this.nextElementSibling.hidden=false"
+            />
+            <div class="flavour-card__placeholder" hidden aria-hidden="true">?</div>
+            <h3 class="flavour-card__name">Pineapple Lime</h3>
           </article>
-          <article class="info-card info-card--peach">
-            <span class="info-icon" aria-hidden="true">🧘</span>
-            <h3 style="margin: 0.5rem 0 0; font-size: 1rem">Post-workout</h3>
+
+          <article class="flavour-card flavour-card--soon" style="--flavour-bg: #fde8d8" role="listitem">
+            <span class="flavour-card__badge">Coming soon</span>
+            <img
+              class="flavour-card__can"
+              src="brand/product/flavours/bg_removed/orange-passionfruit-background-removed.png"
+              alt="PEP Orange Passionfruit can"
+              width="200"
+              height="460"
+              onerror="this.hidden=true;this.nextElementSibling.hidden=false"
+            />
+            <div class="flavour-card__placeholder" hidden aria-hidden="true">?</div>
+            <h3 class="flavour-card__name">Orange Passionfruit</h3>
           </article>
-          <article class="info-card info-card--cream">
-            <span class="info-icon" aria-hidden="true">🥂</span>
-            <h3 style="margin: 0.5rem 0 0; font-size: 1rem">Social occasions</h3>
+
+          <article class="flavour-card flavour-card--soon" style="--flavour-bg: #fce4ec" role="listitem">
+            <span class="flavour-card__badge">Coming soon</span>
+            <img
+              class="flavour-card__can"
+              src="brand/product/flavours/bg_removed/raspberry-lemon-background-removed.png"
+              alt="PEP Raspberry Lemon can"
+              width="200"
+              height="460"
+              onerror="this.hidden=true;this.nextElementSibling.hidden=false"
+            />
+            <div class="flavour-card__placeholder" hidden aria-hidden="true">?</div>
+            <h3 class="flavour-card__name">Raspberry Lemon</h3>
+          </article>
+
+          <article class="flavour-card flavour-card--soon" style="--flavour-bg: #f8d7e8" role="listitem">
+            <span class="flavour-card__badge">Coming soon</span>
+            <img
+              class="flavour-card__can"
+              src="brand/product/flavours/bg_removed/mango-guava-background-removed.png"
+              alt="PEP Mango Guava can"
+              width="200"
+              height="460"
+              onerror="this.hidden=true;this.nextElementSibling.hidden=false"
+            />
+            <div class="flavour-card__placeholder" hidden aria-hidden="true">?</div>
+            <h3 class="flavour-card__name">Mango Guava</h3>
+          </article>
+
+          <article class="flavour-card flavour-card--soon" style="--flavour-bg: #dbeafe" role="listitem">
+            <span class="flavour-card__badge">Coming soon</span>
+            <img
+              class="flavour-card__can"
+              src="brand/product/flavours/bg_removed/blueberry-acai-background-removed.png"
+              alt="PEP Blueberry Acai can"
+              width="200"
+              height="460"
+              onerror="this.hidden=true;this.nextElementSibling.hidden=false"
+            />
+            <div class="flavour-card__placeholder" hidden aria-hidden="true">?</div>
+            <h3 class="flavour-card__name">Blueberry Acai</h3>
           </article>
         </div>
       </section>
 
-      <section class="section" style="padding-top: 0">
-        <div class="info-card info-card--yellow" style="text-align: center; max-width: 36rem; margin: 0 auto">
-          <p style="margin: 0 0 1rem">Running a café, bar, or terrace?</p>
-          <a href="for-venues.html" class="btn-primary" style="width: auto; padding-left: 2rem; padding-right: 2rem">
-            See PEP for venues
-          </a>
+      <section id="enjoy" class="section section--enjoy" aria-labelledby="enjoy-title">
+        <h2 id="enjoy-title" class="section-title">Where to enjoy PEP</h2>
+        <p class="section-lead">
+          Light enough for daytime, social enough for evenings — PEP fits the moments you already love.
+        </p>
+        <div class="enjoy-grid">
+          <article class="enjoy-card">
+            <span class="enjoy-card__icon" aria-hidden="true">☕</span>
+            <h3>Morning &amp; brunch</h3>
+          </article>
+          <article class="enjoy-card">
+            <span class="enjoy-card__icon" aria-hidden="true">🏖️</span>
+            <h3>Summery terrace</h3>
+          </article>
+          <article class="enjoy-card">
+            <span class="enjoy-card__icon" aria-hidden="true">🧘</span>
+            <h3>Post-workout</h3>
+          </article>
+          <article class="enjoy-card">
+            <span class="enjoy-card__icon" aria-hidden="true">🥂</span>
+            <h3>Social occasions</h3>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section section--about" aria-labelledby="about-title">
+        <div class="about-inner">
+          <div class="about-founders">
+            <img
+              src="brand/identity/founders-lou-shannon.jpg"
+              alt="Lou and Shannon, founders of PEP"
+              width="800"
+              height="600"
+              loading="lazy"
+            />
+            <p class="about-founders__caption">Lou &amp; Shannon — founders</p>
+          </div>
+          <div class="about-text">
+          <h2 id="about-title" class="section-title section-title--left">About us</h2>
+          <div class="about-copy">
+            <p>
+              We’re into sports — we met playing volleyball — and we’re Lou and Shannon. Time and
+              again at cafés and bars, we found ourselves missing nice, healthy drink options. We
+              also struggled to hit our protein goals without something that still felt fun and
+              social.
+            </p>
+            <p>
+              PEP started from that gap: a light, refreshing drink with a protein boost that you
+              actually want to order when you’re out.
+            </p>
+            <p>
+              <strong>Lou</strong> brings UX experience — putting product characteristics in line
+              with what people really want, then testing and designing around that.
+            </p>
+            <p>
+              <strong>Shannon</strong> brings entrepreneurship experience and works as an AI
+              engineer, building digital products powered by AI — including how we shape PEP
+              online.
+            </p>
+            <p class="about-tagline tagline-script">Feel good. Have fun.</p>
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band" aria-labelledby="venues-cta-title">
+        <div class="cta-band__inner">
+          <h2 id="venues-cta-title">Running a café, bar, or terrace?</h2>
+          <p>Join the PEP pilot and serve something your guests will remember.</p>
+          <a href="for-venues.html" class="btn-primary btn-primary--light">PEP for venues</a>
         </div>
       </section>
     </main>

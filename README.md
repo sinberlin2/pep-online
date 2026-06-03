@@ -9,16 +9,19 @@ Marketing site for **PEP** — a light, refreshing premium drink with a protein 
 | Landing (the drink) | `index.html` | Hero, 7g protein / 49 calories, product details, “Perfect for” occasions |
 | For venues | `for-venues.html` | Why venues love PEP, how to serve, pilot steps, **customer inquiry form** |
 
-## Run locally
+## Production domain
 
-Open `index.html` in a browser, or serve the folder (recommended for form testing):
+**https://pep-drink.com** — see [DEPLOY.md](DEPLOY.md) for DNS and hosting (Cloudflare Pages / Netlify + GitHub).
+
+## Develop locally (see changes instantly)
 
 ```bash
-# If you have Node.js installed:
-npx serve .
+npm start
 ```
 
-Then visit `http://localhost:3000`.
+Open **http://localhost:3000** — save files and refresh; the live site does not change until you `git push`.
+
+See **[DEVELOPMENT.md](DEVELOPMENT.md)** — **`dev`** for local WIP, **`main`** updates **pep-drink.com** when you merge and push.
 
 ## Customer inquiry form
 

@@ -1,0 +1,44 @@
+{
+  "name": "PEP",
+  "typography": {
+    "logo": {
+      "family": "Didot",
+      "weight": "bold",
+      "usage": "PEP wordmark on flyer and packaging",
+      "webFallback": "GFS Didot, Didot, Georgia, serif"
+    },
+    "badgeNew": {
+      "family": "Bebas Neue",
+      "usage": "NEW! and similar callout badges",
+      "webFallback": "Bebas Neue, sans-serif"
+    },
+    "script": {
+      "family": "Brittany Signature",
+      "usage": "Main script text and bottom slogan (e.g. Feel good. Have fun.)",
+      "webFallback": "Segoe Script, cursive",
+      "note": "License Brittany Signature for production; add WOFF2 to brand/identity/fonts/ when available"
+    },
+    "statNumbers": {
+      "family": "Montserrat",
+      "weight": "800",
+      "usage": "Large numbers on flyer (7, 49)",
+      "webFallback": "Montserrat, sans-serif"
+    },
+    "labels": {
+      "family": "Montserrat",
+      "weight": "500",
+      "usage": "Labels and badges (protein, calories, gluten-free, body copy)",
+      "webFallback": "Montserrat, sans-serif"
+    }
+  },
+  "colors": {
+    "green": "#1f4d3a",
+    "greenDark": "#163a2c",
+    "orange": "#e86a1a",
+    "orangeLight": "#f4a261",
+    "cream": "#faf6f0",
+    "peach": "#fde8d8",
+    "yellow": "#fff4d6",
+    "white": "#ffffff"
+  }
+}
