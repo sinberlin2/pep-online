@@ -1,0 +1,35 @@
+{
+  "id": "hero-can-front-mint-2026-06",
+  "label": "Can in front, bigger; glass behind; mint at base; both upright",
+  "canvasBackground": "#faf6f0",
+  "layers": [
+    {
+      "key": "glass",
+      "widthPct": 57,
+      "centerXPct": 65,
+      "bottomPct": 2,
+      "z": 2,
+      "rotationDeg": 0,
+      "opacity": 1
+    },
+    {
+      "key": "can",
+      "widthPct": 72,
+      "centerXPct": 43,
+      "bottomPct": 2,
+      "z": 3,
+      "rotationDeg": 0,
+      "opacity": 1
+    },
+    {
+      "key": "mint-large",
+      "widthPct": 24,
+      "centerXPct": 49,
+      "bottomPct": 0,
+      "z": 5,
+      "rotationDeg": 0,
+      "opacity": 1
+    }
+  ],
+  "rationale": "Can stands in front and a bit larger than the glass, both perfectly upright on a shared baseline like they're on a table. The glass keeps its built-in orange/leaf garnish. A single mint sprig sits at the base in front. Scaled up to fill the frame with modest headroom."
+}

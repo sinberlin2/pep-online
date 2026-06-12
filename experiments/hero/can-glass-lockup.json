@@ -1,0 +1,31 @@
+{
+  "id": "can-glass-lockup-2026-06",
+  "label": "Baked can + glass lockup (relative positioning preserved)",
+  "output": "brand/product/bg_removed/pep-can-glass-lockup.png",
+  "render": {
+    "canvasWidth": 1600,
+    "transparent": true,
+    "trim": true
+  },
+  "layers": [
+    {
+      "key": "glass",
+      "widthPct": 57,
+      "centerXPct": 64,
+      "bottomPct": 2,
+      "z": 2,
+      "rotationDeg": 0,
+      "opacity": 1
+    },
+    {
+      "key": "can",
+      "widthPct": 72,
+      "centerXPct": 42,
+      "bottomPct": 2,
+      "z": 3,
+      "rotationDeg": 0,
+      "opacity": 1
+    }
+  ],
+  "rationale": "Can in front and a bit larger than the glass, both upright on a shared baseline. Composited and trimmed to a single transparent PNG so the relative positioning can never shift across screen sizes."
+}
