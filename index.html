@@ -21,9 +21,7 @@
   </head>
   <body>
     <header class="site-header">
-      <a href="index.html" class="logo logo--image" aria-label="PEP home">
-        <img src="brand/identity/logo-pep.png" alt="PEP" width="120" height="48" />
-      </a>
+      <a href="index.html" class="logo logo--text" aria-label="PEP home">PEP</a>
       <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
         ☰
       </button>
@@ -60,11 +58,17 @@
         </div>
 
         <div class="hero-visual">
-          <div class="hero-product" role="img" aria-label="PEP Coconut Mango can with a glass of sparkling drink, garnished with citrus and mint">
-            <!-- Layer positions are set by css/hero-generated.css (hero composition agent). -->
-            <img class="hero-layer hero-layer--glass" src="brand/product/bg_removed/pep-glass-background-removed.png?v=1" alt="" />
-            <img class="hero-layer hero-layer--can" src="brand/product/bg_removed/pep-can-background-removed.png?v=1" alt="" fetchpriority="high" />
-            <img class="hero-layer hero-layer--mint-large" src="brand/marketing/garnishes/bg_removed/mint-large-background-removed.png?v=1" alt="" />
+          <div class="hero-product">
+            <!-- Pre-composed can + glass lockup (relative positioning baked in).
+                 Regenerate with scripts/compose_hero.py. -->
+            <img
+              class="hero-lockup"
+              src="brand/product/bg_removed/pep-can-glass-lockup.png?v=1"
+              alt="PEP Coconut Mango can beside a glass of sparkling drink"
+              width="923"
+              height="1496"
+              fetchpriority="high"
+            />
           </div>
         </div>
       </section>

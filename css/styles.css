@@ -251,29 +251,25 @@ a:hover {
 
 .hero-product {
   position: relative;
-  width: min(100%, 340px);
-  aspect-ratio: 4 / 5;
   margin: 0 auto;
 }
 
-/* Generic hero layer. Per-layer width/left/bottom/z come from
-   css/hero-generated.css (produced by the hero composition agent). */
-.hero-layer {
-  position: absolute;
-  height: auto;
+/* Pre-composed can + glass lockup image (relative positioning baked in).
+   Rendered ~340px wide; height follows the image's natural aspect ratio. */
+.hero-lockup {
   display: block;
+  width: 340px;
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
   background: transparent;
-  filter: drop-shadow(0 10px 24px rgba(31, 77, 58, 0.12));
+  filter: drop-shadow(0 12px 28px rgba(31, 77, 58, 0.14));
 }
 
 @media (min-width: 900px) {
   .hero-visual {
     min-height: 100%;
     padding: 2rem;
-  }
-
-  .hero-product {
-    width: min(100%, 400px);
   }
 }
 
