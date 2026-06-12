@@ -33,6 +33,17 @@ def get_openai_api_key() -> str:
     return key
 
 
+def get_anthropic_api_key() -> str:
+    load_project_env()
+    key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
+    if not key or key == "your_anthropic_key_here":
+        raise SystemExit(
+            "ANTHROPIC_API_KEY missing. Add it to .env (never commit .env) "
+            "to use --provider anthropic."
+        )
+    return key
+
+
 def env_bool(name: str, default: bool = True) -> bool:
     load_project_env()
     raw = os.environ.get(name, "").strip().lower()

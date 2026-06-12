@@ -1,5 +1,105 @@
 """JSON schemas for OpenAI structured outputs (strict mode — no $ref)."""
 
+# --- Hero composition agent ---------------------------------------------------
+
+HERO_LAYER = {
+    "type": "object",
+    "additionalProperties": False,
+    "properties": {
+        # Asset key from the allow-listed manifest (e.g. can, glass,
+        # lemon-slice, orange-wedge, mint-large). Never a raw file path.
+        "key": {"type": "string"},
+        # Width of the layer as a percentage of the hero canvas width.
+        "widthPct": {"type": "number"},
+        # Horizontal centre of the layer, 0 (left edge) to 100 (right edge).
+        "centerXPct": {"type": "number"},
+        # Distance from the layer's bottom edge to the canvas bottom, as a
+        # percentage of canvas height. May be negative to bleed off-canvas.
+        "bottomPct": {"type": "number"},
+        # Stacking order (higher = in front).
+        "z": {"type": "integer"},
+        "rotationDeg": {"type": "number"},
+        "opacity": {"type": "number"},
+    },
+    "required": [
+        "key",
+        "widthPct",
+        "centerXPct",
+        "bottomPct",
+        "z",
+        "rotationDeg",
+        "opacity",
+    ],
+}
+
+HERO_LAYOUT_SCHEMA = {
+    "type": "object",
+    "additionalProperties": False,
+    "properties": {
+        "id": {"type": "string"},
+        "label": {"type": "string"},
+        "canvasBackground": {"type": "string"},
+        "layers": {"type": "array", "items": HERO_LAYER},
+        "rationale": {"type": "string"},
+    },
+    "required": ["id", "label", "canvasBackground", "layers", "rationale"],
+}
+
+HERO_REVIEW_SCHEMA = {
+    "type": "object",
+    "additionalProperties": False,
+    "properties": {
+        "verdict": {"type": "string", "enum": ["pass", "revise"]},
+        "overallScore": {"type": "integer"},
+        "scores": {
+            "type": "object",
+            "additionalProperties": False,
+            "properties": {
+                "composition": {"type": "integer"},
+                "overlap": {"type": "integer"},
+                "balance": {"type": "integer"},
+                "realism": {"type": "integer"},
+                "brandFit": {"type": "integer"},
+            },
+            "required": [
+                "composition",
+                "overlap",
+                "balance",
+                "realism",
+                "brandFit",
+            ],
+        },
+        "strengths": {"type": "array", "items": {"type": "string"}},
+        "issues": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": False,
+                "properties": {
+                    "severity": {
+                        "type": "string",
+                        "enum": ["low", "medium", "high"],
+                    },
+                    "finding": {"type": "string"},
+                    "suggestion": {"type": "string"},
+                },
+                "required": ["severity", "finding", "suggestion"],
+            },
+        },
+        "revisionBrief": {"type": "string"},
+    },
+    "required": [
+        "verdict",
+        "overallScore",
+        "scores",
+        "strengths",
+        "issues",
+        "revisionBrief",
+    ],
+}
+
+
+
 SECTION = {
     "type": "object",
     "additionalProperties": False,
