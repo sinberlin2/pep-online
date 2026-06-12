@@ -256,37 +256,14 @@ a:hover {
   margin: 0 auto;
 }
 
-.hero-can,
-.hero-glass,
-.hero-citrus {
+/* Generic hero layer. Per-layer width/left/bottom/z come from
+   css/hero-generated.css (produced by the hero composition agent). */
+.hero-layer {
   position: absolute;
   height: auto;
   display: block;
   background: transparent;
   filter: drop-shadow(0 10px 24px rgba(31, 77, 58, 0.12));
-}
-
-.hero-can {
-  left: 0;
-  bottom: 0;
-  width: 52%;
-  z-index: 2;
-}
-
-.hero-glass {
-  right: -2%;
-  bottom: 8%;
-  width: 48%;
-  z-index: 3;
-}
-
-.hero-citrus {
-  left: 50%;
-  bottom: -2%;
-  width: 75%;
-  transform: translateX(-50%);
-  z-index: 4;
-  filter: drop-shadow(0 6px 16px rgba(31, 77, 58, 0.1));
 }
 
 @media (min-width: 900px) {
@@ -297,21 +274,6 @@ a:hover {
 
   .hero-product {
     width: min(100%, 400px);
-  }
-
-  .hero-can {
-    width: 50%;
-  }
-
-  .hero-glass {
-    width: 46%;
-    right: 0;
-    bottom: 10%;
-  }
-
-  .hero-citrus {
-    width: 80%;
-    bottom: 0;
   }
 }
 

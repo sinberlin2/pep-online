@@ -8,6 +8,7 @@
     "dev": "npm run start",
     "bg:remove": "python scripts/bg_remove.py",
     "segment:flavors": "python scripts/segment_flavors.py",
+    "segment:garnishes": "python scripts/segment_garnishes.py",
     "concept": "python -m agents.concept_run",
     "hero": "python -m agents.hero_run",
     "hero:claude": "python -m agents.hero_run --provider anthropic",
