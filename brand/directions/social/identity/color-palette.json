@@ -1,0 +1,90 @@
+{
+  "background": [
+    {
+      "hex": "#FFF4E2",
+      "inspiredBy": "Seedlip’s restraint and Lyre’s premium hosting cues support a soft, adult base that keeps the system from becoming cheap party clutter.",
+      "name": "Champagne Cream",
+      "role": "main light background for website sections, venue cards, can negative space and premium product storytelling"
+    },
+    {
+      "hex": "#FFD8C7",
+      "inspiredBy": "Kin Euphorics and Poppi show how soft tinted worlds can feel lifestyle-led; this version is warmer and more social, avoiding wellness-spa quietness.",
+      "name": "Peach Glow",
+      "role": "secondary warm background for social posts, flavour panels and event-led moments"
+    },
+    {
+      "hex": "#161124",
+      "inspiredBy": "Lyre’s and Seedlip bring evening hospitality credibility; the deep tone adds bar/night-out sophistication without imitating formal spirits.",
+      "name": "After-Dark Grape",
+      "role": "dark background for night-mode hero sections, reversed lockups, premium menus and high-contrast story ads"
+    }
+  ],
+  "competitorInspiration": "Tier 1 points PEP toward adult, occasion-led colour: Kin Euphorics’ emotional warmth, Lyre’s hospitality polish and Seedlip’s restraint keep the brand premium rather than gym-led. Tier 2 adds permission for fruit-forward energy and ready-to-serve vibrancy from Ole cocktails, Poppi and Yaya Kombucha, while avoiding aperitif subtlety or fermentation craft heaviness. Tier 3 clarifies what not to do: no clinical electrolyte blues, no performance black-and-neon, no nutrition-first supplement palette and no childish juice-box sweetness.",
+  "primary": [
+    {
+      "hex": "#FF5A4E",
+      "inspiredBy": "Kin Euphorics’ mood-led warmth and Ole cocktails’ festive can energy confirm a confident social colour that still feels adult.",
+      "name": "Spritz Coral",
+      "role": "primary brand colour — wordmark, key borders, hero shapes, flavour-led headlines and main CTA buttons"
+    },
+    {
+      "hex": "#4B2354",
+      "inspiredBy": "Lyre’s and Seedlip inform the need for bar-credible depth; this gives PEP a premium evening anchor without copying spirits heritage codes.",
+      "name": "Velvet Plum",
+      "role": "premium anchor — dark panels, can top/bottom bands, navigation, wordmark reversal and hospitality materials"
+    },
+    {
+      "hex": "#FFC247",
+      "inspiredBy": "Ole cocktails and EVER TREE support a bright serving-ritual accent; the golden fruit note keeps the system celebratory, not clinical.",
+      "name": "Mango Spark",
+      "role": "celebration accent — sparkle motifs, flavour highlights, badge fills and small moments of festival energy"
+    }
+  ],
+  "rejectPatterns": [
+    "Clinical blue-and-white hydration palettes that imply utility, replenishment or medical proof.",
+    "Black, chrome and neon gym-performance palettes that make protein feel like bodybuilding fuel.",
+    "Overly beige wellness-spa palettes that remove the social, fruity, night-out energy.",
+    "Heavy black-and-gold spirits imitation that makes PEP feel like a formal alcohol substitute rather than its own drink.",
+    "Primary-colour rainbow clutter or cartoon juice tones that make the brand feel cheap or childlike."
+  ],
+  "secondary": [
+    {
+      "hex": "#FFE1DD",
+      "inspiredBy": "Kin Euphorics and Recess show the value of gentle lifestyle tints; PEP uses this as a warmer, more outgoing social wash.",
+      "name": "Lychee Blush",
+      "role": "soft support colour — flavour backgrounds, quote cards, table-card backs and calm contrast against Spritz Coral"
+    },
+    {
+      "hex": "#FF8A3D",
+      "inspiredBy": "Ole cocktails’ ready-to-party warmth and fruit-forward RTD cues support this energetic but controlled orange accent.",
+      "name": "Aperitivo Orange",
+      "role": "warm accent — secondary CTAs, fruit illustrations, can side stripes and motion graphics"
+    },
+    {
+      "hex": "#D72F7F",
+      "inspiredBy": "Poppi and Kin Euphorics validate expressive lifestyle colour; the raspberry tone adds grown-up playfulness without kids’ juice softness.",
+      "name": "Raspberry Pulse",
+      "role": "playful accent — social stickers, limited flavour details, event graphics and small highlight typography"
+    }
+  ],
+  "text": [
+    {
+      "hex": "#1B1324",
+      "inspiredBy": "Seedlip and Lyre’s use depth and restraint for adult credibility; this replaces supplement black with a warmer hospitality dark.",
+      "name": "Midnight Ink",
+      "role": "primary text colour for headlines, body copy and navigation on light backgrounds"
+    },
+    {
+      "hex": "#332A36",
+      "inspiredBy": "EVER TREE and Yaya Kombucha show that softer dark text can feel premium and crafted; useful for secondary reading without harshness.",
+      "name": "Soft Fig",
+      "role": "secondary text for captions, ingredient notes, product facts and long-form copy"
+    },
+    {
+      "hex": "#FFF8EF",
+      "inspiredBy": "Premium alcohol-free brands often reverse cleanly on rich dark grounds; this warm off-white keeps dark layouts inviting.",
+      "name": "Cream Foam",
+      "role": "reversed text on Velvet Plum and After-Dark Grape backgrounds"
+    }
+  ]
+}

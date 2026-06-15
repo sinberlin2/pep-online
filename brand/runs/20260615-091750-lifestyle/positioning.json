@@ -1,0 +1,389 @@
+{
+  "activeId": 2,
+  "activeName": "Lifestyle upgrade",
+  "activeSlug": "lifestyle",
+  "antiReferences": [
+    {
+      "name": "Gym-bro protein RTD",
+      "why": "Too performance-led, heavy, disciplined, and macro-first. PEP should not feel like a post-workout obligation or bodybuilding product."
+    },
+    {
+      "name": "drinkpep.com",
+      "why": "Same-name collision with a different US energy/probiotic product. Do not borrow its claims, audience, or identity cues."
+    },
+    {
+      "name": "Clinical supplement brands",
+      "why": "Too medicinal and rational. PEP needs wellness credibility without becoming technical or prescriptive."
+    },
+    {
+      "name": "Energy drink brands",
+      "why": "Too stimulant-led, intense, and performance-coded for the Lifestyle upgrade direction."
+    },
+    {
+      "name": "Meal replacement shakes",
+      "why": "Too heavy and utility-driven. PEP should feel light, refreshing, social, and treat-like."
+    },
+    {
+      "name": "Party-first mocktail or spirit brands",
+      "why": "Useful as context, but they push PEP toward the Better social drink direction rather than everyday wellness lifestyle."
+    }
+  ],
+  "audience": [
+    "Wellness-focused consumers who want healthier choices without effort or sacrifice.",
+    "Identity-driven drink buyers who want the brand in their hand to reflect their lifestyle.",
+    "Café, coworking, beach, and wellness-retail customers seeking a refreshing treat with a better nutritional profile.",
+    "People replacing sugary soft drinks, heavy smoothies, snacks, or routine café drinks.",
+    "Social/out-of-home consumers who want something light, premium, and feel-good without a gym or nightlife frame."
+  ],
+  "brand": "PEP",
+  "brandFitRules": [
+    "Accept ideas that make PEP feel like wellness without sacrifice: refreshing, tasty, light, and easy to choose.",
+    "Lead with lifestyle, taste, and occasion; keep protein as the credible benefit, not the whole personality.",
+    "Reject anything that feels gym-first, performance-first, macro-first, or supplement-like.",
+    "Reject anything that feels mainly like a cocktail replacement, bar ritual, festival drink, or alcohol alternative.",
+    "Use brunch, coworking, beach, wellness retail, and afternoon refreshment as the core occasion filter.",
+    "Keep copy friendly, relaxed, and optimistic; never disciplinary, clinical, or transformational.",
+    "Make nutrition simple and believable; do not over-explain or over-claim.",
+    "Design direction should be spacious, minimal, soft in energy, and premium-but-approachable, without becoming vague.",
+    "Do not copy competitor logos, distinctive packaging systems, or signature assets.",
+    "Always distinguish PEP at pep-drink.com from drinkpep.com."
+  ],
+  "domain": "pep-drink.com",
+  "inLineBrands": [
+    {
+      "adjectives": [
+        "prebiotic",
+        "lively",
+        "refreshing",
+        "health-conscious",
+        "playful"
+      ],
+      "category": "Prebiotic Soda",
+      "designPatterns": [
+        "Wellness benefit is easy to understand.",
+        "Taste and lifestyle cues stay prominent.",
+        "Playful but still adult enough for wellness retail.",
+        "Strong flavour-led shelf logic without a supplement feel."
+      ],
+      "drinkTypeFit": "Strong lifestyle beverage peer; not protein, but directly relevant as a healthier refreshing drink replacement.",
+      "name": "BLOOM",
+      "url": "https://bloomnu.com/products/bloom-pop?variant=46836799897700",
+      "why": "Sets a clear precedent for a wellness-oriented drink that feels fun, refreshing, and easy to adopt as part of everyday lifestyle."
+    },
+    {
+      "adjectives": [
+        "healthy",
+        "flavorful",
+        "plant-based",
+        "low-sugar",
+        "prebiotic",
+        "friendly"
+      ],
+      "category": "Prebiotic Soda",
+      "designPatterns": [
+        "Health benefit framed through approachable refreshment.",
+        "Taste-led flavour system.",
+        "Everyday treat positioning with better-for-you credibility.",
+        "Friendly brand world rather than technical nutrition framing."
+      ],
+      "drinkTypeFit": "Strong lifestyle drink peer; direct competitor for healthier soda occasions, though not protein-based.",
+      "name": "OLIPOP",
+      "url": "https://drinkolipop.com/",
+      "why": "A strong benchmark for turning a functional ingredient story into a lifestyle-friendly soda replacement with broad appeal."
+    },
+    {
+      "adjectives": [
+        "modern",
+        "health-conscious",
+        "fun",
+        "trendy",
+        "refreshing"
+      ],
+      "category": "Prebiotic Soda",
+      "designPatterns": [
+        "Simple wellness promise.",
+        "Strong lifestyle relevance.",
+        "High social shareability without becoming nightlife-led.",
+        "Clear flavour variety as a repeat-purchase driver."
+      ],
+      "drinkTypeFit": "Strong lifestyle drink peer; direct competitor for healthier everyday refreshment, though not protein-based.",
+      "name": "Poppi",
+      "url": "https://drinkpoppi.com/",
+      "why": "Shows how a wellness drink can feel culturally current, taste-led, and identity-driven."
+    },
+    {
+      "adjectives": [
+        "approachable",
+        "refreshing",
+        "smooth",
+        "balanced",
+        "unique",
+        "organic"
+      ],
+      "category": "Kombucha",
+      "designPatterns": [
+        "Wellness and craft cues without harshness.",
+        "Approachable adult refreshment.",
+        "Taste differentiation through smoothness and balance.",
+        "Everyday functional beverage positioning."
+      ],
+      "drinkTypeFit": "Strong lifestyle/wellness beverage peer; kombucha is a direct competitor in healthy refreshment moments.",
+      "name": "Alive & Well",
+      "url": "https://aliveandwellkombucha.com/",
+      "why": "Fits PEP’s need to make wellness feel accessible, refreshing, and more pleasant than expected."
+    },
+    {
+      "adjectives": [
+        "calming",
+        "refreshing",
+        "modern",
+        "health-focused",
+        "fruity",
+        "balanced"
+      ],
+      "category": "Infused sparkling water",
+      "designPatterns": [
+        "Low-clutter lifestyle presentation.",
+        "Mood and wellness benefit expressed simply.",
+        "Relaxed daily-use occasion framing.",
+        "Premium casual feel."
+      ],
+      "drinkTypeFit": "Strong lifestyle beverage peer; direct competitor for everyday feel-good refreshment, though not protein-based.",
+      "name": "Recess",
+      "url": "https://takearecess.com",
+      "why": "Highly relevant for a calm, modern wellness drink that behaves like a lifestyle accessory rather than a supplement."
+    },
+    {
+      "adjectives": [
+        "sugar-free",
+        "fiber-enriched",
+        "vegan",
+        "refreshing",
+        "healthy",
+        "naturally sweetened"
+      ],
+      "category": "Functional soda",
+      "designPatterns": [
+        "Functional benefit tied to familiar soda refreshment.",
+        "Clear better-for-you proposition.",
+        "Modern lifestyle drink structure.",
+        "Benefit-forward but not gym-coded."
+      ],
+      "drinkTypeFit": "Strong lifestyle/functional soda peer; relevant for healthier everyday refreshment, though not protein-led.",
+      "name": "more fiz",
+      "url": "",
+      "why": "Useful benchmark for making functional nutrition feel like an easy, refreshing soft-drink upgrade."
+    },
+    {
+      "adjectives": [
+        "organic",
+        "refreshing",
+        "authentic",
+        "low-calorie",
+        "artisanal",
+        "premium"
+      ],
+      "category": "Organic Kombucha Beverages",
+      "designPatterns": [
+        "Craft credibility with everyday refreshment.",
+        "Natural ingredient storytelling.",
+        "Adult taste cues.",
+        "Premium wellness without a sports frame."
+      ],
+      "drinkTypeFit": "Strong lifestyle/wellness drink peer; kombucha directly competes in healthy refreshment occasions.",
+      "name": "Yaya Kombucha",
+      "url": "https://yayakombucha.com/",
+      "why": "Although unassigned in the source positioning, it strongly fits the Lifestyle upgrade lane through premium kombucha, authenticity, and wellness refreshment."
+    },
+    {
+      "adjectives": [
+        "craft",
+        "nuanced",
+        "crisp",
+        "probiotic",
+        "botanical",
+        "non-alcoholic"
+      ],
+      "category": "Kombucha and Botanical Sodas",
+      "designPatterns": [
+        "Craft beverage credibility.",
+        "Nuanced adult refreshment.",
+        "Community and natural cues.",
+        "Less mass-market, more specialty feel."
+      ],
+      "drinkTypeFit": "Strong lifestyle/wellness drink peer; kombucha and botanical sodas compete in the same better-for-you refreshment set.",
+      "name": "Walker Brothers",
+      "url": "https://drinkwalkerbrothers.com/",
+      "why": "Although unassigned in the source positioning, it is relevant as a craft wellness drink benchmark with adult flavour complexity and everyday refreshment logic."
+    }
+  ],
+  "layoutOnlyReferences": [
+    {
+      "name": "Revized",
+      "patterns": [
+        "Use only for structural inspiration, not brand positioning or identity.",
+        "Potentially useful for clear flavour navigation, modular product sections, and simple conversion flow.",
+        "Do not borrow its visual identity, tone, or product-world assumptions."
+      ],
+      "url": ""
+    }
+  ],
+  "occasions": [
+    "Brunch cafés",
+    "Coworking breaks",
+    "Beach or park refreshment",
+    "Afternoon refreshment",
+    "Wellness retail trips",
+    "Light social moments with friends",
+    "On-the-go better snack alternative",
+    "Casual out-of-home lifestyle moments"
+  ],
+  "oneLiner": "PEP is a premium, light, refreshing protein drink for people who want healthier everyday choices to feel like a treat.",
+  "peerBrandsOtherPositionings": [
+    {
+      "drinkTypeFit": "Weak for PEP’s active direction; functional drink category is relevant, but the mindset is too supplement-led.",
+      "name": "HOLY",
+      "positioningMismatch": "Belongs to Functional protein drink / direction 1.",
+      "positioning_id": 1,
+      "whyNotActive": "Its focus on functional benefits and protein-rich utility pushes toward gym and nutrition-tool logic rather than effortless lifestyle refreshment."
+    },
+    {
+      "drinkTypeFit": "Weak; hydration/electrolyte mixes are not direct lifestyle treat competitors.",
+      "name": "LMNT",
+      "positioningMismatch": "Belongs to Functional protein drink / direction 1.",
+      "positioning_id": 1,
+      "whyNotActive": "Its science-backed electrolyte logic is rational, disciplined, and performance-adjacent, which is not the PEP Lifestyle upgrade mood."
+    },
+    {
+      "drinkTypeFit": "Weak; BCAA/energy drink is too sports and stimulant-coded.",
+      "name": "NOCCO",
+      "positioningMismatch": "Belongs to Functional protein drink / direction 1.",
+      "positioning_id": 1,
+      "whyNotActive": "It is too athletic, energizing, and workout-oriented for PEP’s soft everyday wellness role."
+    },
+    {
+      "drinkTypeFit": "Poor; protein plus alcohol novelty creates the wrong association.",
+      "name": "PROTOCHOL",
+      "positioningMismatch": "Belongs to Functional protein drink / direction 1 with some social novelty overlap.",
+      "positioning_id": 1,
+      "whyNotActive": "It makes protein feel like a gimmick in an alcohol context, while PEP must remain light, healthy, refreshing, and premium."
+    },
+    {
+      "drinkTypeFit": "Adjacent but too functional; hydration is relevant, but the brand logic is benefit-first.",
+      "name": "VITAMIN WELL",
+      "positioningMismatch": "Belongs to Functional protein drink / direction 1.",
+      "positioning_id": 1,
+      "whyNotActive": "It is more about vitamin hydration utility than identity-driven lifestyle upgrade."
+    },
+    {
+      "drinkTypeFit": "Adjacent social beverage, but not direct everyday protein refreshment.",
+      "name": "Kin Euphorics",
+      "positioningMismatch": "Belongs to Better social drink / direction 3.",
+      "positioning_id": 3,
+      "whyNotActive": "It is mood-enhancement and social-experience led, which risks pulling PEP away from everyday lifestyle wellness into social ritual territory."
+    },
+    {
+      "drinkTypeFit": "Weak; non-alcoholic spirits are a different use case.",
+      "name": "Lyre's",
+      "positioningMismatch": "Belongs to Better social drink / direction 3.",
+      "positioning_id": 3,
+      "whyNotActive": "It is built around alcohol replacement and cocktail occasions, not everyday healthy refreshment."
+    },
+    {
+      "drinkTypeFit": "Weak; non-alcoholic spirits are not a direct PEP category.",
+      "name": "Seedlip",
+      "positioningMismatch": "Belongs to Better social drink / direction 3.",
+      "positioning_id": 3,
+      "whyNotActive": "Its refined social substitute role is too spirits-led and formal for PEP’s accessible lifestyle habit."
+    }
+  ],
+  "personalityAdjectives": [
+    "refreshing",
+    "light",
+    "balanced",
+    "approachable",
+    "premium",
+    "effortless",
+    "modern",
+    "feel-good",
+    "playful",
+    "calm",
+    "taste-led",
+    "health-conscious",
+    "socially natural",
+    "everyday",
+    "uplifting"
+  ],
+  "positioningFitTypeMismatch": [
+    {
+      "category": "Non-alcoholic Aperitif / Soft Drinks",
+      "drinkTypeFit": "Moderate; useful soft-drink and premium refreshment benchmark, but more aperitif-led than PEP.",
+      "name": "EVER TREE / Everleaf",
+      "positioningMismatch": "Same active lifestyle territory, but leans toward adult aperitif and mindful-drinking cues.",
+      "typeMismatch": "Aperitif/soft-drink ritual is adjacent; PEP is an everyday protein refreshment, not primarily an aperitif.",
+      "url": "https://www.everleafdrinks.com/",
+      "whyBrandingFits": "Refined, natural, refreshing, and premium in a way that can inform PEP’s elevated lifestyle feel without copying the occasion."
+    },
+    {
+      "category": "Ready-to-Drink Cocktails and Mocktails",
+      "drinkTypeFit": "Moderate to weak; convenient and lifestyle-led, but cocktail framing is not core to PEP.",
+      "name": "Ole cocktails",
+      "positioningMismatch": "Same active lifestyle territory in the source, but overlaps with social drinking cues.",
+      "typeMismatch": "Cocktail/mocktail format is too close to party and hospitality occasions; PEP must remain a protein-led everyday refreshment.",
+      "url": "https://olecocktails.com/",
+      "whyBrandingFits": "Useful for convenience, premium ease, and social lifestyle energy, but should not define PEP’s category frame."
+    },
+    {
+      "category": "Non-alcoholic Wineries/Spirits/Mocktails",
+      "drinkTypeFit": "Weak to moderate; premium alcohol-free lifestyle brand, but not a direct drink-type peer.",
+      "name": "Ish",
+      "positioningMismatch": "Same active lifestyle territory in the source, but leans toward social substitute rituals.",
+      "typeMismatch": "Spirit, wine, and mocktail alternatives are not PEP’s core format; PEP should not be positioned as an alcohol replacement.",
+      "url": "https://ishspirits.com/",
+      "whyBrandingFits": "Useful for modern premium lifestyle confidence and inclusivity, but too close to social ritual to be an in-line model."
+    }
+  ],
+  "positioningStatement": "PEP is a premium, light, refreshing protein drink for wellness-focused people who want a healthier everyday choice that feels like a treat and fits naturally into brunch, coworking, beach, and afternoon refreshment moments.",
+  "version": 1,
+  "visual": {
+    "designConcept": "More minimal and gentle: spacious composition, low clutter, soft energy, and a refined everyday feel. The design should make PEP feel like a lifestyle accessory or habit while keeping the protein benefit clear and credible.",
+    "mood": "Airy, relaxed, refreshing, premium-but-approachable, unhurried, feel-good, and socially easy.",
+    "photography": "Real lifestyle moments: café tables, coworking breaks, beach or park refreshment, hands sharing cans, flavour-led close-ups, and casual out-of-home scenes. People should look natural, relaxed, and health-conscious rather than posed like athletes or nightlife talent.",
+    "rejectLooks": [
+      "Dense supplement-style layouts.",
+      "Aggressive sports nutrition energy.",
+      "Clinical or medicinal presentation.",
+      "Overly technical benefit grids as the main impression.",
+      "Childish soda styling.",
+      "Nightlife-first or festival-first atmosphere.",
+      "Heavy meal-replacement cues.",
+      "Generic wellness imagery with no taste or occasion specificity."
+    ]
+  },
+  "voice": {
+    "avoidWords": [
+      "gains",
+      "shred",
+      "macros-first",
+      "no excuses",
+      "crush it",
+      "elite performance",
+      "anabolic",
+      "bulk",
+      "cut",
+      "detox",
+      "cleanse",
+      "fat-burning",
+      "guilt-free",
+      "cheat day",
+      "meal replacement",
+      "biohack",
+      "clinical-grade",
+      "prescribed",
+      "sober ritual",
+      "cocktail replacement"
+    ],
+    "tagline": "Feel good. Have fun.",
+    "tone": "Friendly, light, confident, relaxed, taste-led, and wellness-aware. Speak like a stylish friend, not a coach, doctor, or supplement label."
+  }
+}

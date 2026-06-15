@@ -1,7 +1,7 @@
 {
   "id": "can-glass-lockup-2026-06",
   "label": "Baked can + glass lockup (relative positioning preserved)",
-  "output": "brand/product/bg_removed/pep-can-glass-lockup.png",
+  "output": "brand/design-concepts/pep-original/product/bg_removed/pep-can-glass-lockup.png",
   "render": {
     "canvasWidth": 1600,
     "transparent": true,

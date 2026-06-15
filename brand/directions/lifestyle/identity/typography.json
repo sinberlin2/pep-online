@@ -1,0 +1,32 @@
+{
+  "badge": {
+    "family": "Space Grotesk",
+    "licenseNote": "Open-source via Google Fonts under the SIL Open Font License.",
+    "usage": "Rounded-pill badges, product facts, small proof points, flavour tabs, navigation labels, and concise callouts. Use uppercase with moderate tracking for clarity, not aggression.",
+    "webFallback": "Arial, Helvetica, sans-serif",
+    "weight": "SemiBold 600 / Bold 700"
+  },
+  "body": {
+    "family": "Manrope",
+    "licenseNote": "Open-source via Google Fonts under the SIL Open Font License.",
+    "usage": "Body copy, product descriptions, ecommerce UI, nutrition explanation, captions, forms, and proof lines. Use generous line-height and avoid dense paragraphs.",
+    "webFallback": "Inter, Helvetica Neue, Arial, sans-serif",
+    "weight": "Regular 400 / Medium 500 / SemiBold 600"
+  },
+  "competitorInspiration": "Recess influenced the calm editorial hierarchy: a distinctive display voice balanced by very clean functional text. Poppi, OLIPOP, and BLOOM influenced the approachable, shareable use of bold product names and simple badges, while Everleaf and Ish informed the more premium spacing and restraint. Tier 3 brands such as LMNT, NOCCO, and HOLY show what to avoid typographically: hard technical grids, condensed athletic type, and macro-first hierarchy.",
+  "display": {
+    "family": "Fraunces",
+    "licenseNote": "Open-source via Google Fonts under the SIL Open Font License.",
+    "usage": "Primary headlines, PEP wordmark styling, flavour names, large campaign lines, and packaging hero typography. Use large sizes with tight line-height and modest negative tracking.",
+    "webFallback": "Georgia, Cambria, Times New Roman, serif",
+    "weight": "SemiBold 600 / Black 900"
+  },
+  "pairingRationale": "Fraunces gives PEP a soft premium personality: expressive enough to feel like a lifestyle treat, but not so formal that it becomes a spirits or luxury brand. Manrope supplies modern clarity for the protein and calorie information, keeping the functional benefit credible without clinical design. Caveat adds a relaxed human note when used sparingly, while Space Grotesk gives badges a clean contemporary structure; together the system balances treat, trust, and everyday ease.",
+  "script": {
+    "family": "Caveat",
+    "licenseNote": "Open-source via Google Fonts under the SIL Open Font License.",
+    "usage": "Very sparing handwritten accents such as serving notes, flavour whispers, social stickers, or small campaign asides. Never use for claims, nutrition facts, or long copy.",
+    "webFallback": "Segoe Print, Bradley Hand, cursive",
+    "weight": "Regular 400 / Medium 500"
+  }
+}

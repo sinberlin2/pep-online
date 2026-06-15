@@ -254,9 +254,9 @@ This is **subordinate** to the site concept, not a replacement.
   "hero": {
     "layout": "split", 
     "assets": [
-      { "src": "brand/product/bg_removed/pep-glass-background-removed.png", "role": "glass", "z": 2, "x": "58%", "y": "12%", "scale": 0.92 },
-      { "src": "brand/product/bg_removed/pep-can-background-removed.png", "role": "can", "z": 3, "x": "42%", "y": "0%", "scale": 1 },
-      { "src": "brand/marketing/bg_removed/garnishes-citrus-background-removed.png", "role": "garnish", "z": 1, "x": "70%", "y": "55%", "scale": 0.75, "opacity": 0.85 }
+      { "src": "brand/research/directions/provided/assets/bg_removed/pep-glass-background-removed.png", "role": "glass", "z": 2, "x": "58%", "y": "12%", "scale": 0.92 },
+      { "src": "brand/research/directions/provided/assets/bg_removed/pep-can-background-removed.png", "role": "can", "z": 3, "x": "42%", "y": "0%", "scale": 1 },
+      { "src": "brand/research/directions/provided/assets/bg_removed/garnishes-citrus-background-removed.png", "role": "garnish", "z": 1, "x": "70%", "y": "55%", "scale": 0.75, "opacity": 0.85 }
     ]
   },
   "sections": ["hero", "drinks", "enjoy", "about"],
@@ -282,7 +282,7 @@ OpenAI returns structured **hero/carousel** variant JSON only; validator enforce
 |--------|-----|
 | `brand/brand.json` | Colors, typography — hard constraints |
 | `brand/README.md`, `identity/typography.md` | Rules and usage |
-| `brand/product/flavours/flavours.json` | Carousel colors/order |
+| `brand/research/directions/provided/assets/flavours/flavours.json` | Carousel colors/order |
 | `marketing/originals/design-reference-full.png` | Visual target (multimodal) |
 | Current `index.html` + `css/styles.css` | Baseline structure |
 | Asset manifest | Allowed image paths only |

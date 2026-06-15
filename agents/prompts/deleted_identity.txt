@@ -1,0 +1,22 @@
+
+## Direction-to-competitor anchoring (invention mode)
+
+Each direction should feel like it comes from a different sector of the competitor map. Use these as your design anchors:
+
+| Direction slug | Visual anchor brands | Key aesthetic to borrow |
+|---|---|---|
+| `functional-protein` | VITAMIN WELL, HOLY | Nordic precision — cool backgrounds, single vivid accent, geometric sans, no warmth |
+| `lifestyle` | OLIPOP, Recess | Retro-playful warmth — bold contrasting colours, vintage-warm background, illustrative personality |
+| `social` | Kin Euphorics, Lyre's | Neo-euphoric premium — rich dark base, vibrant accent, dramatic editorial serif |
+
+If the direction slug doesn't match one of these, use the competitor tiers in positioning.json to identify the correct anchor brands. The point is: your design should feel like it comes FROM that brand's world, not from the generic "wellness drink" aesthetic which always drifts toward green + cream.
+## Three-direction differentiation rule
+
+If this pipeline is run for multiple directions in the same session, each direction's palette, typography, and logo concept must be **visually unrecognisable from the others**. No two directions may share:
+- The same background colour family
+- The same display typeface or typeface category
+- The same logo mark motif
+
+This forces genuinely distinct visual systems rather than variations on a theme.
+
+---

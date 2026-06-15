@@ -8,13 +8,14 @@ from __future__ import annotations
 
 import csv
 import json
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-RESEARCH = ROOT / "brand" / "research"
-OUT = RESEARCH / "positioning-options.json"
+sys.path.insert(0, str(ROOT))
+import paths  # noqa: E402
 
-# Column order in your Mural export
+OUT = paths.POSITIONING_OPTIONS
 OPTIONS = [
     {
         "id": 1,
@@ -38,11 +39,13 @@ OPTIONS = [
 
 
 def _find_csv() -> Path:
-    candidates = list(RESEARCH.glob("*positioning*.csv")) + list(RESEARCH.glob("*Positioning*.csv"))
+    if paths.POSITIONING_SOURCE_CSV.is_file():
+        return paths.POSITIONING_SOURCE_CSV
+    candidates = list(paths.POSITIONING.glob("*positioning*.csv"))
     if not candidates:
         raise SystemExit(
-            f"No positioning CSV in {RESEARCH}. "
-            "Add your Mural export (e.g. 'Product positioning options - from Mural - Sheet1.csv')."
+            f"No positioning CSV in {paths.POSITIONING}. "
+            "Add product-positioning-options.csv."
         )
     return sorted(candidates, key=lambda p: p.stat().st_mtime, reverse=True)[0]
 

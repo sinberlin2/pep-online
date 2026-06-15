@@ -1,0 +1,32 @@
+{
+  "slug": "pep-original",
+  "label": "PEP original flyer design",
+  "kind": "from-design",
+  "source": "brand/design-concepts/pep-original",
+  "brand": "PEP",
+  "domain": "",
+  "version": 1,
+  "assembledAt": "2026-06-13T19:18:49.548813+00:00",
+  "strategyStatus": "pending (Flow B extraction)",
+  "summary": {
+    "name": "PEP",
+    "tagline": "Feel good. Have fun.",
+    "oneLiner": "",
+    "positioningStatement": "",
+    "primaryColors": [
+      "#1f4d3a",
+      "#e86a1a",
+      "#faf6f0"
+    ],
+    "fonts": {
+      "logo": "Didot",
+      "body": "Montserrat",
+      "script": "Brittany Signature"
+    }
+  },
+  "parts": {
+    "positioning": null,
+    "designSystem": "brand/from-design/pep-original/design-system.json",
+    "guidelines": null
+  }
+}

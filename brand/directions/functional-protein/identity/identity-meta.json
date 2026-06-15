@@ -1,0 +1,8 @@
+{
+  "createdAt": "2026-06-15T11:33:03.342169+00:00",
+  "model": "gpt-5.5",
+  "provider": "openai",
+  "selectedPositioning": "functional-protein",
+  "mode": "from-direction",
+  "visionImages": []
+}

@@ -1,15 +1,33 @@
 """
-Pass 1 — whole-site concept via OpenAI (optional web search).
+WEBSITE concept generator — NOT brand identity.
+
+This is the *website redesign* pipeline. It produces a whole-site layout/content
+concept for pep-drink.com, and it is the ONE place that reads the current live
+`index.html` (the existing OLD design) as a reference to redesign from.
+
+Distinct from the branding pipeline:
+  - Branding  : agents.brand_run -> agents.brand_identity -> agents.brand_images
+                (invents palette/typography/logo from a clean slate; never reads
+                 the live site; competitors come from static research files).
+  - This file : agents.concept_run
+                (designs the actual website; reads index.html + competitors.md;
+                 can do live web research for competitor sites).
+
+Inputs : active positioning.json, experiments/references/competitors.md,
+         current index.html, optional live web search (web_search_preview).
+Output : experiments/website-concepts/<timestamp>-<slug>/  (kept separate from
+         brand/ so website work never mixes with branding files).
 
 Usage:
   python -m agents.concept_run --brief "Premium light, social protein, venue-led"
-  python -m agents.concept_run --brief "..." --no-web-search
+  python -m agents.concept_run --brief "..." --no-web-search   # skip live web research
 """
 from __future__ import annotations
 
 import argparse
 import json
 import os
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -18,10 +36,11 @@ from agents.llm.openai_client import chat_json, make_client, web_research
 from agents.schemas import CONCEPT_BUNDLE_SCHEMA
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
+import paths  # noqa: E402
 PROMPT_PATH = Path(__file__).resolve().parent / "prompts" / "concept_director.md"
 REFERENCES_PATH = PROJECT_ROOT / "experiments" / "references" / "competitors.md"
-ACTIVE_POSITIONING_PATH = PROJECT_ROOT / "brand" / "research" / "active" / "positioning.json"
-DIRECTIONS_ROOT = PROJECT_ROOT / "brand" / "research" / "directions"
+DIRECTIONS_ROOT = paths.DIRECTIONS
 WEBSITE_CONCEPTS_DIR = PROJECT_ROOT / "experiments" / "website-concepts"
 DEFAULT_BRIEF = (
     "Premium light protein drink for cafés, bars, and terraces. "
@@ -50,7 +69,9 @@ def _current_site_summary() -> str:
 
 def _resolve_positioning_path(positioning_arg: str | None) -> Path:
     if not positioning_arg:
-        return ACTIVE_POSITIONING_PATH
+        positioning_arg = _read_json(paths.CHOICE).get("positioningSlug", "")
+        if not positioning_arg:
+            raise SystemExit("Pass --positioning or set company/choice.json positioningSlug")
     key = positioning_arg.strip().lower()
     aliases = {
         "1": "functional-protein",
@@ -63,7 +84,7 @@ def _resolve_positioning_path(positioning_arg: str | None) -> Path:
         "social": "social",
     }
     slug = aliases.get(key, key)
-    return DIRECTIONS_ROOT / slug / "positioning.json"
+    return paths.direction_strategy(slug) / "positioning.json"
 
 
 def _active_positioning_block(positioning_path: Path) -> str:
@@ -109,11 +130,13 @@ def _research_instructions(brief: str, references: str, positioning: str) -> str
 Plain-text research memo. No invented URLs."""
 
 
-def _concept_user_message(brief: str, references: str, research: str, positioning: str) -> str:
-    brand = _read_json(PROJECT_ROOT / "brand" / "brand.json")
-    flavours = _read_json(PROJECT_ROOT / "brand" / "product" / "flavours" / "flavours.json")
+def _concept_user_message(brief: str, references: str, research: str, positioning: str, positioning_path: Path) -> str:
+    product = _read_json(paths.PRODUCT_PROFILE)
+    design_system = _read_json(paths.FROM_DESIGN / "pep-original" / "design-system.json")
+    flavours = _read_json(paths.DESIGN_CONCEPTS / "pep-original" / "product" / "flavours" / "flavours.json")
     site_excerpt = _current_site_summary()
-    guidelines = _read_text(PROJECT_ROOT / "brand" / "research" / "active" / "brand-guidelines.md")
+    # brand-guidelines.md lives next to the resolved positioning.json (the direction's strategy folder)
+    guidelines = _read_text(positioning_path.parent / "brand-guidelines.md")
 
     return f"""Create a whole-site concept bundle for PEP (pep-drink.com).
 
@@ -132,9 +155,14 @@ def _concept_user_message(brief: str, references: str, research: str, positionin
 ## Web research memo
 {research or "(Web search disabled — use anchors and general category knowledge; mark discovered URLs only if confident.)"}
 
-## brand.json
+## product-profile.json (generic facts)
 ```json
-{json.dumps(brand, indent=2)}
+{json.dumps(product, indent=2)}
+```
+
+## Active design tokens (from-design/pep-original — post-processed from proposed design)
+```json
+{json.dumps(design_system, indent=2)}
 ```
 
 ## flavours.json
@@ -191,7 +219,7 @@ def run_concept(
         client,
         model=model,
         system=system,
-        user=_concept_user_message(brief, references, research, positioning),
+        user=_concept_user_message(brief, references, research, positioning, positioning_path),
         schema_name="pep_concept_bundle",
         schema=CONCEPT_BUNDLE_SCHEMA,
     )

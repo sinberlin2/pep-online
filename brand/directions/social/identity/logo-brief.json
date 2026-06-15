@@ -1,0 +1,24 @@
+{
+  "concept": "The mark communicates a fruity social serve: a circular sip, a moment of sparkle and the subtle feeling of two drinks meeting. It takes hospitality credibility from Lyre’s and Seedlip, but adds the warmer event energy seen in Kin Euphorics and Ole cocktails so PEP feels like its own alcohol-free social protein refreshment rather than a spirits imitation.",
+  "imagePrompts": [
+    {
+      "id": "logo-mark",
+      "name": "Mark only",
+      "prompt": "Create a flat graphic brand mark only, with no text and no letters. Use a near-perfect circular fruit-disc outline in Spritz Coral #FF5A4E, stroke weight about 68px on a 1024x1024 canvas, with a small 32-degree opening at the upper left. Inside the circle place a four-point sparkle with rounded points in Mango Spark #FFC247, centred slightly above the midpoint. Add one small solid fizz dot in Velvet Plum #4B2354 at the upper right outside edge and one smaller solid dot in Spritz Coral #FF5A4E at the lower left inside edge. No gradients, no shadows, no texture, no 3D effects. Flat product branding style, clean minimal design, isolated on solid background.",
+      "size": "1024x1024"
+    },
+    {
+      "id": "logo-lockup-light",
+      "name": "Light identity lockup",
+      "prompt": "Create a flat graphic brand identity illustration on Champagne Cream #FFF4E2. Place a circular fruit-disc brand mark on the left: Spritz Coral #FF5A4E thick open circle, Mango Spark #FFC247 rounded four-point sparkle inside, small Velvet Plum #4B2354 fizz dot near the upper right. To the right, set the wordmark 'PEP' in a bold rounded high-contrast serif style, uppercase, tightly kerned, in Velvet Plum #4B2354. Keep generous spacing, horizontal alignment, no tagline, no extra text, no gradients, no drop shadows. Flat product branding style, clean minimal design, isolated on solid background.",
+      "size": "1024x1024"
+    },
+    {
+      "id": "logo-lockup-dark",
+      "name": "Dark identity lockup",
+      "prompt": "Create a flat graphic brand identity illustration on After-Dark Grape #161124. Place a circular fruit-disc brand mark above the wordmark: Spritz Coral #FF5A4E thick open circle, Mango Spark #FFC247 rounded four-point sparkle inside, small Cream Foam #FFF8EF fizz dot near the upper right. Beneath it, set the wordmark 'PEP' in a bold rounded high-contrast serif style, uppercase, tightly kerned, in Cream Foam #FFF8EF. No tagline, no supporting text, no gradients, no drop shadows, no texture. Flat product branding style, clean minimal design, isolated on solid background.",
+      "size": "1024x1024"
+    }
+  ],
+  "markDescription": "A flat circular fruit-disc mark built from a thick open ring in Spritz Coral #FF5A4E, approximately 68px stroke on a 1024px square, with a 32-degree opening at the upper-left. A rounded four-point sparkle sits just above centre in Mango Spark #FFC247, with one small Velvet Plum #4B2354 fizz dot near the upper-right outside edge and one smaller Spritz Coral #FF5A4E dot at the lower-left inside edge. The style is geometric, minimal, high-contrast, flat, with no gradients, shadows, outlines or texture."
+}

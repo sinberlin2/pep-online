@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "source": "from positioning.visual (Flow A — invented look)",
+  "colors": {},
+  "typography": {},
+  "mood": "Minimal, pastel, warm and airy. Cream, peach, soft yellow, and deep green. Premium but never cold. Light but never bland.",
+  "photography": "Bright natural light, real everyday settings — café tables, open-air terraces, sunny windowsills, picnic rugs. Aspirational but accessible. Inclusive groups or solo moments. No gym, no night scenes, no clinical white studio.",
+  "typographyDirection": "Didot for the wordmark (elegant, confident), Montserrat for labels and body (clear, modern), Brittany Signature for the tagline and script accents (warmth, personality). Avoid heavy sans-serifs or 'action' fonts.",
+  "rejectLooks": [
+    "Bold aggressive fitness branding",
+    "High-saturation energy drink palettes",
+    "Sports or gym-centric imagery",
+    "Clinical or medicinal label layouts",
+    "Juvenile or kids'-soda branding",
+    "Nightclub or festival neon"
+  ]
+}

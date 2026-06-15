@@ -59,11 +59,11 @@ All logos, product shots, and marketing files live under **`brand/`** — see `b
 
 | Folder | Purpose |
 |--------|---------|
-| `brand/identity/` | Logo, marks, fonts, colour references |
-| `brand/product/` | Hero PNGs (can, glass, mango) — **used on the landing page** |
-| `brand/marketing/` | Posters, handouts, reference artwork |
+| `brand/design-concepts/pep-original/identity/` | Logo, typography — from the **example design** (exploratory) |
+| `brand/design-concepts/pep-original/product/` | Hero PNGs (can, glass) — **used on the landing page** |
+| `brand/design-concepts/pep-original/marketing/` | Flyers, mockups, reference artwork |
 
-**Landing hero** — add transparent PNGs to `brand/product/`:
+**Landing hero** — assets live under `brand/directions/provided/assets/product/`:
 
 - `pep-can.png`, `pep-glass.png`, `pep-mango.png` (optional)
 

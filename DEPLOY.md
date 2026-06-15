@@ -62,7 +62,7 @@ For **pep-drink.com** (no www), follow Cloudflare’s wizard — they usually ad
 
 - [ ] Open `https://pep-drink.com` and `https://www.pep-drink.com` (both should work)
 - [ ] Open `https://pep-drink.com/for-venues.html`
-- [ ] Test mobile menu and images (especially `brand/product/bg_removed/`)
+- [ ] Test mobile menu and images (especially `brand/directions/provided/assets/product/bg_removed/`)
 - [ ] Set `FORM_ENDPOINT` in `js/config.js` for Formspree (see main README)
 - [ ] Submit a test message on **Join the pilot**
 

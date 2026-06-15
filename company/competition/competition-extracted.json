@@ -1,0 +1,333 @@
+{
+  "legendNotes": "Functional (1) brands are green, Lifestyle (2) brands are pink/pastel, and Social (3) brands are blue.",
+  "brands": [
+    {
+      "brand_name": "HOLY",
+      "category": "Vitamin Drink",
+      "positioning_id": 1,
+      "positioning_name": "Functional protein drink",
+      "background_color": "light green",
+      "adjectives": [
+        "vitamin-enriched",
+        "light",
+        "health"
+      ],
+      "visual_design_notes": "simple design highlighting vitamin content.",
+      "product_traits": "Vitamin-enriched drinks focusing on health.",
+      "why_positioning_fit": "Provides vitamins in a functional layout supporting health benefits.",
+      "url": "https://holy.com/"
+    },
+    {
+      "brand_name": "LMNT",
+      "category": "Hydration",
+      "positioning_id": 1,
+      "positioning_name": "Functional protein drink",
+      "background_color": "light green",
+      "adjectives": [
+        "functional",
+        "electrolytes",
+        "hydrate"
+      ],
+      "visual_design_notes": "clinical, straightforward packaging highlighting electrolytes.",
+      "product_traits": "Contains electrolytes and targets hydration.",
+      "why_positioning_fit": "Fits as a functional beverage targeting hydration needs directly.",
+      "url": "https://drinklmnt.com/"
+    },
+    {
+      "brand_name": "NOCCO",
+      "category": "BCAA/Energy",
+      "positioning_id": 1,
+      "positioning_name": "Functional protein drink",
+      "background_color": "light green",
+      "adjectives": [
+        "energy",
+        "BCAA",
+        "sports"
+      ],
+      "visual_design_notes": "bold and sporty with focus on energy and BCAA benefits.",
+      "product_traits": "BCAA energy drink for sports and recovery.",
+      "why_positioning_fit": "Aims to support athletic performance with BCAA and energy nutrients.",
+      "url": "https://nocco.com/"
+    },
+    {
+      "brand_name": "PROTOCHOL",
+      "category": "Protein & Alcohol",
+      "positioning_id": 1,
+      "positioning_name": "Functional protein drink",
+      "background_color": "light blue",
+      "adjectives": [
+        "protein",
+        "alcohol fusion",
+        "innovative"
+      ],
+      "visual_design_notes": "light blue packaging emphasizing its protein content and niche fusion of alcohol and protein.",
+      "product_traits": "Contains protein with a combination of alcohol for a unique drink.",
+      "why_positioning_fit": "Innovative approach combining protein with social drinking aspects.",
+      "url": "https://protocholbeverage.com/"
+    },
+    {
+      "brand_name": "VITAMIN WELL",
+      "category": "Hydration",
+      "positioning_id": 1,
+      "positioning_name": "Functional protein drink",
+      "background_color": "light green",
+      "adjectives": [
+        "vitamin-enriched",
+        "functional",
+        "hydrating"
+      ],
+      "visual_design_notes": "clean and clear labeling focusing on vitamin content.",
+      "product_traits": "Vitamin-enriched hydration for health and function.",
+      "why_positioning_fit": "Provides functional hydration through vitamin-enriched drinks.",
+      "url": "https://www.vitaminwell.com/"
+    },
+    {
+      "brand_name": "BLOOM",
+      "category": "Prebiotic",
+      "positioning_id": 2,
+      "positioning_name": "Lifestyle upgrade",
+      "background_color": "bright pink",
+      "adjectives": [
+        "prebiotic",
+        "lively",
+        "vibrant"
+      ],
+      "visual_design_notes": "bright, playful packaging with a focus on probiotics.",
+      "product_traits": "Prebiotic drink with lively flavors and wellness focus.",
+      "why_positioning_fit": "Integrates prebiotic benefits with a fun lifestyle branding, appealing to health-conscious consumers.",
+      "url": "https://bloomnu.com/products/bloom-pop?variant=46836799897700"
+    },
+    {
+      "brand_name": "EVER TREE",
+      "category": "Soft Drinks",
+      "positioning_id": 2,
+      "positioning_name": "Lifestyle upgrade",
+      "background_color": "light pink",
+      "adjectives": [
+        "refreshing",
+        "natural",
+        "subtle"
+      ],
+      "visual_design_notes": "minimalist and elegant design focusing on natural ingredients.",
+      "product_traits": "Soft drink with a health and natural focus.",
+      "why_positioning_fit": "Encourages healthier everyday choices with a refreshingly natural taste.",
+      "url": "https://www.everleafdrinks.com/"
+    },
+    {
+      "brand_name": "OLIPOP",
+      "category": "Prebiotic",
+      "positioning_id": 2,
+      "positioning_name": "Lifestyle upgrade",
+      "background_color": "pastel pink",
+      "adjectives": [
+        "prebiotic",
+        "soft",
+        "health-focused"
+      ],
+      "visual_design_notes": "soft, friendly branding with health focus.",
+      "product_traits": "Prebiotic soda promoting gut health.",
+      "why_positioning_fit": "Targets wellness with a prebiotic-focused drink that fits lifestyle aspirations.",
+      "url": "https://drinkolipop.com/"
+    },
+    {
+      "brand_name": "Poppi",
+      "category": "Prebiotic",
+      "positioning_id": 2,
+      "positioning_name": "Lifestyle upgrade",
+      "background_color": "pastel pink",
+      "adjectives": [
+        "prebiotic",
+        "refreshing",
+        "health"
+      ],
+      "visual_design_notes": "vibrant, lively packaging with wellness appeal.",
+      "product_traits": "Gut health and wellness drink brand in prebiotic soda category.",
+      "why_positioning_fit": "Appeals to health-conscious consumers looking for a refreshing lifestyle beverage.",
+      "url": "https://drinkpoppi.com/"
+    },
+    {
+      "brand_name": "Kin Euphorics",
+      "category": "Social Drinks/Mocktails",
+      "positioning_id": 3,
+      "positioning_name": "Better social drink",
+      "background_color": "light blue",
+      "adjectives": [
+        "euphoric",
+        "social",
+        "experience"
+      ],
+      "visual_design_notes": "fancy, trendy, experiential design aimed at mood enhancement.",
+      "product_traits": "Functional blend of mood-enhancing and social experiences.",
+      "why_positioning_fit": "Blends social appeal with mood-enhancing functionalities, ideal for gatherings.",
+      "url": "https://kineuphorics.com/"
+    },
+    {
+      "brand_name": "Lyre's",
+      "category": "Social Drinks/Mocktails",
+      "positioning_id": 3,
+      "positioning_name": "Better social drink",
+      "background_color": "light blue",
+      "adjectives": [
+        "alcohol-free",
+        "spirit",
+        "aesthetic"
+      ],
+      "visual_design_notes": "elegant labeling emphasizing its spirit-like presentation.",
+      "product_traits": "Alcohol-free spirits with a sophisticated look for social consumption.",
+      "why_positioning_fit": "Appeals to those seeking quality non-alcoholic options for social occasions.",
+      "url": "https://lyres.com/"
+    },
+    {
+      "brand_name": "Seedlip",
+      "category": "Social Drinks/Mocktails",
+      "positioning_id": 3,
+      "positioning_name": "Better social drink",
+      "background_color": "light blue",
+      "adjectives": [
+        "non-alcoholic",
+        "social",
+        "premium"
+      ],
+      "visual_design_notes": "high-end design focusing on non-alcoholic benefits for social settings.",
+      "product_traits": "Non-alcoholic spirits designed to replace traditional social drinks.",
+      "why_positioning_fit": "Offers a premium social experience without alcohol.",
+      "url": "https://www.seedlipdrinks.com/en-us"
+    },
+    {
+      "brand_name": "Alive & Well",
+      "category": "Kombucha",
+      "positioning_id": 2,
+      "positioning_name": "Lifestyle upgrade",
+      "background_color": "",
+      "adjectives": [
+        "approachable",
+        "refreshing",
+        "smooth",
+        "balanced",
+        "unique",
+        "less acidic",
+        "organic"
+      ],
+      "visual_design_notes": "Modern, clean design with natural and botanical themes emphasizing wellness and artisan quality.",
+      "product_traits": "Live probiotics, organic teas and botanicals, unique and exotic flavors, softer carbonation, less acidic taste.",
+      "why_positioning_fit": "In: Clearly differentiated by smoother taste and functional, wellness-driven positioning within the kombucha lane.",
+      "url": "https://aliveandwellkombucha.com/"
+    },
+    {
+      "brand_name": "Recess",
+      "category": "Infused sparkling water",
+      "positioning_id": 2,
+      "positioning_name": "Lifestyle upgrade",
+      "background_color": "",
+      "adjectives": [
+        "calming",
+        "refreshing",
+        "modern",
+        "health-focused",
+        "fruity",
+        "balanced"
+      ],
+      "visual_design_notes": "Minimalist design with pastel colors, playful branding, and clean typography emphasizing relaxation.",
+      "product_traits": "Infused with adaptogens and magnesium, real fruit flavors, non-caffeinated, positioned for stress relief.",
+      "why_positioning_fit": "In: Direct competitor in the infused sparkling water space targeting lifestyle-conscious consumers.",
+      "url": "https://takearecess.com"
+    },
+    {
+      "brand_name": "Walker Brothers",
+      "category": "Kombucha and Botanical Sodas",
+      "positioning_id": 2,
+      "positioning_name": "Lifestyle upgrade",
+      "background_color": "",
+      "adjectives": [
+        "craft",
+        "nuanced",
+        "crisp",
+        "probiotic",
+        "botanical",
+        "non-alcoholic",
+        "organic",
+        "wild-harvested"
+      ],
+      "visual_design_notes": "Brand visuals emphasize natural, Appalachian-inspired motifs with clean and earthy design elements.",
+      "product_traits": "Naturally fermented, probiotic-rich, organic and wild-harvested ingredients, non-alcoholic, inspired by craft beer complexity.",
+      "why_positioning_fit": "In, as a prominent craft competitor focusing on natural kombucha and botanical sodas with a specialty and wellness positioning.",
+      "url": "https://drinkwalkerbrothers.com/"
+    },
+    {
+      "brand_name": "Yaya Kombucha",
+      "category": "Organic Kombucha Beverages",
+      "positioning_id": 2,
+      "positioning_name": "Lifestyle upgrade",
+      "background_color": "",
+      "adjectives": [
+        "organic",
+        "refreshing",
+        "authentic",
+        "low-calorie",
+        "non-alcoholic",
+        "artisanal",
+        "premium"
+      ],
+      "visual_design_notes": "Modern, clean design with bold, colorful labels emphasizing natural ingredients and flavor cues.",
+      "product_traits": "Organic ingredients, wild fermentation, no artificial additives, non-alcoholic, variety of flavors.",
+      "why_positioning_fit": "In, as it is a well-positioned kombucha brand with strong authenticity and health credentials.",
+      "url": "https://yayakombucha.com/"
+    },
+    {
+      "brand_name": "Ish",
+      "category": "Non-alcoholic Wineries/Spirits/Mocktails",
+      "positioning_id": 2,
+      "positioning_name": "Lifestyle upgrade",
+      "background_color": "",
+      "adjectives": [
+        "premium",
+        "modern",
+        "authentic",
+        "sophisticated",
+        "inclusive"
+      ],
+      "visual_design_notes": "Minimalist Scandinavian, contemporary packaging with clean lines and bold typography.",
+      "product_traits": "Non-alcoholic, natural ingredients, mimics taste of traditional alcoholic drinks, ready-to-drink cocktails, wine alternatives.",
+      "why_positioning_fit": "In—strong category fit as a leading non-alcoholic mocktail and spirits brand positioned as a lifestyle upgrade.",
+      "url": "https://ishspirits.com/"
+    },
+    {
+      "brand_name": "Ole cocktails",
+      "category": "Ready-to-Drink Cocktails and Mocktails",
+      "positioning_id": 2,
+      "positioning_name": "Lifestyle upgrade",
+      "background_color": "",
+      "adjectives": [
+        "premium",
+        "convenient",
+        "authentic",
+        "modern",
+        "inclusive",
+        "vibrant"
+      ],
+      "visual_design_notes": "Colorful, modern can designs with clear flavor indicators and festive branding.",
+      "product_traits": "Made with real fruit juices and Blanco tequila, gluten-free, vegan, no artificial additives, available in cans.",
+      "why_positioning_fit": "Relevant for benchmarking both alcoholic and non-alcoholic tequila drinks targeting lifestyle-conscious consumers.",
+      "url": "https://olecocktails.com/"
+    },
+    {
+      "brand_name": "more fiz",
+      "category": "functional soda",
+      "positioning_id": 2,
+      "positioning_name": "Lifestyle upgrade",
+      "background_color": "",
+      "adjectives": [
+        "sugar-free",
+        "fiber-enriched",
+        "vegan",
+        "refreshing",
+        "healthy",
+        "natural-sweetened"
+      ],
+      "visual_design_notes": "Bright, vibrant can colors matching fruit flavors, modern design, health-forward imagery.",
+      "product_traits": "10g plant-based fiber per can, sugar-free, uses monk fruit and stevia, vegan, lactose-free, gluten-free, multiple fruit flavors.",
+      "why_positioning_fit": "In scope for its direct competition in healthy, functional sodas targeting lifestyle upgrades.",
+      "url": "https://service.morenutrition.de/hc/en-us/articles/40222048023185-More-Fizi"
+    }
+  ]
+}

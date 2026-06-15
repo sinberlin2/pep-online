@@ -1,10 +1,10 @@
 """
 Split the garnish palette into individual transparent cut-outs.
 
-Input : brand/marketing/bg_removed/garnishes-citrus-background-removed.png
-        (a single PNG containing several garnishes + faint bg-removal ghosts)
-Output: brand/marketing/garnishes/bg_removed/<slug>-background-removed.png
-        + brand/marketing/garnishes/garnishes.json (manifest)
+Input : brand/design-concepts/pep-original/marketing/bg_removed/garnishes-citrus-background-removed.png
+Output: .../marketing/garnishes/bg_removed/<slug>-background-removed.png
+Output: .../marketing/garnishes/bg_removed/<slug>-background-removed.png
+        + .../marketing/garnishes/garnishes.json (manifest)
 
 Method: threshold the alpha channel to drop faint ghosts, find connected
 components (8-connectivity, on a downscaled mask for speed — no numpy needed),
@@ -22,15 +22,10 @@ from typing import Any
 from PIL import Image, ImageFilter
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-SOURCE = (
-    PROJECT_ROOT
-    / "brand"
-    / "marketing"
-    / "bg_removed"
-    / "garnishes-citrus-background-removed.png"
-)
-OUT_DIR = PROJECT_ROOT / "brand" / "marketing" / "garnishes" / "bg_removed"
-MANIFEST = PROJECT_ROOT / "brand" / "marketing" / "garnishes" / "garnishes.json"
+CONCEPT_DIR = PROJECT_ROOT / "brand" / "design-concepts" / "pep-original"
+SOURCE = CONCEPT_DIR / "marketing" / "bg_removed" / "garnishes-citrus-background-removed.png"
+OUT_DIR = CONCEPT_DIR / "marketing" / "garnishes" / "bg_removed"
+MANIFEST = CONCEPT_DIR / "marketing" / "garnishes" / "garnishes.json"
 
 # Alpha at/above this counts as "solid" for finding pieces (drops faint ghosts).
 ALPHA_SOLID = 100

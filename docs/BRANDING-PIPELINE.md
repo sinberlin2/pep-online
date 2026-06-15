@@ -191,7 +191,7 @@ brand/
     directions/00-provided/          # reverse positioning extracted from the provided design
 ```
 
-Site-referenced assets (`brand/identity|marketing|product/...`) stay put. Only the loose,
+Design concept assets live under `brand/research/design-concepts/<slug>/` (identity, marketing, product).
 unreferenced `images/` and `images/new/` move into `brand/designs/00-provided/mockups/`.
 
 ---

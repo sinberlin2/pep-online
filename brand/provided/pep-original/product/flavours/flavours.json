@@ -1,0 +1,40 @@
+{
+  "available": {
+    "slug": "coconut-mango",
+    "name": "Coconut Mango",
+    "color": "#fff4d6",
+    "image": "brand/design-concepts/pep-original/product/bg_removed/pep-can-background-removed.png"
+  },
+  "comingSoon": [
+    {
+      "slug": "pineapple-lime",
+      "name": "Pineapple Lime",
+      "color": "#fff0a8",
+      "image": "brand/design-concepts/pep-original/product/flavours/bg_removed/pineapple-lime-background-removed.png"
+    },
+    {
+      "slug": "orange-passionfruit",
+      "name": "Orange Passionfruit",
+      "color": "#fde8d8",
+      "image": "brand/design-concepts/pep-original/product/flavours/bg_removed/orange-passionfruit-background-removed.png"
+    },
+    {
+      "slug": "raspberry-lemon",
+      "name": "Raspberry Lemon",
+      "color": "#fce4ec",
+      "image": "brand/design-concepts/pep-original/product/flavours/bg_removed/raspberry-lemon-background-removed.png"
+    },
+    {
+      "slug": "mango-guava",
+      "name": "Mango Guava",
+      "color": "#f8d7e8",
+      "image": "brand/design-concepts/pep-original/product/flavours/bg_removed/mango-guava-background-removed.png"
+    },
+    {
+      "slug": "blueberry-acai",
+      "name": "Blueberry Acai",
+      "color": "#dbeafe",
+      "image": "brand/design-concepts/pep-original/product/flavours/bg_removed/blueberry-acai-background-removed.png"
+    }
+  ]
+}

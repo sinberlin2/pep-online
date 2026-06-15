@@ -7,13 +7,13 @@ Usage:
   python scripts/enrich_competitors.py --overwrite-notes
 
 Inputs:
-  brand/research/characteristics.csv
-  brand/research/manual-competitors.csv (optional)
+  company/competition/characteristics.csv
+  company/competition/manual-competitors.csv (optional)
 
 Outputs:
-  brand/research/characteristics.csv
-  brand/research/competition-extracted.json (URL backfill + manual row merge)
-  brand/research/competitor-enrichment-log.json
+  company/competition/characteristics.csv
+  company/competition/competition-extracted.json
+  company/competition/competitor-enrichment-log.json
 """
 from __future__ import annotations
 
@@ -30,11 +30,12 @@ sys.path.insert(0, str(ROOT))
 from agents.llm.env import get_openai_api_key, load_project_env
 from agents.llm.openai_client import chat_json, make_client, web_research
 
-RESEARCH = ROOT / "brand" / "research"
-CHAR_PATH = RESEARCH / "characteristics.csv"
-MANUAL_PATH = RESEARCH / "manual-competitors.csv"
-COMP_JSON_PATH = RESEARCH / "competition-extracted.json"
-LOG_PATH = RESEARCH / "competitor-enrichment-log.json"
+import paths  # noqa: E402
+
+CHAR_PATH = paths.CHARACTERISTICS_CSV
+MANUAL_PATH = paths.MANUAL_COMPETITORS
+COMP_JSON_PATH = paths.COMPETITION_EXTRACTED
+LOG_PATH = paths.ENRICHMENT_LOG
 MANUAL_FIELDS = ["brand_name", "category", "positioning_id"]
 
 FIELDS = [

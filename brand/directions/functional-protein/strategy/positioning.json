@@ -1,0 +1,280 @@
+{
+  "activeId": 1,
+  "activeName": "Functional protein drink",
+  "activeSlug": "functional-protein",
+  "antiReferences": [
+    {
+      "name": "Hardcore gym-bro protein RTDs",
+      "why": "Too aggressive, heavy, body-transformation-led, and supplement-coded. PEP should feel functional and active without becoming macho or extreme."
+    },
+    {
+      "name": "drinkpep.com",
+      "why": "Name collision only. It is a different US energy/probiotic product and must not be treated as the same brand, inspiration source, or market reference for pep-drink.com."
+    },
+    {
+      "name": "Meal replacement shakes",
+      "why": "PEP is a light, refreshing protein drink for routine support, not a heavy substitute for food."
+    },
+    {
+      "name": "Alcohol-first protein novelty drinks",
+      "why": "Protein mixed with alcohol creates confusion for this direction. Functional protein should be about routine, usefulness, and repeat consumption."
+    },
+    {
+      "name": "Vague wellness soda brands",
+      "why": "If the brand becomes only a healthy refreshment or lifestyle accessory, it loses the rational protein reason to buy."
+    }
+  ],
+  "audience": [
+    "Active people who want help reaching daily protein goals.",
+    "Gym-goers, runners, studio members, and wellness-oriented consumers with regular routines.",
+    "Busy professionals who want a functional drink between meals or at work.",
+    "People who dislike heavy shakes or bars but still want credible protein.",
+    "Customers buying in gyms, wellness studios, healthy cafés, and grab-and-go settings."
+  ],
+  "brand": "PEP",
+  "brandFitRules": [
+    "Protein benefit must be obvious in the first scan.",
+    "Lightness and refreshment must be present alongside the protein message.",
+    "Primary occasions should be routine-led: after gym, post run, between meals, at work, or on the go.",
+    "Out-of-home contexts are acceptable when they support active routines, such as gyms, studios, cafés, and workdays.",
+    "Reject concepts led by nightlife, cocktails, festivals, or alcohol replacement for this direction.",
+    "Reject hardcore gym, bodybuilding, punishment, and transformation language.",
+    "Reject vague wellness claims that do not make PEP useful as a protein tool.",
+    "Reject heavy meal-replacement cues.",
+    "Keep copy direct, rational, upbeat, and benefit-led.",
+    "Never copy competitor logos, distinctive assets, or identity systems.",
+    "Never treat drinkpep.com as the same product as pep-drink.com."
+  ],
+  "domain": "pep-drink.com",
+  "inLineBrands": [
+    {
+      "adjectives": [
+        "functional",
+        "protein-rich",
+        "light",
+        "health-focused",
+        "vitamin-enriched"
+      ],
+      "category": "Functional & Vitamin Drinks",
+      "designPatterns": [
+        "benefit-led product communication",
+        "simple hierarchy around nutrition",
+        "clear functional promise",
+        "modern active-consumer feel",
+        "repeat-use health framing"
+      ],
+      "drinkTypeFit": "Strict fit: functional beverage with direct protein relevance and health-led use case.",
+      "name": "HOLY",
+      "url": "https://holy.com/",
+      "why": "HOLY is the closest strict peer for this active direction because it combines functional drink logic with protein relevance. It supports PEP’s lane of convenient protein without heaviness, while still requiring PEP to stay distinct and not copy its execution."
+    }
+  ],
+  "layoutOnlyReferences": [],
+  "occasions": [
+    "After gym",
+    "Post run",
+    "After a wellness studio class",
+    "Between meals",
+    "At work",
+    "On a commute after training",
+    "Healthy café grab-and-go",
+    "Routine fridge purchase several times per week"
+  ],
+  "oneLiner": "PEP is a premium, light and refreshing protein drink that helps active people hit their protein goals conveniently, without the heaviness of traditional shakes.",
+  "peerBrandsOtherPositionings": [
+    {
+      "drinkTypeFit": "Prebiotic soda, not protein-led.",
+      "name": "BLOOM",
+      "positioningMismatch": "Assigned to lifestyle upgrade, where the main appeal is healthy refreshment and wellness identity.",
+      "positioning_id": 2,
+      "whyNotActive": "Useful market context, but too lifestyle and gut-health focused to define a functional protein tool."
+    },
+    {
+      "drinkTypeFit": "Non-alcoholic aperitif and soft drink, not protein-led.",
+      "name": "EVER TREE",
+      "positioningMismatch": "Assigned to lifestyle upgrade, with emphasis on natural sophistication and mindful drinking.",
+      "positioning_id": 2,
+      "whyNotActive": "The occasion and buying logic are more social and sensory than routine protein utility."
+    },
+    {
+      "drinkTypeFit": "Prebiotic soda, not protein-led.",
+      "name": "OLIPOP",
+      "positioningMismatch": "Assigned to lifestyle upgrade, focused on healthier soda replacement and digestive wellness.",
+      "positioning_id": 2,
+      "whyNotActive": "Strong health-branding reference, but the core reason to buy is not hitting protein targets."
+    },
+    {
+      "drinkTypeFit": "Prebiotic soda, not protein-led.",
+      "name": "Poppi",
+      "positioningMismatch": "Assigned to lifestyle upgrade, focused on trendy wellness refreshment.",
+      "positioning_id": 2,
+      "whyNotActive": "Too soda and lifestyle driven for the active functional protein direction."
+    },
+    {
+      "drinkTypeFit": "Non-alcoholic functional social beverage, not protein-led.",
+      "name": "Kin Euphorics",
+      "positioningMismatch": "Assigned to better social drink, where the core role is mood and social experience.",
+      "positioning_id": 3,
+      "whyNotActive": "PEP should not become a mood-enhancing social ritual in this direction."
+    },
+    {
+      "drinkTypeFit": "Non-alcoholic spirit/mocktail alternative, not protein-led.",
+      "name": "Lyre's",
+      "positioningMismatch": "Assigned to better social drink, focused on alcohol-free cocktail replacement.",
+      "positioning_id": 3,
+      "whyNotActive": "Too close to bar and cocktail culture for a routine protein drink."
+    },
+    {
+      "drinkTypeFit": "Non-alcoholic spirit, not protein-led.",
+      "name": "Seedlip",
+      "positioningMismatch": "Assigned to better social drink, focused on premium alcohol-free mixing occasions.",
+      "positioning_id": 3,
+      "whyNotActive": "Strong social-drink reference, but it would pull PEP away from nutrition utility."
+    },
+    {
+      "drinkTypeFit": "Organic kombucha, not protein-led.",
+      "name": "Yaya Kombucha",
+      "positioningMismatch": "Unassigned or pending in the source table; closer to craft wellness refreshment than functional protein.",
+      "positioning_id": 0,
+      "whyNotActive": "Fermentation, craft, and casual refreshment cues are weaker than PEP’s protein-target role."
+    },
+    {
+      "drinkTypeFit": "Kombucha and botanical soda, not protein-led.",
+      "name": "Walker Brothers",
+      "positioningMismatch": "Unassigned or pending in the source table; closer to craft botanical wellness or alcohol alternative than protein routine.",
+      "positioning_id": 0,
+      "whyNotActive": "Interesting for premium craft context, but not a functional protein benchmark."
+    },
+    {
+      "drinkTypeFit": "Kombucha, not protein-led.",
+      "name": "Alive & Well",
+      "positioningMismatch": "Assigned to lifestyle upgrade, focused on approachable wellness and smoother kombucha occasions.",
+      "positioning_id": 2,
+      "whyNotActive": "Too wellness-lifestyle and probiotic-led to anchor PEP’s functional protein positioning."
+    },
+    {
+      "drinkTypeFit": "Infused sparkling water, not protein-led.",
+      "name": "Recess",
+      "positioningMismatch": "Assigned to lifestyle upgrade, focused on relaxation and everyday wellness identity.",
+      "positioning_id": 2,
+      "whyNotActive": "The emotional driver is calm and lifestyle fit, not optimization, discipline, and protein efficiency."
+    },
+    {
+      "drinkTypeFit": "Ready-to-drink cocktails and mocktails, not protein-led.",
+      "name": "Ole cocktails",
+      "positioningMismatch": "Assigned to lifestyle upgrade, with stronger party and premium convenience cues.",
+      "positioning_id": 2,
+      "whyNotActive": "Too celebratory and cocktail-adjacent for this routine functional protein direction."
+    },
+    {
+      "drinkTypeFit": "Non-alcoholic spirits/mocktails, not protein-led.",
+      "name": "Ish",
+      "positioningMismatch": "Assigned to lifestyle upgrade, with strong mindful-drinking and social occasion framing.",
+      "positioning_id": 2,
+      "whyNotActive": "Premium and modern, but the core occasion is social drinking rather than daily protein support."
+    },
+    {
+      "drinkTypeFit": "Functional soda, not protein-led.",
+      "name": "more fiz",
+      "positioningMismatch": "Assigned to lifestyle upgrade, with healthier soda replacement cues.",
+      "positioning_id": 2,
+      "whyNotActive": "Functional cues are relevant, but soda-style lifestyle refreshment should not define the protein proposition."
+    }
+  ],
+  "personalityAdjectives": [
+    "functional",
+    "protein-rich",
+    "light",
+    "refreshing",
+    "convenient",
+    "efficient",
+    "disciplined",
+    "routine-friendly",
+    "health-focused",
+    "clean",
+    "premium-but-practical",
+    "upbeat"
+  ],
+  "positioningFitTypeMismatch": [
+    {
+      "category": "Hydration/Electrolyte Drink Mixes",
+      "drinkTypeFit": "Functional fitness-adjacent beverage, but not protein-led.",
+      "name": "LMNT",
+      "positioningMismatch": "Same active positioning in the source, but the core benefit is hydration and electrolytes rather than protein.",
+      "typeMismatch": "Powder/electrolyte routine instead of ready protein refreshment.",
+      "url": "https://drinklmnt.com/",
+      "whyBrandingFits": "Strong example of functional clarity, rational benefit communication, and routine-driven use."
+    },
+    {
+      "category": "BCAA/Energy Drink",
+      "drinkTypeFit": "Fitness functional beverage, but BCAA/energy-led rather than protein-led.",
+      "name": "NOCCO",
+      "positioningMismatch": "Same active positioning in the source, but it is more sports energy and recovery adjacent than light protein nutrition.",
+      "typeMismatch": "Energy and BCAA format, not premium protein refreshment.",
+      "url": "https://nocco.com/",
+      "whyBrandingFits": "Relevant for gym and active-consumer contexts, benefit-first messaging, and performance-adjacent credibility."
+    },
+    {
+      "category": "Protein & Alcohol",
+      "drinkTypeFit": "Contains protein, but the alcohol fusion makes it strategically unstable for this direction.",
+      "name": "PROTOCHOL",
+      "positioningMismatch": "Same active positioning in the source, but its novelty and social-alcohol premise conflict with functional routine use.",
+      "typeMismatch": "Alcoholic protein drink rather than everyday functional protein tool.",
+      "url": "not provided",
+      "whyBrandingFits": "Useful only as proof that protein can enter beverage formats beyond shakes; not a model for PEP’s brand role."
+    },
+    {
+      "category": "Functional hydration",
+      "drinkTypeFit": "Functional hydration, but not protein-led.",
+      "name": "VITAMIN WELL",
+      "positioningMismatch": "Same active positioning in the source, but the benefit is vitamins and hydration rather than protein target support.",
+      "typeMismatch": "Hydration/vitamin beverage instead of protein drink.",
+      "url": "https://www.vitaminwell.com/",
+      "whyBrandingFits": "Relevant for clean functional communication, everyday use, and health-forward refreshment."
+    },
+    {
+      "category": "Functional soda",
+      "drinkTypeFit": "Functional beverage, but soda-style and not protein-led.",
+      "name": "more fiz",
+      "positioningMismatch": "Assigned to lifestyle upgrade, though it has functional health cues.",
+      "typeMismatch": "Healthy soda replacement rather than protein nutrition tool.",
+      "url": "not provided",
+      "whyBrandingFits": "Useful for understanding accessible functional refreshment, but PEP must be more nutrition-targeted."
+    }
+  ],
+  "positioningStatement": "For active, routine-minded people who struggle to hit their protein target, PEP is a premium, light and refreshing protein drink that provides convenient protein without heaviness, helping them feel good and keep moving through their day.",
+  "version": 1,
+  "visual": {
+    "designConcept": "clean",
+    "mood": "Light, refreshing, purposeful, active, premium-but-practical, upbeat, and easy to trust.",
+    "photography": "Real routine moments: post-session, post-run, studio exit, work break, commute, healthy café purchase, and product-in-hand movement. Keep scenes natural, repeatable, and grounded rather than extreme or overly staged.",
+    "rejectLooks": [
+      "cluttered supplement-style layouts",
+      "hardcore gym or bodybuilding energy",
+      "medical or clinical severity",
+      "meal-replacement heaviness",
+      "party-first or cocktail-first presentation",
+      "novelty-led packaging feel",
+      "generic wellness lifestyle with no functional clarity",
+      "childlike or juice-like cues"
+    ]
+  },
+  "voice": {
+    "avoidWords": [
+      "shred",
+      "bulk",
+      "beast mode",
+      "gains at all costs",
+      "cheat day",
+      "detox",
+      "miracle",
+      "skinny",
+      "guilt-free",
+      "party fuel",
+      "mocktail replacement",
+      "energy/probiotic PEP"
+    ],
+    "tagline": "Feel good. Have fun.",
+    "tone": "Direct, benefit-led, upbeat, confident, and practical. Copy should make protein convenience clear while keeping the brand light and enjoyable."
+  }
+}

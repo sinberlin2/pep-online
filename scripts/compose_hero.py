@@ -28,14 +28,17 @@ from typing import Any
 from PIL import Image, ImageColor
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
+DESIGN_CONCEPT = "pep-original"
+CONCEPT_REL = f"brand/design-concepts/{DESIGN_CONCEPT}"
+CONCEPT_DIR = PROJECT_ROOT / "brand" / "design-concepts" / DESIGN_CONCEPT
 
 # Fixed product assets (always available).
 PRODUCT_ASSETS: dict[str, str] = {
-    "can": "brand/product/bg_removed/pep-can-background-removed.png",
-    "glass": "brand/product/bg_removed/pep-glass-background-removed.png",
+    "can": f"{CONCEPT_REL}/product/bg_removed/pep-can-background-removed.png",
+    "glass": f"{CONCEPT_REL}/product/bg_removed/pep-glass-background-removed.png",
 }
 # Individual garnish cut-outs come from this manifest (segment_garnishes.py).
-GARNISH_MANIFEST = PROJECT_ROOT / "brand" / "marketing" / "garnishes" / "garnishes.json"
+GARNISH_MANIFEST = CONCEPT_DIR / "marketing" / "garnishes" / "garnishes.json"
 
 CANVAS_ASPECT = (4, 5)  # width : height, matches .hero-product
 DEFAULT_BACKGROUND = "#faf6f0"  # --pep-cream

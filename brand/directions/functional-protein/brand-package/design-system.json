@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "source": "from positioning.visual (Flow A — invented look)",
+  "colors": {},
+  "typography": {},
+  "mood": "Clean, airy, purposeful. Nutrition is front and centre but without clinical coldness — think premium supplement meets fresh café.",
+  "photography": "Solo, active contexts: clean desk setups, post-run outdoors, light café corners. Natural backgrounds, good light. Never a bar, party, brunch spread, or staged group shot.",
+  "typographyDirection": "Didot for the hero wordmark (premium, clean), Montserrat for stats and body (clear, functional), Bebas Neue for callout badges. Brittany Signature only for the tagline — never for nutritional info.",
+  "rejectLooks": [
+    "Vibrant social mocktail packaging",
+    "Pastel lifestyle soda palettes",
+    "Party or festival graphics",
+    "Chunky aggressive fitness fonts",
+    "BEAST MODE or SHRED-style labels",
+    "Neon or metallic energy drink cues",
+    "Overly playful or childlike icons"
+  ]
+}

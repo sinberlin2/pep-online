@@ -4,8 +4,7 @@ Extract brands from competition table PDF (colored cells → positioning 1/2/3).
 Uses GPT-4o vision on rendered PDF pages.
 
 Place PDF at:
-  brand/research/competition-table.pdf
-  or any brand/research/*.pdf
+  company/competition/sources/drink-competition.pdf
 
 Usage:
   python scripts/extract_competition_pdf.py
@@ -23,10 +22,12 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-RESEARCH = ROOT / "brand" / "research"
-OUT_JSON = RESEARCH / "competition-extracted.json"
-OUT_CSV = RESEARCH / "characteristics.csv"
-OPTIONS_JSON = RESEARCH / "positioning-options.json"
+sys.path.insert(0, str(ROOT))
+import paths  # noqa: E402
+
+OUT_JSON = paths.COMPETITION_EXTRACTED
+OUT_CSV = paths.CHARACTERISTICS_CSV
+OPTIONS_JSON = paths.POSITIONING_OPTIONS
 
 EXTRACT_SCHEMA = {
     "type": "object",
@@ -90,12 +91,14 @@ def _find_pdf(explicit: str | None) -> Path:
         if not p.is_file():
             raise SystemExit(f"PDF not found: {p}")
         return p
-    for pattern in ("competition-table.pdf", "competition*.pdf", "*.pdf"):
-        hits = list(RESEARCH.glob(pattern))
+    for pattern in ("drink-competition.pdf", "competition*.pdf", "*.pdf"):
+        hits = list(paths.COMPETITION_SOURCES.glob(pattern)) if paths.COMPETITION_SOURCES.is_dir() else []
+        if not hits:
+            hits = list(paths.COMPETITION.glob(pattern))
         if hits:
             return sorted(hits, key=lambda x: x.stat().st_mtime, reverse=True)[0]
     raise SystemExit(
-        f"Put your competition table PDF in {RESEARCH}/competition-table.pdf"
+        f"Put competition PDF in {paths.COMPETITION}/sources/drink-competition.pdf"
     )
 
 

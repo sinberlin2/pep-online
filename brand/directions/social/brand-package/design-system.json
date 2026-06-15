@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "source": "from positioning.visual (Flow A — invented look)",
+  "colors": {},
+  "typography": {},
+  "mood": "Vibrant, premium, festive — sunset parties, golden hour, rooftop energy. Bold but not garish. Feels like a great night out, not a gym locker room.",
+  "photography": "People socialising — close-ups with hands holding cans or glasses, sparkling drinks, fruit garnishes, golden or late-afternoon light. Real, stylish settings: rooftops, bar terraces, dinner tables. Bold and joyful, never sterile.",
+  "typographyDirection": "Didot for the logo (elegant, chic), Brittany Signature for the tagline and key copy moments (personality and warmth), Montserrat for body and labels. Lean into expressive type and handwritten details for personality.",
+  "rejectLooks": [
+    "Clinical or medical aesthetics",
+    "Sporty or supplement packaging",
+    "Workout-oriented visuals",
+    "Bare minimalist wellness",
+    "Saccharine or cartoony",
+    "Kids' juice aesthetics",
+    "Pastel wellness kitsch"
+  ]
+}

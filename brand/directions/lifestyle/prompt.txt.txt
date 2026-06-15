@@ -1,0 +1,108 @@
+Create a polished editorial visual identity board for the beverage brand PEP.
+
+Brand: PEP
+Flavour: Mango Coconut only
+Tagline: Feel good. Have fun.
+
+Overall art direction:
+Warm, premium, playful, wellness lifestyle drink. Minimal but fruity. Retro-inspired without looking childish. Use a warm off-white editorial background. The brand should feel like an everyday lifestyle upgrade, not a gym protein drink, not an energy drink, not clinical.
+
+Composition:
+Create one clean brand board with clearly separated zones.
+
+1. Upper left:
+   Large bold PEP wordmark. The wordmark should be very clear and readable. Chunky custom lettering, premium playful geometry, confident, clean, slightly rounded, adult, not childish. Deep forest green.
+
+2. Right side:
+   Hero slim 330ml aluminium can, front-facing with a slight three-quarter angle. Cream can body with deep forest green lower band. The can label should include:
+   PEP wordmark
+   Feel good. Have fun.
+   Mango Coconut
+   One 7g protein badge
+   One 49 calories badge
+   330ml
+
+Important can text restrictions:
+Only show these words on the can:
+PEP
+Feel good. Have fun.
+Mango Coconut
+7g protein
+49 calories
+330ml
+
+Do not show the words:
+sparkling
+naturally flavoured
+gluten-free
+passionfruit
+protein sparkling drink
+social serve
+alcohol
+0.0%
+
+3. Middle left:
+   Separate reusable illustration elements, arranged neatly:
+   whole mango
+   mango slice
+   coconut half
+   green leaves
+   small starburst/sparkle shapes
+   small ribbon shape without text
+   cocktail garnish shapes
+
+Illustration style:
+Flat vector-like illustrations. Warm, imperfect, retro-premium, fruity, festive. Use bold simple shapes, soft organic curves, minimal detail, no photorealism.
+
+4. Right side badge concepts:
+   Show separate badge concepts next to the can:
+   7g protein
+   49 calories
+   0.0%
+   gluten-free
+   social serve
+
+Badge concepts can appear on the board, but only 7g protein and 49 calories may appear on the can.
+
+5. Bottom left:
+   Colour palette swatches with readable hex labels:
+   Deep forest green #2D6A4F
+   Soft leaf green #7BA37F
+   Warm peach #FFC49D
+   Sunflower yellow #FFD166
+   Mango orange #F28C45
+   Cream #FFF6E8
+
+6. Bottom middle:
+   Typography direction:
+   Bold rounded display for logo
+   Elegant condensed sans for details
+   Confident editorial hierarchy
+   Show sample text:
+   HEADLINE
+   Bold. Playful. Confident.
+   SECONDARY
+   Clean. Modern. Easy to read.
+
+7. Bottom right:
+   Flat label layout preview showing the editable can label design. It should match the hero can and include only:
+   PEP
+   Feel good. Have fun.
+   Mango Coconut
+   7g protein
+   49 calories
+   330ml
+
+Text accuracy rules:
+Render PEP very clearly and large.
+Keep all other text minimal and readable.
+Do not invent extra brand names, websites, ingredients, claims, or slogans.
+No misspelled duplicate logos.
+No passionfruit.
+No sparkling.
+No naturally flavoured.
+No gluten-free on the can.
+No 0.0% on the can.
+
+Output intent:
+Beautiful first-pass visual direction sheet that can guide later extraction into reusable logo, fruit icons, label assets, colour palette, badges, and can mockups.

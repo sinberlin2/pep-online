@@ -1,0 +1,32 @@
+{
+  "badge": {
+    "family": "Space Grotesk",
+    "licenseNote": "Google Fonts; SIL Open Font License. Free for commercial web and packaging use under OFL terms.",
+    "usage": "Functional badges, short product facts, navigation labels, CTA buttons, small caps, venue-card seals and pack callouts. Use uppercase with moderate tracking; never let badges dominate the brand story.",
+    "webFallback": "Arial, Helvetica, sans-serif",
+    "weight": "700 Bold"
+  },
+  "body": {
+    "family": "DM Sans",
+    "licenseNote": "Google Fonts; SIL Open Font License. Free for commercial web and packaging use under OFL terms.",
+    "usage": "Body copy, menus, product descriptions, web UI, captions and explanatory text. Use Regular for paragraphs, Medium for short labels and Semibold for navigation.",
+    "webFallback": "Inter, Arial, Helvetica, sans-serif",
+    "weight": "400 Regular / 500 Medium / 600 Semibold"
+  },
+  "competitorInspiration": "Kin Euphorics influenced the expressive, mood-led headline approach; Lyre’s and Seedlip informed the need for adult hospitality polish and controlled hierarchy. Ole cocktails and Poppi support a more vibrant social rhythm, but the system avoids their more overt canned-cocktail or soda-pop extremes. LMNT, NOCCO and other functional references are useful mainly as anti-inspiration: PEP should not use condensed performance type, clinical claim grids or supplement-style proof hierarchy.",
+  "display": {
+    "family": "Fraunces 9pt SuperSoft",
+    "licenseNote": "Google Fonts; SIL Open Font License. Free for commercial web and packaging use under OFL terms.",
+    "usage": "Main wordmark direction, campaign headlines, can-front flavour names, website hero headlines and large social statements. Use at large sizes with tight leading for a juicy premium feel.",
+    "webFallback": "Georgia, 'Times New Roman', serif",
+    "weight": "800–900 Black"
+  },
+  "pairingRationale": "Fraunces gives PEP a warm, flavourful, premium headline voice that feels more like a social serve than a sports drink. DM Sans keeps information clear and modern, which is important because protein, calories and gluten-free claims still need to be easy to understand without becoming the identity. Lobster Two adds a small hospitality flourish for serve language, while Space Grotesk makes badges feel crisp and intentional rather than clinical; together the set balances fun, credibility and orderability.",
+  "script": {
+    "family": "Lobster Two",
+    "licenseNote": "Google Fonts; SIL Open Font License. Free for commercial web and packaging use under OFL terms.",
+    "usage": "Sparing accent phrases only: serve notes, flavour flourishes, social captions and small hospitality moments. Do not use for long copy or core claims.",
+    "webFallback": "'Brush Script MT', 'Segoe Script', cursive",
+    "weight": "700 Bold Italic"
+  }
+}

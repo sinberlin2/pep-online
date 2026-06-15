@@ -1,0 +1,67 @@
+[
+  {
+    "slug": "lemon-slice",
+    "category": "lemon",
+    "src": "brand/design-concepts/pep-original/marketing/garnishes/bg_removed/lemon-slice-background-removed.png",
+    "pixelWidth": 368,
+    "pixelHeight": 363,
+    "aspectRatio": 1.0138,
+    "avgColor": [
+      242,
+      218,
+      118
+    ]
+  },
+  {
+    "slug": "mint-large",
+    "category": "mint",
+    "src": "brand/design-concepts/pep-original/marketing/garnishes/bg_removed/mint-large-background-removed.png",
+    "pixelWidth": 377,
+    "pixelHeight": 276,
+    "aspectRatio": 1.3659,
+    "avgColor": [
+      102,
+      143,
+      21
+    ]
+  },
+  {
+    "slug": "mint-small",
+    "category": "mint",
+    "src": "brand/design-concepts/pep-original/marketing/garnishes/bg_removed/mint-small-background-removed.png",
+    "pixelWidth": 321,
+    "pixelHeight": 272,
+    "aspectRatio": 1.1801,
+    "avgColor": [
+      103,
+      135,
+      28
+    ]
+  },
+  {
+    "slug": "orange-slice",
+    "category": "orange",
+    "src": "brand/design-concepts/pep-original/marketing/garnishes/bg_removed/orange-slice-background-removed.png",
+    "pixelWidth": 374,
+    "pixelHeight": 372,
+    "aspectRatio": 1.0054,
+    "avgColor": [
+      249,
+      190,
+      52
+    ]
+  },
+  {
+    "slug": "orange-wedge",
+    "category": "orange",
+    "src": "brand/design-concepts/pep-original/marketing/garnishes/bg_removed/orange-wedge-background-removed.png",
+    "pixelWidth": 279,
+    "pixelHeight": 279,
+    "aspectRatio": 1.0,
+    "avgColor": [
+      246,
+      195,
+      71
+    ]
+  }
+]

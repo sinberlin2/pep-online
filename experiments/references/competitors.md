@@ -66,6 +66,6 @@ CONCEPT_AGENT_WEB_SEARCH=1   # default on for concept_run
 ## PEP assets the agent must respect (local, not scraped)
 
 - `brand/brand.json` — colors & fonts
-- `brand/marketing/originals/design-reference-full.png`
-- `brand/product/flavours/flavours.json` — flavours and colours
+- `brand/research/directions/provided/assets/marketing/originals/design-reference-full.png`
+- `brand/research/directions/provided/assets/product/flavours/flavours.json` — flavours and colours
 - Founder story & SKU truth on the current site — do not invent products or availability

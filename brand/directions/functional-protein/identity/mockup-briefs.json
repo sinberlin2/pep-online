@@ -1,0 +1,88 @@
+[
+  {
+    "colorUsage": "Alpine White base with Protein Navy typography; Kinetic Blue vertical recognition band; Citrus Pulse protein badge; Fresh Mint motion ticks and small flavour accents; Cool Silver dividers for nutrition modules.",
+    "context": "Primary product packaging for a slim 250ml ready-to-drink can.",
+    "id": "can-label",
+    "imagePrompt": "Studio render of a slim chilled aluminum beverage can standing upright on a clean pale surface, with a minimal abstract label using crisp blue, deep navy, mint, pale blue, and a small bright citrus-lime accent. The can has condensation droplets, sharp vertical information bands, small geometric tick marks, and a premium functional drink feel. Bright softbox lighting, subtle reflection, front-facing composition, no legible text, no recognizable logo, no people, no clutter.",
+    "inspiredBy": [
+      "HOLY",
+      "LMNT",
+      "NOCCO",
+      "VITAMIN WELL"
+    ],
+    "layout": "Front label uses a 12-column wrap grid. Top 18%: small centred wordmark area. Middle 42%: large stacked product benefit area, with the main protein claim occupying the visual centre. Right edge: 8mm Kinetic Blue vertical band running full height with small Fresh Mint measurement ticks. Bottom 25%: three fact cells in a horizontal row separated by 1px Cool Silver lines. Keep at least 18% open negative space.",
+    "name": "Can label — clean protein utility",
+    "typographyUsage": "Display: Sora Bold for the central benefit claim, approx. 42–52pt on can artwork. Body: Inter Medium for flavour and short descriptor, 10–14pt. Badge: IBM Plex Mono SemiBold for nutrition cells and numerical facts, 9–12pt. Script: Caveat Medium may appear only as a tiny 8–10pt human note near the bottom rim, not on factual claims."
+  },
+  {
+    "colorUsage": "Mist Blue background; Protein Navy headline; Citrus Pulse circular number module; Kinetic Blue underline arrow; Fresh Mint dot-grid corner detail; Alpine White inset card.",
+    "context": "Single Instagram square card announcing the light protein proposition.",
+    "id": "social-post",
+    "imagePrompt": "Square social media graphic scene with a clean active nutrition aesthetic: pale cool background, central white card, geometric circular accent, small dot grid, arrow-like motion lines, and a chilled can silhouette partially cropped at the lower edge. Crisp daylight, high negative space, premium functional beverage mood, no legible text, no recognizable logo, no human faces.",
+    "inspiredBy": [
+      "HOLY",
+      "LMNT",
+      "VITAMIN WELL"
+    ],
+    "layout": "1080x1080 square. Use a centred Alpine White rounded rectangle card covering 78% of the canvas. Top-left: small eyebrow. Centre: oversized two-line headline, left aligned. Right centre: Citrus Pulse circular fact badge overlapping the card edge. Bottom: cropped product can or abstract can placeholder entering from the lower-right corner. Add a thin Kinetic Blue arrow underline beneath the headline and a Fresh Mint dot grid in the top-right corner.",
+    "name": "Social post — protein without heaviness",
+    "typographyUsage": "Display: Sora Bold for headline at 86–104px line height 0.95. Body: Inter Medium for subline at 28–34px. Badge: IBM Plex Mono SemiBold for the circular fact at 30–38px. Script: Caveat Medium may be used as a small handwritten-style encouragement at 26–30px, angled 4 degrees, never more than three words."
+  },
+  {
+    "colorUsage": "Alpine White card stock with Kinetic Blue border; Protein Navy primary text; Cool Silver table lines; Citrus Pulse mini badge; Fresh Mint small motion icon.",
+    "context": "Small table card or menu insert for cafés, gyms, studios, and grab-and-go counters.",
+    "id": "venue-card",
+    "imagePrompt": "A small premium menu insert card standing in a clear acrylic holder on a bright café counter beside a glass of ice water and a folded towel. The card design is minimal and functional with cool blue, navy, mint, and a small citrus-lime accent, using clean rule lines and geometric symbols. Natural morning light, shallow depth of field, contemporary café or fitness studio setting, no legible text, no recognizable branding.",
+    "inspiredBy": [
+      "VITAMIN WELL",
+      "HOLY",
+      "LMNT"
+    ],
+    "layout": "A6 vertical card. 6mm Kinetic Blue border with rounded corners. Top: compact lockup area. Main area: left-aligned headline across three short lines. Under headline: a clean comparison-style row with three fact cells. Bottom 20%: simple serving suggestion strip using icons only: chilled can, ice, post-workout bag. Keep hierarchy calm and readable from 1 metre away.",
+    "name": "Venue card — grab-and-go protein support",
+    "typographyUsage": "Display: Sora SemiBold for headline at 28–34pt. Body: Inter Regular for supporting sentence at 10–12pt. Badge: IBM Plex Mono SemiBold for fact cells at 9–11pt uppercase. Script: avoid on this surface unless used as a tiny 8pt sign-off on the back."
+  },
+  {
+    "colorUsage": "Deep Training Navy full-bleed base with a soft Mist Blue glow shape; Alpine White headline; Fresh Mint and Citrus Pulse kinetic accents; Kinetic Blue navigation/button treatment.",
+    "context": "Full-bleed website hero with no product, expressing the brand mood through abstract active refreshment.",
+    "id": "brand-hero",
+    "imagePrompt": "Full-bleed abstract website hero background with premium active refreshment energy: deep navy field, translucent ice-like facets, soft cool glow, diagonal motion trails, small precise dot grids, and a subtle citrus-lime pulse accent. Minimal, clean, high-end functional drink art direction, no cans, no bottles, no people, no legible text, no logo, no botanical elements. Wide cinematic composition with generous empty space for text on the left.",
+    "inspiredBy": [
+      "NOCCO",
+      "LMNT",
+      "HOLY"
+    ],
+    "layout": "Desktop 1440x820. Left 45% reserved for text block with generous spacing: eyebrow, large headline, two-line body copy, CTA pair. Right 55% contains abstract motion system: diagonal capsule marks, ice facets, and dot-grid data texture. Use a 72px top margin and 96px left margin. Keep hero product-free and mood-led but still functional.",
+    "name": "Website brand hero — clean active momentum",
+    "typographyUsage": "Display: Sora Bold for H1 at 76–88px, line-height 0.98. Body: Inter Regular for supporting copy at 20–22px. Badge: IBM Plex Mono Medium for eyebrow at 13px uppercase with 0.08em tracking. Script: not used in the hero."
+  },
+  {
+    "colorUsage": "Real-world neutrals with PEP identity accents: Kinetic Blue gym towel or phone case, Fresh Mint straw/ice reflection, Citrus Pulse small prop accent, Alpine White daylight surfaces.",
+    "context": "Lifestyle product photography for website, email, and ads showing practical daily protein use.",
+    "id": "product-lifestyle",
+    "imagePrompt": "Bright realistic lifestyle photograph of a chilled slim beverage can on a clean bench beside a gym bag, wireless earbuds, a stainless water bottle, and a folded light towel. Setting feels like a modern fitness studio lobby after a workout, with daylight through large windows, condensation on the can, crisp shadows, premium but practical atmosphere. Use cool blue, navy, mint, white, and one small citrus-lime accent in props. No legible text, no recognizable logo, no people posing, no bodybuilding imagery, no cocktail elements.",
+    "inspiredBy": [
+      "VITAMIN WELL",
+      "NOCCO",
+      "HOLY"
+    ],
+    "layout": "Horizontal 4:3 crop. Product sits on the right third; daily active props occupy the left and rear plane. Leave top-left negative space for optional headline overlay. Composition should feel candid but controlled, with the can upright and clearly the functional object, not a party drink.",
+    "name": "Product lifestyle — post-workout everyday routine",
+    "typographyUsage": "If text is overlaid, use Sora SemiBold at 40–52px for a short headline and Inter Medium at 18–22px for a single supporting line. Badge overlay can use IBM Plex Mono SemiBold in a small Citrus Pulse pill. Do not use script on photography overlays."
+  },
+  {
+    "colorUsage": "Fast alternating panels: Alpine White intro, Kinetic Blue fact frame, Mist Blue refreshment frame, Deep Training Navy final CTA; Citrus Pulse for swipe/CTA and key fact; Fresh Mint for motion trails.",
+    "context": "Vertical 9:16 social story ad for benefit-first acquisition.",
+    "id": "story-ad",
+    "imagePrompt": "Vertical social story composition for a premium functional beverage: a chilled slim can moving through three clean abstract panels with cool blue, deep navy, mint, white, and a bright citrus-lime accent. Dynamic diagonal motion, crisp ice facets, geometric fact badges, and lots of clean negative space. High-energy but not aggressive, no legible text, no recognizable logo, no people, no gym-bro imagery, no cocktail styling.",
+    "inspiredBy": [
+      "LMNT",
+      "HOLY",
+      "NOCCO",
+      "more fiz"
+    ],
+    "layout": "1080x1920. Frame is divided into three stacked zones: top 30% headline zone on Alpine White, middle 45% dynamic product/abstract motion zone with Kinetic Blue diagonal sweep, bottom 25% Deep Training Navy CTA zone. Place a Citrus Pulse fact badge at the intersection of middle and bottom zones. Keep all text within central 820px safe area and leave 180px bottom safe zone for app UI.",
+    "name": "Story ad — hit the goal, keep it light",
+    "typographyUsage": "Display: Sora Bold for top headline at 84–96px. Body: Inter Medium for one supporting line at 34–40px. Badge: IBM Plex Mono SemiBold for fact badge at 32–38px with uppercase micro-label at 18px. Script: optional tiny Caveat Medium note at 34px in the middle zone only if the frame needs warmth."
+  }
+]

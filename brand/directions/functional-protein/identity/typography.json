@@ -1,0 +1,32 @@
+{
+  "badge": {
+    "family": "IBM Plex Mono",
+    "licenseNote": "Google Fonts / SIL Open Font License. Free for commercial web and packaging use.",
+    "usage": "Nutrition badges, protein/calorie facts, utility labels, measurement ticks, CTA microcopy where a technical routine cue is useful.",
+    "webFallback": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace",
+    "weight": "SemiBold 600"
+  },
+  "body": {
+    "family": "Inter",
+    "licenseNote": "Google Fonts / SIL Open Font License. Free for commercial web and packaging use.",
+    "usage": "Body copy, product explanations, navigation, legal text, ingredient/fact descriptions, UI states.",
+    "webFallback": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+    "weight": "Regular 400, Medium 500"
+  },
+  "competitorInspiration": "HOLY and LMNT inform the clear, benefit-led hierarchy: direct headlines, readable supporting copy, and technical fact modules. NOCCO contributes performance credibility through compact, high-contrast information styling, while Vitamin Well tempers the system with everyday refreshment and approachable cleanliness. Tier 3 brands influenced the restraint: PEP should avoid retro soda typography, bar-world serif elegance, and soft wellness scripts as core brand voices.",
+  "display": {
+    "family": "Sora",
+    "licenseNote": "Google Fonts / SIL Open Font License. Free for commercial web and packaging use.",
+    "usage": "Primary headlines, packaging hero claims, website H1s, campaign lines, large benefit statements.",
+    "webFallback": "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+    "weight": "SemiBold 600, Bold 700"
+  },
+  "pairingRationale": "Sora gives PEP a premium functional voice: geometric, active, and confident without looking macho. Inter keeps all benefit and nutrition communication extremely clear across packaging and digital surfaces. IBM Plex Mono adds a measured, routine-driven layer for facts and badges, making the protein proposition feel precise. Caveat is deliberately limited to tiny human moments so the brand stays upbeat and friendly without drifting into lifestyle wellness or childlike juice cues.",
+  "script": {
+    "family": "Caveat",
+    "licenseNote": "Google Fonts / SIL Open Font License. Free for commercial use. Use sparingly; not appropriate for regulated or factual nutrition claims.",
+    "usage": "Small human accent notes only, such as a short encouragement on social cards or secondary packaging details; never for the protein claim, product facts, navigation, or legal copy.",
+    "webFallback": "'Comic Sans MS', 'Segoe Print', cursive",
+    "weight": "Medium 500"
+  }
+}

@@ -1,6 +1,6 @@
 Add-Type -AssemblyName System.Drawing
 
-# Prefer poster in brand/marketing/; outputs go to brand/product/
+# Prefer poster in brand/research/directions/provided/assets/marketing/; outputs go to .../assets/product/
 $srcPath = Join-Path $PSScriptRoot "..\brand\marketing\pep-hero.png"
 if (-not (Test-Path $srcPath)) {
   $srcPath = Join-Path $PSScriptRoot "..\images\pep-hero.png"

@@ -1,0 +1,10 @@
+{
+  "name": "PEP",
+  "tagline": "Feel good. Have fun.",
+  "productFacts": {
+    "protein": "7g",
+    "calories": "49",
+    "glutenFree": true,
+    "labelTypes": ["protein", "calories", "gluten-free", "body-copy"]
+  }
+}

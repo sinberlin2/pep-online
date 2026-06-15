@@ -1,0 +1,90 @@
+[
+  {
+    "colorUsage": "Warm Cream #F7EFE2 as the main label field; Fresh Teal #79D8CA as the upper curved colour block and mark; Soft Coral #F48772 for flavour accent shapes and CTA-like callouts; Deep Espresso #302823 for PEP and core text; Apricot Fizz #F8C86A for one small sparkle or badge accent.",
+    "context": "Primary product packaging for a 250–330ml slim can.",
+    "id": "can-label",
+    "imagePrompt": "A premium slim beverage can standing upright on a warm stone surface in soft natural daylight. The can has a spacious cream label, a broad soft teal curved colour field near the top, small coral and apricot abstract fruit accents, minimal geometric bubbles, and refined dark typography-like shapes without readable text. Light condensation on the can, airy kitchen or café atmosphere, shallow depth of field, realistic product photography, no visible brand names, no legible words.",
+    "inspiredBy": [
+      "Recess",
+      "Poppi",
+      "OLIPOP",
+      "Everleaf"
+    ],
+    "layout": "Slim can label with 60% Warm Cream negative space. Place large centered 'PEP' wordmark vertically in the upper-middle, occupying roughly 34% of label height. Put the smile-arc mark above the wordmark at 9% label height. Add a single soft curved Fresh Teal band wrapping the top third, dipping slightly on the right. Under the wordmark, set tagline 'Feel good. Have fun.' in one line, then a calm product descriptor: 'light refreshing protein drink'. Product facts sit in three small rounded badges along the lower 18% of the label, evenly spaced.",
+    "name": "Lifestyle Can Label",
+    "typographyUsage": "PEP wordmark/display: Fraunces Black, custom tightened tracking, approx. 54–68pt on label artwork. Tagline: Caveat Regular, approx. 16–18pt. Descriptor and flavour: Manrope Medium, 10–12pt. Fact badges: Space Grotesk SemiBold uppercase, 8–9pt, with Manrope small supporting text where needed."
+  },
+  {
+    "colorUsage": "Spa Mist #EAF7F5 background; Fresh Teal #79D8CA rounded border and mark; Soft Coral #F48772 large fruit shape; Deep Espresso #302823 headline; Slate Cocoa #6B625C supporting line; White Foam #FFFDF8 for text if placed inside coral accent.",
+    "context": "Single Instagram square card for a lifestyle/taste-led launch post.",
+    "id": "social-post",
+    "imagePrompt": "A square editorial still life with a chilled sparkling beverage glass, rounded ice cubes, a citrus wedge, a peach slice, and tiny bubbles on a pale fresh background. Soft morning light, subtle shadows, generous empty space in the top half, premium casual wellness mood, no visible brand names, no readable text, no people, no logos.",
+    "inspiredBy": [
+      "BLOOM",
+      "Recess",
+      "Alive & Well"
+    ],
+    "layout": "1080x1080 square. Use a very spacious composition: headline in the top-left quadrant, large but calm, with three short lines. Place a rounded coral fruit-shape illustration behind the lower-right still-life crop. Add the mark as a tiny sign-off in the bottom-left. Keep at least 35% empty space. Supporting line sits below headline, max 42 characters.",
+    "name": "Instagram Square — Everyday Treat",
+    "typographyUsage": "Headline: Fraunces SemiBold, 82–96px, line-height 0.94. Supporting line: Manrope Regular, 28–32px. Small handwritten note such as 'serve chilled' may use Caveat Regular, 34px, angled very slightly. Badge: Space Grotesk SemiBold, 18px uppercase inside a rounded pill."
+  },
+  {
+    "colorUsage": "Oat Milk #FBF6ED card stock; Deep Espresso #302823 primary text; Fresh Teal #79D8CA border and small mark; Mist Blue #C9E7F2 section panel; Soft Coral #F48772 small accent dot; Slate Cocoa #6B625C descriptive copy.",
+    "context": "Small table card or café/bar menu insert for a daytime café, deli, salon, or boutique fitness-adjacent but non-gym venue.",
+    "id": "venue-card",
+    "imagePrompt": "A small premium table card on a café table beside a clear glass with ice and a citrus garnish, ceramic plate edge, linen napkin, and soft daylight from a nearby window. The printed card uses spacious blocks, rounded shapes, and dark refined typography-like marks without readable words. Calm upscale casual setting, no logos, no legible text, no nightlife atmosphere.",
+    "inspiredBy": [
+      "Everleaf",
+      "Yaya Kombucha",
+      "Walker Brothers",
+      "Recess"
+    ],
+    "layout": "A6 vertical card. Top 15% contains small mark centered. Main headline sits below, centered, with generous tracking and two-line rhythm. Middle 40% contains a soft Mist Blue rounded rectangle holding a short product description and three small benefit badges. Bottom 20% shows a simple serving suggestion line and a small abstract fruit/bubble motif. Keep margins at 12–14mm.",
+    "name": "Venue Table Card",
+    "typographyUsage": "Headline: Fraunces SemiBold, 30–36pt. Description: Manrope Regular, 10.5–12pt, 140% line-height. Serving note: Caveat Regular, 18pt. Badges: Space Grotesk SemiBold uppercase, 7.5–8.5pt."
+  },
+  {
+    "colorUsage": "Use Oat Milk #FBF6ED and Spa Mist #EAF7F5 as layered background fields; Fresh Teal #79D8CA for the small mark and one curved line; Soft Coral #F48772 and Apricot Fizz #F8C86A only as tiny taste accents; Deep Espresso #302823 for hero headline if overlaid in implementation.",
+    "context": "Full-bleed website hero with no product shown — pure brand mood for the homepage or campaign landing page.",
+    "id": "brand-hero",
+    "imagePrompt": "A full-bleed airy lifestyle scene with a sunlit breakfast nook, pale ceramic cups, sparkling water in a clear glass with rounded ice, citrus and peach slices on a small plate, soft linen texture, and gentle morning shadows. Composition leaves large clean negative space on the left for future headline placement. Premium but approachable everyday wellness mood, realistic editorial photography, no cans, no bottles, no visible brand names, no readable text, no people.",
+    "inspiredBy": [
+      "Recess",
+      "Everleaf",
+      "Ish"
+    ],
+    "layout": "16:9 hero. Leave left 45% as calm negative space for headline and CTA. Image subject sits in the right third: glass, fruit, ceramic, linen. Add a very subtle Fresh Teal curved line or bubble motif as an overlay near the headline area. CTA button should be a Soft Coral rounded pill. Keep the product benefit under the headline as one concise proof line, not a grid.",
+    "name": "Website Brand Hero — Pure Mood",
+    "typographyUsage": "Hero headline: Fraunces SemiBold, 72–88px desktop, 44–52px mobile, line-height 0.95. Proof line: Manrope Medium, 18–21px. CTA: Manrope SemiBold, 16–18px. Optional micro-note: Caveat Regular, 26–30px."
+  },
+  {
+    "colorUsage": "Natural scene led by Warm Cream #F7EFE2 and Oat Milk #FBF6ED surfaces; Fresh Teal #79D8CA can accent; Soft Coral #F48772 and Apricot Fizz #F8C86A in fruit/prop accents; Deep Espresso #302823 on any designed overlay captions.",
+    "context": "Product lifestyle image for website, retail deck, and paid social.",
+    "id": "product-lifestyle",
+    "imagePrompt": "A chilled slim beverage can with a cream label and soft teal curved accent sitting on a café table next to a glass with ice, a peach slice, and a citrus wedge. A hand rests nearby casually but does not obscure the can. Soft afternoon daylight, condensation, warm stone tabletop, relaxed premium everyday scene, shallow depth of field, no readable text, no visible brand names, no gym objects, no nightlife cues.",
+    "inspiredBy": [
+      "Poppi",
+      "Alive & Well",
+      "Yaya Kombucha",
+      "Ole cocktails"
+    ],
+    "layout": "Use as a 4:5 crop. Product sits slightly right of center, occupying 45% of image height. Leave upper-left negative space for a small headline overlay. Add one rounded Fresh Teal caption pill near the can base for a simple benefit line. Avoid stacking multiple claims; max two overlay elements.",
+    "name": "Product Lifestyle — Café Refresh",
+    "typographyUsage": "Overlay headline: Fraunces SemiBold, 44–56px. Caption pill: Space Grotesk SemiBold uppercase, 15–17px. Supporting line: Manrope Regular, 18–22px. Avoid script unless using a tiny 'chilled' note at under 28px."
+  },
+  {
+    "colorUsage": "Top background in Spa Mist #EAF7F5 fading via hard editorial block into Warm Cream #F7EFE2; Soft Coral #F48772 for swipe/CTA area; Fresh Teal #79D8CA for mark, arc, and badge outlines; Deep Espresso #302823 for primary message; White Foam #FFFDF8 for CTA text on coral.",
+    "context": "Vertical 9:16 social story ad for awareness or trial.",
+    "id": "story-ad",
+    "imagePrompt": "A vertical mobile-first lifestyle composition showing a chilled slim can silhouette with a minimal cream label on a pale café counter, sparkling glass with ice, citrus wedge, peach slice, and small fizzy bubbles. Bright natural daylight, clean negative space in the upper third and lower third for future interface text, premium casual refreshment mood, no readable words, no brand names, no logos.",
+    "inspiredBy": [
+      "BLOOM",
+      "Poppi",
+      "Recess",
+      "more fiz"
+    ],
+    "layout": "1080x1920. Top 20%: short headline, centered-left. Middle 55%: product/still-life crop with can slightly below center and glass behind it. Bottom 18%: Soft Coral rounded CTA panel with one line of benefit copy and a button. Use two small badge pills stacked vertically along the right edge, but keep them airy with wide spacing.",
+    "name": "Vertical Story Ad — Trial Prompt",
+    "typographyUsage": "Top headline: Fraunces SemiBold, 78–92px, max three words per line. Benefit copy: Manrope Medium, 30–36px. CTA button: Manrope Bold, 28–32px. Badge pills: Space Grotesk SemiBold uppercase, 20–22px. Optional handwritten accent: Caveat Regular, 34–40px, one or two words only."
+  }
+]

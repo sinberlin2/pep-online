@@ -1,0 +1,24 @@
+{
+  "concept": "The mark should communicate light refreshment, everyday uplift, and a gentle protein benefit without using gym or supplement symbolism. It takes cues from the low-clutter lifestyle confidence of Recess and the approachable treat logic of Poppi and OLIPOP, while using a softer, more premium geometry suitable for a daily wellness habit.",
+  "imagePrompts": [
+    {
+      "id": "logo-mark",
+      "name": "Mark only",
+      "prompt": "A flat graphic brand mark only, no text: one smooth rounded smile arc constructed from a 5px monoline stroke in Fresh Teal #79D8CA, with a small solid circular bubble above the right end in Soft Coral #F48772 and a tiny four-point sparkle above the left end in Apricot Fizz #F8C86A. Centered on solid Warm Cream #F7EFE2, perfectly balanced, geometric, minimal, no gradients, no drop shadows. Flat product branding style, clean minimal design, isolated on solid background.",
+      "size": "1024x1024"
+    },
+    {
+      "id": "logo-lockup-light",
+      "name": "Light lockup",
+      "prompt": "A flat graphic brand identity illustration with a small rounded smile arc brand mark in Fresh Teal #79D8CA, a Soft Coral #F48772 bubble, and an Apricot Fizz #F8C86A sparkle placed to the left of a large soft rounded serif wordmark 'PEP' in Deep Espresso #302823. Use generous spacing, warm off-white background #F7EFE2, premium beverage styling, no tagline, no extra text, no gradients, no drop shadows. Flat product branding style, clean minimal design, isolated on solid background.",
+      "size": "1024x1024"
+    },
+    {
+      "id": "logo-lockup-dark",
+      "name": "Dark lockup",
+      "prompt": "A flat graphic brand identity illustration with a small rounded smile arc brand mark in Fresh Teal #79D8CA, a Soft Coral #F48772 bubble, and an Apricot Fizz #F8C86A sparkle placed above a large soft rounded serif wordmark 'PEP' in White Foam #FFFDF8. Use a solid Deep Espresso #302823 background, centered stacked composition, premium beverage styling, no tagline, no extra text, no gradients, no drop shadows. Flat product branding style, clean minimal design, isolated on solid background.",
+      "size": "1024x1024"
+    }
+  ],
+  "markDescription": "A minimal 'refresh smile' mark: one shallow upward arc drawn as a rounded monoline stroke, paired with one small circular bubble and one tiny four-point sparkle. The arc is Fresh Teal #79D8CA, stroke weight equivalent to 5px on a 1024px canvas, spanning about 46% of the canvas width; the bubble is Soft Coral #F48772, 6% canvas diameter, positioned just above the right end of the arc; the sparkle is Apricot Fizz #F8C86A, 5% canvas height, positioned above the left side. Flat vector style, no gradients, no shadows, no botanical elements."
+}

@@ -1,0 +1,33 @@
+Create a polished visual identity board for the brand PEP, including a logo, slim can packaging concept, fruit illustration elements, badges, colour palette, typography direction, and label layout.
+
+Brand: PEP
+Exact logo text: "PEP"
+Exact tagline text if included: "Feel good. Have fun."
+
+Positioning:
+A vibrant, premium protein drink that belongs on the table when everyone else is drinking; social ritual, no alcohol required. It should feel like rooftop parties, golden hour, festival evenings, stylish bars, dinner tables, and sparkling fruit drinks. Protein is only a subtle credential, not the headline.
+
+Visual mood:
+Vibrant, premium, festive, confident, trend-forward, fresh, celebratory, fruity, golden-hour social energy. Bold but not garish. Looks like a great night out, not a gym product.
+
+Composition:
+One clean editorial brand board on a warm off-white background. Include these zones:
+
+1. A large bold PEP wordmark in the upper left, chunky custom lettering, premium playful geometry, confident and clean, slightly rounded, not childish.
+2. A hero slim 330ml aluminium can on the right, front-facing with slight three-quarter angle. Can label uses the PEP wordmark, the tagline, vibrant fruit motifs, small subtle text "7g protein" as a small badge, and premium social drink cues.
+3. Separate reusable illustration elements: mango slice, coconut half, passionfruit, citrus wedge, sparkle/starburst, ribbon badge, cocktail garnish shapes. Flat vector-like illustrations, warm, imperfect, retro-premium, fruity, festive.
+4. Colour palette swatches with hex labels: Sunset Coral #FF5A3D, Golden Mango #FFB72B, Electric Lime #C9FF4A, Deep Plum #3B164F, Night Berry #7B1E57, Cream Fizz #FFF4E2, Spark Green #1F8F6B.
+5. Typography direction: bold rounded display for logo, elegant condensed sans for details, confident editorial hierarchy.
+6. Small badge concepts: "0.0%", "7g protein", "social serve", "sparkling".
+
+Packaging style:
+Premium social drink, bar-worthy, colourful, confident. The can should not look like an energy drink, supplement, kids' juice, or clinical wellness product. No gym, no muscles, no shaker bottle, no medical symbols, no sterile white product shot.
+
+Art direction:
+Vector-friendly, graphic, high-end beverage design, crisp edges, strong silhouette, balanced negative space, fruit illustrations inspired by modern cocktail menus and festival posters. Use rich sunset colours with deep plum accents and warm cream.
+
+Text constraints:
+Render "PEP" very clearly and large. Keep other text minimal and readable; do not invent extra brand names or websites. No misspelled duplicate logos.
+
+Output intent:
+Beautiful first-pass visual direction sheet that can guide later extraction into reusable logo, fruit icons, label assets, and can mockups.

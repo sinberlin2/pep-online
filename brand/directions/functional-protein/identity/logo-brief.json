@@ -1,0 +1,24 @@
+{
+  "concept": "The mark communicates protein made light, mobile, and easy to repeat: a small system of rounded units moving forward like a daily active routine. It takes the benefit-first clarity seen in HOLY and LMNT, with the clean performance confidence of NOCCO, but removes supplement aggression through rounded geometry and open spacing.",
+  "imagePrompts": [
+    {
+      "id": "logo-mark",
+      "name": "Graphic mark only",
+      "prompt": "A flat graphic brand mark with no text: three rounded capsule-dot shapes arranged diagonally from lower left to upper right, forming a subtle forward motion path. The centre capsule is Kinetic Blue #176BFF, the trailing capsule is Fresh Mint #4EE3B4, and the leading small circular dot is Citrus Pulse #D7FF3F, all on Alpine White #F7FBFC. Geometry is clean and precise, rounded ends, balanced negative space, no gradients, no shadows, no outlines. Flat product branding style, clean minimal design, isolated on solid background.",
+      "size": "1024x1024"
+    },
+    {
+      "id": "logo-lockup-light",
+      "name": "Light lockup",
+      "prompt": "A flat graphic brand identity illustration on Alpine White #F7FBFC: three rounded capsule-dot shapes arranged diagonally from lower left to upper right as a forward motion mark, placed to the left of a bold geometric sans wordmark 'PEP'. The wordmark is Protein Navy #10243E, with wide spacing, rounded terminals, and confident premium proportions; the mark uses Kinetic Blue #176BFF, Fresh Mint #4EE3B4, and Citrus Pulse #D7FF3F. No tagline, no supporting text, no gradients, no drop shadows. Flat product branding style, clean minimal design, isolated on solid background.",
+      "size": "1024x1024"
+    },
+    {
+      "id": "logo-lockup-dark",
+      "name": "Dark lockup",
+      "prompt": "A flat graphic brand identity illustration on Deep Training Navy #101C2D: three rounded capsule-dot shapes arranged diagonally from lower left to upper right as a forward motion mark, placed above a bold geometric sans wordmark 'PEP'. The wordmark is Pure White #FFFFFF with wide spacing, rounded terminals, and confident premium proportions; the mark uses Kinetic Blue #176BFF, Fresh Mint #4EE3B4, and Citrus Pulse #D7FF3F. No tagline, no supporting text, no gradients, no drop shadows. Flat product branding style, clean minimal design, isolated on solid background.",
+      "size": "1024x1024"
+    }
+  ],
+  "markDescription": "Three rounded capsule-dot units arranged on a 35-degree ascending diagonal, implying forward motion and repeatable protein routine. The largest central capsule is Kinetic Blue #176BFF, 56px wide by 28px high with fully rounded ends; the rear capsule is Fresh Mint #4EE3B4, 42px wide by 22px high; the leading dot is Citrus Pulse #D7FF3F, 20px diameter. Flat vector style, no gradients, no shadows, generous negative space, usually placed on Alpine White #F7FBFC or reversed on Deep Training Navy #101C2D."
+}

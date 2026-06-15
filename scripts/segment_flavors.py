@@ -3,7 +3,7 @@ Extract individual flavour cans from the lineup image and remove backgrounds.
 
 Uses rembg (local model). Optional: set REMOVEBG_API_KEY for remove.bg API per crop.
 
-Outputs: brand/product/flavours/bg_removed/{slug}-background-removed.png
+Outputs: brand/design-concepts/pep-original/product/flavours/bg_removed/{slug}-background-removed.png
 
 Run (conda env pep-online):
   python scripts/segment_flavors.py
@@ -19,9 +19,10 @@ from PIL import Image
 from rembg import remove, new_session
 
 ROOT = Path(__file__).resolve().parents[1]
-LINEUP = ROOT / "brand" / "marketing" / "originals" / "flavours-lineup.png"
-OUT_DIR = ROOT / "brand" / "product" / "flavours" / "bg_removed"
-CROP_DIR = ROOT / "brand" / "product" / "flavours" / "crops"
+CONCEPT_DIR = ROOT / "brand" / "design-concepts" / "pep-original"
+LINEUP = CONCEPT_DIR / "marketing" / "originals" / "flavours-lineup.png"
+OUT_DIR = CONCEPT_DIR / "product" / "flavours" / "bg_removed"
+CROP_DIR = CONCEPT_DIR / "product" / "flavours" / "crops"
 
 # Five cans left-to-right in flavours-lineup.png (1024×561)
 FLAVOURS = [

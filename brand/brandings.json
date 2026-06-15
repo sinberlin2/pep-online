@@ -1,0 +1,42 @@
+{
+  "activeSlug": "lifestyle",
+  "assembledAt": "2026-06-13T19:18:49.548813+00:00",
+  "brandings": [
+    {
+      "slug": "functional-protein",
+      "label": "Functional protein",
+      "kind": "from-direction",
+      "source": "brand/directions/functional-protein",
+      "active": false,
+      "strategyStatus": "ready",
+      "package": "brand/directions/functional-protein/brand-package/brand-package.json"
+    },
+    {
+      "slug": "lifestyle",
+      "label": "Lifestyle / wellness",
+      "kind": "from-direction",
+      "source": "brand/directions/lifestyle",
+      "active": true,
+      "strategyStatus": "ready",
+      "package": "brand/directions/lifestyle/brand-package/brand-package.json"
+    },
+    {
+      "slug": "social",
+      "label": "Social",
+      "kind": "from-direction",
+      "source": "brand/directions/social",
+      "active": false,
+      "strategyStatus": "ready",
+      "package": "brand/directions/social/brand-package/brand-package.json"
+    },
+    {
+      "slug": "pep-original",
+      "label": "PEP original flyer design",
+      "kind": "from-design",
+      "source": "brand/provided/pep-original",
+      "active": false,
+      "strategyStatus": "pending (Flow B extraction)",
+      "package": "brand/provided/pep-original/extracted/brand-package.json"
+    }
+  ]
+}

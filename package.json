@@ -19,7 +19,12 @@
     "brand:enrich": "python scripts/enrich_competitors.py",
     "brand": "python -m agents.brand_run --positioning 2",
     "brand:all": "python -m agents.brand_all --set-active 2",
+    "brand:identity": "python -m agents.brand_identity",
+    "brand:identity:claude": "python -m agents.brand_identity --provider anthropic",
+    "brand:package": "python -m agents.brand_package",
     "brand:export": "python scripts/export_brand_guidelines.py",
-    "brand:pdf": "python scripts/export_brand_guidelines.py"
+    "brand:pdf": "python scripts/export_brand_guidelines.py",
+    "brand:images": "python -m agents.brand_images",
+    "brand:images:hd": "python -m agents.brand_images --quality hd"
   }
 }

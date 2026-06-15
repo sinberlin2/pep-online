@@ -5,7 +5,7 @@ Usage:
   python scripts/export_brand_guidelines.py
   python scripts/export_brand_guidelines.py --html-only
 
-Outputs (brand/research/exports/):
+Outputs (brand/exports/):
   PEP-brand-guidelines.html          — open in browser; Print → PDF if needed
   PEP-brand-guidelines.pdf           — print-quality PDF (requires playwright)
   PEP-brand-guidelines-<slug>.png    — one full-page image per direction
@@ -19,9 +19,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-DIRS = ROOT / "brand" / "research" / "directions"
-BRAND_JSON = ROOT / "brand" / "brand.json"
-OUT_DIR = ROOT / "brand" / "research" / "exports"
+sys.path.insert(0, str(ROOT))
+import paths  # noqa: E402
+
+DIRS = paths.DIRECTIONS
+OUT_DIR = paths.EXPORTS
 
 SECTIONS = [
     ("functional-protein", "Functional protein drink", "1"),
@@ -37,8 +39,8 @@ ACCENTS = {
 
 
 def _load_brand() -> dict:
-    if BRAND_JSON.is_file():
-        return json.loads(BRAND_JSON.read_text(encoding="utf-8"))
+    if paths.PRODUCT_PROFILE.is_file():
+        return json.loads(paths.PRODUCT_PROFILE.read_text(encoding="utf-8"))
     return {"colors": {"green": "#1f4d3a", "cream": "#faf6f0", "orange": "#e86a1a"}}
 
 

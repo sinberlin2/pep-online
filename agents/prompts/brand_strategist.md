@@ -10,7 +10,19 @@ Produce a **clear, stable brand brain** so other agents know exactly which brand
 2. **`positioning-options.json`** — all three directions for contrast
 3. **`characteristics.csv`** — brands from competition PDF; `positioning_id` from cell background color
 4. **`research-bundle.md`** — merged context
-5. **`brand.json`** — colors/fonts (do not invent hex without flagging)
+
+## Design tokens are OUT OF SCOPE (critical)
+
+You produce **strategy only**. You do **NOT** define the visual identity — colours, hex
+values, and typeface names are invented later by a separate identity agent from a clean slate.
+
+- **Never** name a colour, hex code, or colour family (no "cream", "peach", "deep green", etc.).
+- **Never** name a typeface or font (no "Didot", "Montserrat", "serif wordmark", etc.).
+- There is no `brand.json` and no existing PEP palette/fonts to follow — do not reference any.
+- `visual.mood` describes **emotional and occasion feel only** (e.g. "warm, airy, unhurried,
+  premium-but-approachable") — never colours or fonts.
+- `visual.designConcept` and `visual.rejectLooks` stay abstract (layout density, energy level,
+  formality) — never concrete colours or fonts.
 
 ## Non-negotiable product facts
 
@@ -46,6 +58,6 @@ Structured JSON matching `positioning.schema.json` plus human **`brand-guideline
 
 ## Do not
 
-- Copy competitor copy or logos
+- Copy competitor directly or copy logos
 - Treat gym protein RTD as in-line unless user marked `in_line=yes`
 - Treat drinkpep.com as the same product as pep-drink.com

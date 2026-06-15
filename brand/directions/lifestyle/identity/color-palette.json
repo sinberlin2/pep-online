@@ -1,0 +1,90 @@
+{
+  "background": [
+    {
+      "hex": "#FBF6ED",
+      "inspiredBy": "Recess and Everleaf both use relaxed negative space to feel elevated rather than clinical; this warm off-white keeps PEP premium, soft, and everyday.",
+      "name": "Oat Milk",
+      "role": "main website and label background — spacious, warm, non-clinical base"
+    },
+    {
+      "hex": "#EAF7F5",
+      "inspiredBy": "Inspired by the low-clutter freshness of Recess and the approachable wellness world of BLOOM; it gives lifestyle wellness without medical blue-white sterility.",
+      "name": "Spa Mist",
+      "role": "alternate hero background, lifestyle content panels, social templates"
+    },
+    {
+      "hex": "#FFF0E7",
+      "inspiredBy": "Draws from Poppi and OLIPOP’s treat-led flavour friendliness, softened for a more refined lifestyle feel.",
+      "name": "Sunlit Peach",
+      "role": "soft flavour-led background for peach/citrus variants, social cards, and warm product moments"
+    }
+  ],
+  "competitorInspiration": "Across Tier 1, the strongest lesson is that functional benefit should sit inside a taste-first, lifestyle-led colour world: Poppi, OLIPOP, BLOOM, and Recess make wellness feel easy through warm, optimistic palettes rather than supplement codes. Tier 2 brands such as Everleaf, Ole, and Ish show how restraint, premium spacing, and a few sophisticated accent colours can make a can feel like a lifestyle accessory, but PEP should stay lighter and more everyday than cocktail-led. Tier 3 brands clarify the boundaries: avoid the dark, high-contrast, technical, performance-coded palette logic of LMNT, NOCCO, HOLY, and energy/supplement brands, while selectively retaining their clarity around benefits.",
+  "primary": [
+    {
+      "hex": "#79D8CA",
+      "inspiredBy": "Recess’ calm lifestyle freshness and Alive & Well’s approachable wellness cues support a cool, refreshing hero colour that is not sporty or clinical.",
+      "name": "Fresh Teal",
+      "role": "primary brand colour — can colour block, key borders, icon mark, primary website accents"
+    },
+    {
+      "hex": "#F7EFE2",
+      "inspiredBy": "Everleaf and Yaya Kombucha show how warm natural neutrals can make wellness feel crafted and premium; this keeps PEP gentle rather than supplement-like.",
+      "name": "Warm Cream",
+      "role": "signature neutral — label field, editorial backgrounds, premium whitespace"
+    },
+    {
+      "hex": "#F48772",
+      "inspiredBy": "Poppi, BLOOM, and OLIPOP use fruit-forward warmth to make better-for-you drinks feel like treats; this coral brings appetite and friendliness.",
+      "name": "Soft Coral",
+      "role": "warm accent — CTA buttons, flavour highlights, social stickers, small callouts"
+    }
+  ],
+  "rejectPatterns": [
+    "Neon green, black, silver, and electric blue combinations that imply energy drink or gym performance.",
+    "Clinical white-and-medical-blue systems with dense benefit grids or laboratory credibility cues.",
+    "Heavy black backgrounds, metallic gradients, flames, lightning, or aggressive contrast associated with sports nutrition.",
+    "Overly childish rainbow soda palettes with hard candy saturation and bubblegum graphics.",
+    "Formal dark spirits-bar palettes that make PEP feel like an alcohol replacement rather than an everyday refreshment."
+  ],
+  "secondary": [
+    {
+      "hex": "#F8C86A",
+      "inspiredBy": "OLIPOP and Poppi prove that better-for-you can still feel sunny and treat-like; this is a restrained, premium yellow rather than candy yellow.",
+      "name": "Apricot Fizz",
+      "role": "secondary flavour accent — highlights, small badges, lifestyle warmth"
+    },
+    {
+      "hex": "#C9E7F2",
+      "inspiredBy": "Recess and more fiz suggest light blue can communicate sparkling refreshment when softened and paired with warm neutrals.",
+      "name": "Mist Blue",
+      "role": "secondary cool accent — hydration cues, background blocks, subtle product shadows"
+    },
+    {
+      "hex": "#CBE8B8",
+      "inspiredBy": "Alive & Well and Yaya Kombucha use natural freshness cues; this soft green adds clean wellness credibility without botanical illustration.",
+      "name": "Cucumber Glass",
+      "role": "secondary freshness accent — flavour system, divider shapes, small graphic fills"
+    }
+  ],
+  "text": [
+    {
+      "hex": "#302823",
+      "inspiredBy": "Everleaf and Walker Brothers demonstrate that premium beverage identity benefits from warm dark text instead of harsh black.",
+      "name": "Deep Espresso",
+      "role": "primary text — wordmark, headings, high-contrast body copy"
+    },
+    {
+      "hex": "#6B625C",
+      "inspiredBy": "Recess-style calm editorial design calls for a softer secondary text tone that preserves readability without looking technical.",
+      "name": "Slate Cocoa",
+      "role": "secondary text — captions, supporting claims, product facts, menu descriptions"
+    },
+    {
+      "hex": "#FFFDF8",
+      "inspiredBy": "Borrowed from premium lifestyle beverage systems where reversed type feels clean and understated on deeper accent blocks.",
+      "name": "White Foam",
+      "role": "reversed text — CTA text, dark panels, colour-blocked label details"
+    }
+  ]
+}
