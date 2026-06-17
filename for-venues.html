@@ -124,7 +124,20 @@
             Tell us about your venue and we’ll get back to you with next steps.
           </p>
           <div class="inquiry-section" style="width: 100%; max-width: none; box-shadow: none; padding: 0">
-            <form id="inquiry-form" class="inquiry-form" novalidate>
+            <form
+              id="inquiry-form"
+              class="inquiry-form"
+              name="venue-pilot"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              data-success="Thanks! We received your enquiry and will be in touch about the pilot soon."
+              novalidate
+            >
+              <input type="hidden" name="form-name" value="venue-pilot" />
+              <p class="hp-field" hidden aria-hidden="true">
+                <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+              </p>
               <div class="form-group">
                 <label for="name">Name <span aria-hidden="true">*</span></label>
                 <input type="text" id="name" name="name" required autocomplete="name" />
@@ -166,8 +179,7 @@
       <p class="tagline-script">Feel good. Have fun.<span class="leaf-dot">🌿</span></p>
     </footer>
 
-    <script src="js/config.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/inquiry.js"></script>
+    <script src="js/forms.js"></script>
   </body>
 </html>

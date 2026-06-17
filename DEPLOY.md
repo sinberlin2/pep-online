@@ -12,7 +12,7 @@ Your site is **static** (HTML/CSS/JS) — no server required. You connect a free
 1. **pep-drink.com** (and access to its DNS at your registrar)
 2. Access to your **domain registrar** (where you bought it: GoDaddy, Namecheap, Cloudflare, etc.)
 3. This project pushed to **GitHub** on `main`
-4. (Optional) **Formspree** URL in `js/config.js` so the venue form sends email in production
+4. (Recommended) Deploy on **Netlify** so the sign-up forms are captured by **Netlify Forms** (no config needed)
 
 ---
 
@@ -63,8 +63,8 @@ For **pep-drink.com** (no www), follow Cloudflare’s wizard — they usually ad
 - [ ] Open `https://pep-drink.com` and `https://www.pep-drink.com` (both should work)
 - [ ] Open `https://pep-drink.com/for-venues.html`
 - [ ] Test mobile menu and images (especially `brand/directions/provided/assets/product/bg_removed/`)
-- [ ] Set `FORM_ENDPOINT` in `js/config.js` for Formspree (see main README)
-- [ ] Submit a test message on **Join the pilot**
+- [ ] In Netlify → **Forms**, confirm `venue-pilot` and `subscribers` are detected; add an email notification to sjdoyle46@gmail.com
+- [ ] Submit a test message on **Join the pilot** and a test email on the landing-page **Be first to try PEP** band
 
 ---
 
@@ -148,4 +148,4 @@ Netlify provisions **SSL** automatically after DNS is correct. In Netlify → **
 - [ ] DNS records added in Namecheap **Advanced DNS**
 - [ ] `https://www.pep-drink.com` loads
 - [ ] `https://pep-drink.com` loads (redirect or A record)
-- [ ] Formspree set in `js/config.js`
+- [ ] Netlify Forms detected (`venue-pilot`, `subscribers`) + email notification set

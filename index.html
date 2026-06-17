@@ -240,6 +240,40 @@
         </div>
       </section>
 
+      <section class="subscribe-band" aria-labelledby="subscribe-title">
+        <div class="subscribe-band__inner">
+          <h2 id="subscribe-title">Be first to try PEP</h2>
+          <p>Join the list for launch news, new flavours, and where to find PEP near you.</p>
+          <form
+            name="subscribers"
+            class="subscribe-form"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            data-success="You’re on the list! We’ll let you know the moment PEP lands near you."
+            novalidate
+          >
+            <input type="hidden" name="form-name" value="subscribers" />
+            <p class="hp-field" hidden aria-hidden="true">
+              <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+            </p>
+            <div class="subscribe-row">
+              <label class="visually-hidden" for="subscribe-email">Email address</label>
+              <input
+                type="email"
+                id="subscribe-email"
+                name="email"
+                placeholder="you@email.com"
+                required
+                autocomplete="email"
+              />
+              <button type="submit" class="btn-primary subscribe-btn">Join</button>
+            </div>
+            <p class="form-message" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
       <section class="cta-band" aria-labelledby="venues-cta-title">
         <div class="cta-band__inner">
           <h2 id="venues-cta-title">Running a café, bar, or terrace?</h2>
@@ -254,5 +288,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/forms.js"></script>
   </body>
 </html>

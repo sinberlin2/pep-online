@@ -107,4 +107,4 @@ main branch →  git push  →  pep-drink.com
 
 - [ ] Spot-check on localhost (or branch preview URL)
 - [ ] Image paths under `brand/` load
-- [ ] `js/config.js` — Formspree only matters for the live form on production
+- [ ] Sign-up forms — captured by Netlify Forms only on the live production site

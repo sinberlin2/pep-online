@@ -635,6 +635,89 @@ a:hover {
   color: var(--pep-green-dark) !important;
 }
 
+/* ——— Subscriber band (landing page) ——— */
+.subscribe-band {
+  background: var(--pep-yellow);
+  color: var(--pep-green-dark);
+  padding: 3.5rem 1.5rem;
+  text-align: center;
+}
+
+.subscribe-band__inner {
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.subscribe-band h2 {
+  margin: 0 0 0.75rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.subscribe-band p {
+  margin: 0 0 1.5rem;
+  font-size: 1.05rem;
+}
+
+.subscribe-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.subscribe-row input[type="email"] {
+  flex: 1;
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(31, 77, 58, 0.2);
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--pep-green);
+  background: var(--pep-white);
+}
+
+.subscribe-row input[type="email"]:focus {
+  outline: 2px solid var(--pep-orange);
+  outline-offset: 0;
+  border-color: transparent;
+}
+
+.subscribe-btn {
+  white-space: nowrap;
+}
+
+@media (min-width: 520px) {
+  .subscribe-row {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .subscribe-btn {
+    width: auto;
+  }
+}
+
+.subscribe-band .form-message {
+  text-align: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .card-grid {
   display: grid;
   gap: 1.25rem;

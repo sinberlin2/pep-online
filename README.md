@@ -36,22 +36,24 @@ npm run concept
 
 See **[agents/README.md](agents/README.md)** — OpenAI proposes a whole-site concept (Revized + drinkpep anchors, web search for more references). Outputs go to `experiments/concepts/`.
 
-## Customer inquiry form
+## Sign-up forms
 
-The form on **For venues → Join the PEP pilot** collects:
+Two forms feed straight into **Netlify Forms** — no API key or endpoint to configure. Netlify captures every submission once the site is deployed on Netlify.
 
-- Name (required)
-- Venue name (optional)
-- Email (required)
-- Interest type
-- Message
+| Form | Where | Collects |
+|------|-------|----------|
+| **Subscribers** | Landing (`index.html`) — “Be first to try PEP” band | Email |
+| **Venue pilot** | `for-venues.html` → Join the PEP pilot | Name (required), venue, email (required), interest, message |
 
-### Connect email (Formspree)
+Both are handled by `js/forms.js`: it validates, AJAX-posts to Netlify, and shows an inline confirmation (the visitor stays on the page).
 
-1. Create a free form at [formspree.io](https://formspree.io).
-2. Edit `js/config.js` and set `FORM_ENDPOINT` to your form URL, e.g. `https://formspree.io/f/abcdefgh`.
+### Where submissions go
 
-Until then, submissions are stored in the browser’s `localStorage` under `pep_inquiries` (demo mode).
+1. Deploy on **Netlify** (see [DEPLOY.md](DEPLOY.md)). Netlify auto-detects the forms at build time.
+2. In the Netlify dashboard → **Forms** you’ll see the **venue-pilot** and **subscribers** submissions.
+3. Add an email notification (**Forms → Settings → Form notifications**) to forward new sign-ups to sjdoyle46@gmail.com.
+
+> On `localhost` Netlify can’t capture submissions, so the forms confirm without sending — useful for testing the UI. Real capture happens only on the deployed Netlify site.
 
 ## Brand assets (`brand/`)
 
@@ -74,7 +76,7 @@ Site colours and fonts: `css/styles.css`.
 ## Roadmap
 
 - [x] Brand assets sorted from `brand/tmp/` into `identity/`, `product/`, `marketing/`
-- [ ] Formspree / backend for enquiries
+- [x] Netlify Forms backend for sign-ups (subscribers + venue pilot)
 - [ ] AI Instagram post generator (future)
 
 ## Project structure
@@ -86,8 +88,7 @@ pep-online/
 ├── css/styles.css
 ├── js/
 │   ├── main.js         # Mobile nav
-│   ├── config.js       # Form endpoint
-│   └── inquiry.js      # Form handling
+│   └── forms.js        # Netlify Forms handling (subscribers + venue pilot)
 ├── brand/              # Identity, product, marketing assets
 │   ├── identity/
 │   ├── product/
