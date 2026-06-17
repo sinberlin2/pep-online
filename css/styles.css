@@ -644,7 +644,7 @@ a:hover {
 }
 
 .subscribe-band__inner {
-  max-width: 32rem;
+  max-width: 40rem;
   margin: 0 auto;
 }
 
@@ -665,18 +665,25 @@ a:hover {
 .subscribe-row {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.6rem;
   text-align: left;
 }
 
+.subscribe-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
 .subscribe-row input[type="email"] {
-  flex: 1;
+  flex: 1 1 auto;
   width: 100%;
-  padding: 0.85rem 1rem;
+  min-width: 0;
+  padding: 0.95rem 1.1rem;
   border: 1px solid rgba(31, 77, 58, 0.2);
   border-radius: 999px;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: var(--pep-green);
   background: var(--pep-white);
 }
@@ -697,8 +704,11 @@ a:hover {
     align-items: center;
   }
 
-  .subscribe-btn {
+  /* Beat `.btn-primary { width: 100% }` (equal specificity, defined later)
+     so the button hugs its label and the email field takes the rest. */
+  .subscribe-row .subscribe-btn {
     width: auto;
+    flex: 0 0 auto;
   }
 }
 
