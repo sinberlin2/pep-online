@@ -6,12 +6,25 @@ Marketing site for **PEP** — a light, refreshing premium drink with a protein 
 
 | Page | URL | Content |
 |------|-----|---------|
-| Landing (the drink) | `index.html` | Hero, 7g protein / 49 calories, product details, “Perfect for” occasions |
-| For venues | `for-venues.html` | Why venues love PEP, how to serve, pilot steps, **customer inquiry form** |
+| Landing (the drink) | `site/index.html` | Hero, 7g protein / 49 calories, product details, “Perfect for” occasions |
+| For venues | `site/for-venues.html` | Why venues love PEP, how to serve, pilot steps, **customer inquiry form** |
 
 ## Production domain
 
 **https://pep-drink.com** — see [DEPLOY.md](DEPLOY.md) for DNS and hosting (Cloudflare Pages / Netlify + GitHub).
+
+## Documentation
+
+| Doc | What |
+|-----|------|
+| **[docs/WORKFLOW.md](docs/WORKFLOW.md)** | **Start here** — end-to-end workflow (website + brand pipeline), what each agent does |
+| [docs/PIPELINE-CONCEPT.md](docs/PIPELINE-CONCEPT.md) | One-screen pipeline diagram |
+| [docs/ASSETS.md](docs/ASSETS.md) | Repo layout (`site/` vs `brand/`), asset buckets, git policy |
+| [brand/README.md](brand/README.md) | Branding module — per-step detail |
+| [agents/README.md](agents/README.md) | The agents — setup + list |
+| [DEVELOPMENT.md](DEVELOPMENT.md) · [DEPLOY.md](DEPLOY.md) | Website dev/release flow · DNS & hosting |
+| [docs/BRANDING-PIPELINE.md](docs/BRANDING-PIPELINE.md) | Architecture & roadmap (incl. planned Flow B) |
+| [docs/AGENT-LAYOUT-PROPOSAL.md](docs/AGENT-LAYOUT-PROPOSAL.md) · [docs/BRAND-OUTPUT-SCHEMA-TODO.md](docs/BRAND-OUTPUT-SCHEMA-TODO.md) | Historical concept-agent proposal · schema status |
 
 ## Develop locally (see changes instantly)
 
@@ -45,7 +58,7 @@ Two forms feed straight into **Netlify Forms** — no API key or endpoint to con
 | **Subscribers** | Landing (`index.html`) — “Be first to try PEP” band | Email |
 | **Venue pilot** | `for-venues.html` → Join the PEP pilot | Name (required), venue, email (required), interest, message |
 
-Both are handled by `js/forms.js`: it validates, AJAX-posts to Netlify, and shows an inline confirmation (the visitor stays on the page).
+Both are handled by `site/js/forms.js`: it validates, AJAX-posts to Netlify, and shows an inline confirmation (the visitor stays on the page).
 
 ### Where submissions go
 
@@ -55,23 +68,22 @@ Both are handled by `js/forms.js`: it validates, AJAX-posts to Netlify, and show
 
 > On `localhost` Netlify can’t capture submissions, so the forms confirm without sending — useful for testing the UI. Real capture happens only on the deployed Netlify site.
 
-## Brand assets (`brand/`)
+## Repo layout
 
-All logos, product shots, and marketing files live under **`brand/`** — see `brand/README.md`.
+The **website** lives in `site/` (the only thing Netlify deploys — `netlify.toml` →
+`publish = "site"`) and reads only from `site/public/`. The **brand pipeline** (generator)
+lives under `brand/`, `agents/`, `scripts/`. End-to-end workflow (website + brand pipeline):
+**[docs/WORKFLOW.md](docs/WORKFLOW.md)**; repo layout & git policy: **[docs/ASSETS.md](docs/ASSETS.md)**.
 
-| Folder | Purpose |
-|--------|---------|
-| `brand/design-concepts/pep-original/identity/` | Logo, typography — from the **example design** (exploratory) |
-| `brand/design-concepts/pep-original/product/` | Hero PNGs (can, glass) — **used on the landing page** |
-| `brand/design-concepts/pep-original/marketing/` | Flyers, mockups, reference artwork |
+## Brand assets
 
-**Landing hero** — assets live under `brand/directions/provided/assets/product/`:
+- **Site images** — `site/public/`: hero can lockup (`product/pep-can-lockup.{webp,png}`),
+  founders (`people/founders-lou-shannon.jpg`). These are the only images the site serves.
+- **Design sets to extract from** — `brand/inputs/external-designs/pep-original/`
+  (identity, marketing, product, `extracted/`). See `brand/README.md`.
+- Publish generated brand assets into the site with `npm run site:sync`.
 
-- `pep-can.png`, `pep-glass.png`, `pep-mango.png` (optional)
-
-PNG with alpha, trimmed tight; the site adds cream background and orange glow in CSS.
-
-Site colours and fonts: `css/styles.css`.
+Site colours and fonts: `site/css/styles.css`.
 
 ## Roadmap
 

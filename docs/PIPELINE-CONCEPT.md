@@ -1,86 +1,83 @@
-# PEP branding pipeline — concept stages
+# Brand pipeline — at a glance
 
-Module 1 produces a **brand package** from company inputs. Module 2 (website) comes later.
-
-**Priority:** Flow A — **concept → design** (strategy → invented look).  
-Flow B (design → concept) and exploratory `brand/design-concepts/` are **later**.
+The one-screen visual overview. Step-by-step commands are in
+**[docs/WORKFLOW.md](WORKFLOW.md)**; repo layout in **[docs/ASSETS.md](ASSETS.md)**.
 
 ```mermaid
 flowchart TB
-    classDef co fill:#fff4d6,stroke:#e86a1a,color:#1f4d3a;
-    classDef pick fill:#e86a1a,stroke:#e86a1a,color:#fff;
-    classDef out fill:#1f4d3a,stroke:#1f4d3a,color:#fff;
+    classDef in fill:#fff4d6,stroke:#e86a1a,color:#1f4d3a;
+    classDef agent fill:#1f4d3a,stroke:#1f4d3a,color:#fff;
+    classDef out fill:#e86a1a,stroke:#e86a1a,color:#fff;
+    classDef step fill:#3b6ea5,stroke:#2b5580,color:#fff;
+    classDef temp fill:#f0f0f0,stroke:#cccccc,color:#999999,stroke-dasharray:4 3;
 
-    subgraph CO["company/ — inputs (not branding)"]
-        PP[product-profile.json<br/>protein drink, facts]
-        PO[positioning-options.json<br/>functional / lifestyle / social]
-        CP[competition/characteristics.csv<br/>peers by positioning + drink type]
-        CH[choice.json<br/>pick positioning]:::pick
+    subgraph INPUTS["brand/inputs/"]
+        PP[product-profile.json]:::in
+        PO[positioning-options.json<br/>functional / lifestyle / social]:::in
+        COMP[competition/<br/>characteristics.csv + images/]:::in
+        EXT[external-designs/&lt;slug&gt;]:::in
     end
 
-    subgraph PREP["Scripts"]
-        parse[parse_positioning_options]
-        extract[extract_competition_pdf]
-        enrich[enrich_competitors]
-        merge[merge_brand_research → research-bundle.md]
+    subgraph PREP["inputs prep (scripts/)"]
+        parse[brand:parse]
+        pdf[brand:extract-pdf]
+        enrich[brand:enrich]
+        imgs[brand:competitor-images]
+        merge[brand:merge → research-bundle.md]
     end
 
-    subgraph BR["brand/ — outputs"]
-        RUN[brand_run agent]
-        PKG[brand package<br/>positioning + design-system + guidelines]
-        RUN --> PKG
-    end
+    RUN["brand_run<br/>(strategist)"]:::agent
+    PKG["brand_package"]:::agent
+    IMG["brand_images<br/>(brand board)"]:::agent
+    ID["brand_identity<br/>(design themes)"]:::agent
 
-    PP --> CH
-    PO --> parse --> CH
-    CP --> extract --> enrich --> merge
-    CH --> RUN
-    merge --> RUN
-    CP --> RUN
+    STRAT["directions/&lt;slug&gt;/strategy/<br/>positioning.json + brand-guidelines.md"]:::out
+    THEMES["directions/&lt;slug&gt;/identity/<br/>design-themes.json"]:::out
+    BOARD["identity/images/brand-board.png<br/>★ main deliverable"]:::out
+    PKGOUT["brand-package/ + brandings.json<br/>(activeSlug)"]:::out
+    SITE["site/public/<br/>(temporary hand-off)"]:::temp
+
+    PP --> RUN
+    PO --> parse --> RUN
+    COMP --> pdf --> enrich --> merge --> RUN
+
+    RUN --> STRAT
+    STRAT --> PKG
+    STRAT --> IMG
+    STRAT --> ID
+
+    COMP --> imgs --> ID
+    EXT -.->|from-design| ID
+    ID --> THEMES
+
+    THEMES -->|theme| IMG
+    IMG --> BOARD
+
+    PKG --> PKGOUT
+    PKGOUT -->|site sync| SITE
 ```
 
-## Stages (your flow)
+Read it as: **inputs → strategist → `positioning.json` (+ guidelines)**, which then feeds
+**identity → `design-themes.json`** and, together with a chosen theme, **the board →
+`brand-board.png`** (the main deliverable). `brand_package` rolls the direction up into
+`brandings.json`, and `site:sync` publishes approved assets to `site/public/`.
 
-| Step | What | Where |
-|------|------|-------|
-| 1 | Product definition | `company/product-profile.json` |
-| 2 | Positioning options (3 directions) | `company/positioning-options.json` |
-| 3 | Competitor landscape | `company/competition/characteristics.csv` |
-| 4 | **Choose positioning** | `company/choice.json` (`drinkType` optional — add later if needed) |
-| 5 | Brand package | `brand/directions/<slug>/` + `brand/brand-package/` |
+## Stages
 
-Step 5 should analyse how **similar competitors** brand themselves (same positioning, similar drink type), and infer customer, pricing band, visual codes — then invent a design-system (Flow A). That invention step is still the main gap in tooling.
+| # | Stage | Command | Output |
+|---|-------|---------|--------|
+| 1 | Strategy (the strategist) | `npm run brand` | `directions/<slug>/strategy/positioning.json` + `brand-guidelines.md` |
+| 2 | Design themes | `npm run brand:identity` | `directions/<slug>/identity/design-themes.json` |
+| 3 | Brand board (from a theme) | `npm run brand:images` | `directions/<slug>/identity/images/brand-board.png` |
+| 4 | Package | `npm run brand:package` | `directions/<slug>/brand-package/` + `brandings.json` |
+| — | Publish to site | `npm run site:sync` | `site/public/` |
 
-## Brand package contents
+The **brand board is the main visual deliverable** — generated directly from the strategy + one
+design theme (the image model invents the palette/type onto the board; you read them off it).
 
-| Part | Contents |
-|------|----------|
-| **Positioning** | Audience, occasions, voice, peers, anti-references |
-| **Design system** | Colours, fonts, mood — **invented** for Flow A |
-| **Guidelines** | Human-readable brand book |
+Positioning IDs: **1** `functional-protein` · **2** `lifestyle` · **3** `social`.
 
-## On disk
-
-```text
-company/
-  product-profile.json
-  choice.json                      # positioningSlug (drinkType optional later)
-  positioning-options.json
-  positioning/                     # source CSV, optional board PNG
-  competition/                     # PDF source, characteristics.csv, enrichment
-  research-bundle.md
-  assets/                          # founders photo, etc.
-
-brand/
-  directions/<slug>/               # brand packages per positioning
-  design-concepts/                 # later: Flow B exploratory designs
-  active/ | brand-package/
-```
-
-## Still open
-
-- **Drink type in choice?** Not required now — only `positioningSlug`. Add `drinkType` to `choice.json` when you want a separate filter.
-- **Design invention** — `brand_run` must produce a real `design-system.json`, not empty mood-only stubs.
-- **Structured competitive analysis** — optional artifact before/alongside positioning (pricing, customer, visual patterns from filtered peers).
-
-> Script mapping: `docs/BRANDING-PIPELINE.md`
+The strategy is **format-agnostic**: brands are grouped by *positioning fit* first
+(`inLineBrands` / `positioningFitTypeMismatch` / `peerBrandsOtherPositionings`), with drink
+category as secondary context — so a mocktail can be a valid **social** peer even though its
+format differs from PEP.

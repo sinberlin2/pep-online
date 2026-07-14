@@ -4,7 +4,7 @@
   "private": true,
   "description": "PEP marketing site — landing page, for venues, customer inquiry",
   "scripts": {
-    "start": "npx --yes serve . -l 3000",
+    "start": "npx --yes serve site -l 3000",
     "dev": "npm run start",
     "bg:remove": "python scripts/bg_remove.py",
     "segment:flavors": "python scripts/segment_flavors.py",
@@ -17,6 +17,7 @@
     "brand:parse": "python scripts/parse_positioning_options.py",
     "brand:extract-pdf": "python scripts/extract_competition_pdf.py",
     "brand:enrich": "python scripts/enrich_competitors.py",
+    "brand:competitor-images": "python scripts/fetch_competitor_images.py",
     "brand": "python -m agents.brand_run --positioning 2",
     "brand:all": "python -m agents.brand_all --set-active 2",
     "brand:identity": "python -m agents.brand_identity",
@@ -25,6 +26,7 @@
     "brand:export": "python scripts/export_brand_guidelines.py",
     "brand:pdf": "python scripts/export_brand_guidelines.py",
     "brand:images": "python -m agents.brand_images",
-    "brand:images:hd": "python -m agents.brand_images --quality hd"
+    "brand:images:hd": "python -m agents.brand_images --quality hd",
+    "site:sync": "python scripts/publish_site_assets.py"
   }
 }

@@ -3,16 +3,17 @@
   "source": "from positioning.visual (Flow A — invented look)",
   "colors": {},
   "typography": {},
-  "mood": "Vibrant, premium, festive — sunset parties, golden hour, rooftop energy. Bold but not garish. Feels like a great night out, not a gym locker room.",
-  "photography": "People socialising — close-ups with hands holding cans or glasses, sparkling drinks, fruit garnishes, golden or late-afternoon light. Real, stylish settings: rooftops, bar terraces, dinner tables. Bold and joyful, never sterile.",
-  "typographyDirection": "Didot for the logo (elegant, chic), Brittany Signature for the tagline and key copy moments (personality and warmth), Montserrat for body and labels. Lean into expressive type and handwritten details for personality.",
+  "mood": "Warm, social, high-energy, polished, refreshing, expressive, and premium-but-approachable. The brand should feel like something people want to order, hold, photograph, and share in out-of-home social settings.",
+  "photography": "Show PEP in bars, dinners, festivals, rooftops, terraces, hotels, dates, and group moments. Prioritise hands, serves, chilled refreshment, table scenes, movement, and real social atmosphere. Avoid making people look like they are training, dieting, or taking a supplement.",
+  "typographyDirection": "",
   "rejectLooks": [
-    "Clinical or medical aesthetics",
-    "Sporty or supplement packaging",
-    "Workout-oriented visuals",
-    "Bare minimalist wellness",
-    "Saccharine or cartoony",
-    "Kids' juice aesthetics",
-    "Pastel wellness kitsch"
+    "Clinical supplement layouts with dense claims and rational benefit stacks.",
+    "Gym-coded protein design built around muscle, recovery, discipline, or transformation.",
+    "Meal-replacement seriousness or heavy nutrition-first hierarchy.",
+    "Overly sparse luxury that feels stiff, silent, or inaccessible.",
+    "Childish soft-drink styling that reduces premium credibility.",
+    "Generic wellness-soda minimalism with no social energy.",
+    "Hardcore energy-drink aggression.",
+    "Any identity cues copied directly from competitor logos, label systems, or signature assets."
   ]
 }

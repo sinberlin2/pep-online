@@ -1,11 +1,18 @@
-# PEP branding pipeline — overview
+# PEP branding pipeline — architecture & roadmap
 
-This is the map of how PEP branding is generated today, and the planned extension that
+> **Scope:** §1–3 describe the **current** pipeline (paths updated to `brand/inputs/` +
+> `site/`). §4 onward is a **proposal/roadmap** (Flow B extraction, `design_run`,
+> `00-provided/` layout) that is **not built** — paths there are aspirational. For the
+> current, operational workflow use **[docs/WORKFLOW.md](WORKFLOW.md)**; for the one-screen
+> diagram, **[docs/PIPELINE-CONCEPT.md](PIPELINE-CONCEPT.md)**.
+
+This is the map of how PEP branding is generated today, plus the planned extension that
 adds **visual design proposals** and a second entry point (start from images, not just concepts).
 
-- **Current state:** concept side is built (`brand_run` → `concept_run`).
-- **Planned:** a design-proposal stage and an image-extraction stage that converge on one
-  website-ready design.
+- **Current state (built):** `brand_run` (strategy) → `brand_identity` (design themes + look)
+  → `brand_images` (board) → `brand_package`; plus `concept_run` for the website concept.
+- **Planned:** a design-proposal stage and an image-extraction stage (Flow B) that converge on
+  one website-ready design.
 
 ---
 
@@ -63,6 +70,7 @@ flowchart TD
 | Parse directions | `parse_positioning_options.py` | Mural CSV | `positioning-options.json` | `brand_run` |
 | Extract competitors | `extract_competition_pdf.py` | competition PDF | `characteristics.csv` | `brand_run` |
 | Enrich competitors | `enrich_competitors.py` | `manual-competitors.csv` | URLs + notes in CSV | `brand_run` |
+| Fetch competitor images | `fetch_competitor_images.py` | `competition-extracted.json` (URLs) | `brand/inputs/competition/images/` + manifest | `brand_identity` |
 | Merge research | `merge_brand_research.py` | CSV + Mural notes | `research-bundle.md` | `brand_run` |
 | **Concept** | `agents.brand_run` | options + bundle + `brand.json` | `positioning.json` + `brand-guidelines.md` | `concept_run` |
 | **Website concept** | `agents.concept_run` | positioning + `brand.json` + refs | `site-concept.json` + `concept.md` | you / Cursor |
@@ -168,6 +176,18 @@ flowchart TD
 > **Competitors:** we keep the current `characteristics.csv` as the starting point. Adding more
 > later is the existing path — drop names into `manual-competitors.csv`, run `enrich_competitors.py`,
 > then `merge_brand_research.py`. No new tooling needed for that.
+>
+> **Competitor design themes:** `brand_identity` reads competitor images
+> (`npm run brand:competitor-images` → `brand/inputs/competition/images/`) and extracts
+> `observedDesignThemes` — the recurring visual looks within each positioning
+> (base / colour / finish shiny-vs-matte / typography), written to
+> `directions/<slug>/identity/design-themes.json` and used to ground the palette. See
+> `brand/README.md` → Step 2 for detail.
+>
+> **Extraction-mode references:** `--from-design [SLUG]` (Flow B) extracts from any design
+> set under `brand/inputs/external-designs/<slug>/` (default `pep-original`). The reference images are
+> listed in that folder's `extraction-images.json` (not hardcoded); edit that JSON or pass
+> `--design-manifest` to change the reference set.
 
 ---
 

@@ -1,8 +1,32 @@
 {
-  "createdAt": "2026-06-15T11:11:19.561340+00:00",
+  "createdAt": "2026-07-12T11:19:29.012346+00:00",
   "model": "gpt-5.5",
   "provider": "openai",
   "selectedPositioning": "social",
   "mode": "from-direction",
-  "visionImages": []
+  "providedSource": null,
+  "visionImages": [
+    "kin-euphorics.png",
+    "lyre-s.png",
+    "ish.png",
+    "ole-cocktails.png",
+    "rekorderlig.png",
+    "royal-club-ginger-ale.png",
+    "royal-club-mocktails.png",
+    "on-the-rocks-cocktails.png",
+    "lmnt.png",
+    "nocco.png",
+    "protochol.png",
+    "vitamin-well.png",
+    "bloom.png",
+    "ever-tree.png",
+    "olipop.png",
+    "poppi.png",
+    "alive-well.png",
+    "recess.png",
+    "walker-brothers.png",
+    "yaya-kombucha.png",
+    "more-fiz.png",
+    "juuz.png"
+  ]
 }

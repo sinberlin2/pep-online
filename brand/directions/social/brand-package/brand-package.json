@@ -6,13 +6,13 @@
   "brand": "PEP",
   "domain": "pep-drink.com",
   "version": 1,
-  "assembledAt": "2026-06-13T19:18:49.546195+00:00",
+  "assembledAt": "2026-07-14T08:00:21.506204+00:00",
   "strategyStatus": "ready",
   "summary": {
     "name": "PEP",
     "tagline": "Feel good. Have fun.",
-    "oneLiner": "A vibrant, premium protein drink that earns its place on the table when everyone else is drinking — social ritual, no alcohol required.",
-    "positioningStatement": "For social, aesthetic-driven people who want a drink worth ordering when they are out — something that looks the part, tastes memorable, and replaces both the sugary soft drink and the fifth round of drinks — PEP is the premium non-alcoholic option that makes every social moment feel like a proper occasion.",
+    "oneLiner": "PEP is the premium protein drink for going out: refreshing, flavour-led, social, and made to feel good while having fun.",
+    "positioningStatement": "For socially active adults who want a better drink option when they are out, PEP is a premium protein drink that turns refreshment into a fun social ritual. Unlike gym-coded protein drinks or basic soft drinks, PEP leads with flavour, lightness, and occasion — with protein as a smart benefit that helps people feel good and have fun.",
     "primaryColors": [],
     "fonts": {
       "logo": "",
@@ -21,8 +21,8 @@
     }
   },
   "parts": {
-    "positioning": "brand/directions/social/positioning.json",
-    "designSystem": "brand/directions/social/design-system.json",
-    "guidelines": "brand/directions/social/brand-guidelines.md"
+    "positioning": "brand/directions/social/strategy/positioning.json",
+    "designSystem": "brand/directions/social/brand-package/design-system.json",
+    "guidelines": "brand/directions/social/strategy/brand-guidelines.md"
   }
 }

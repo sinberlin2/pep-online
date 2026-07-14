@@ -1,8 +1,8 @@
 """
 Remove backgrounds from brand assets using rembg.
 
-Processes design concept folders:
-  brand/design-concepts/<slug>/{identity,marketing,product}/originals/
+Processes external-design folders:
+  brand/inputs/external-designs/<slug>/{identity,marketing,product}/originals/
 
 Skips full-scene assets that should keep their background (flyers, backgrounds, templates).
 """
@@ -12,7 +12,7 @@ from pathlib import Path
 from rembg import remove
 
 ROOT = Path(__file__).resolve().parents[1]
-DESIGN_CONCEPTS = ROOT / "brand" / "design-concepts"
+DESIGN_CONCEPTS = ROOT / "brand" / "inputs" / "external-designs"
 
 SKIP_STEMS = frozenset(
     {
@@ -55,7 +55,7 @@ def process_folder(originals: Path, outputs: Path, label: str) -> int:
 def main() -> None:
     total = 0
     if not DESIGN_CONCEPTS.is_dir():
-        print("No design-concepts folder")
+        print("No external-designs folder")
         return
 
     for concept in sorted(DESIGN_CONCEPTS.iterdir()):

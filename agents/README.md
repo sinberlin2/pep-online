@@ -1,55 +1,32 @@
-# PEP site design agents
+# PEP agents
+
+LLM agents that generate the brand and the website concept. Full end-to-end workflow:
+**[docs/WORKFLOW.md](../docs/WORKFLOW.md)**. Pipeline diagram: **[docs/PIPELINE-CONCEPT.md](../docs/PIPELINE-CONCEPT.md)**.
 
 ## Setup (once)
 
 ```powershell
-cd c:\Users\doyle\projects\pep-online
-conda activate pep-online
 pip install -r requirements-agents.txt
-# .env with OPENAI_API_KEY only (never commit .env)
+# .env with OPENAI_API_KEY (and optional ANTHROPIC_API_KEY); never commit .env
 ```
 
-## Full workflow (3 positionings + PDF table)
+## Agents
 
-See `brand/research/WORKFLOW.md`.
+| Module | npm | Role |
+|--------|-----|------|
+| `agents.brand_run` | `brand` | **Strategist** — positioning, voice, competitor split → `directions/<slug>/strategy/` |
+| `agents.brand_identity` | `brand:identity` | **Design themes** — extracts recurring competitor looks → `directions/<slug>/identity/design-themes.json` (themes only) |
+| `agents.brand_images` | `brand:images` | Renders the **brand board** directly from the strategy + a chosen design theme (`--theme <id>`) — the main visual deliverable |
+| `agents.brand_package` | `brand:package` | Assembles design-system + `brandings.json` (no LLM) |
+| `agents.concept_run` | `concept` | Proposes a whole-site **concept** (web search) → `experiments/` |
+
+Run any per direction with `--positioning 1|2|3` (or the slug). Most default to OpenAI; add
+`--provider anthropic` where supported.
 
 ```powershell
-npm run brand:parse
-# Add brand/research/competition-table.pdf then:
-npm run brand:extract-pdf -- --max-pages 12 --tile-rows 2 --tile-cols 2
-npm run brand:merge
-npm run brand:all
-
-# Build website concept for selected direction
-python -m agents.concept_run --positioning 2
+python -m agents.brand_run --positioning 3
+python -m agents.brand_identity --positioning 3
+python -m agents.concept_run --positioning 3
 ```
 
-| ID | Direction | CLI |
-|----|-----------|-----|
-| 1 | Functional protein | `--positioning 1` |
-| 2 | Lifestyle / wellness | `--positioning 2` or `lifestyle` |
-| 3 | Better social drink | `--positioning 3` |
-
-All direction packs:
-- `brand/research/directions/functional-protein/`
-- `brand/research/directions/lifestyle/`
-- `brand/research/directions/social/`
-
-Current active selection:
-- `brand/research/active/positioning.json`
-
-## Pass 1 — Site concept
-
-```powershell
-python -m agents.concept_run --brief "..." --positioning 2
-```
-
-Outputs go to `experiments/website-concepts/` to keep website work separate from branding files.
-
-Shareable brand exports: `npm run brand:export` → HTML, PDF, and PNGs in `brand/research/exports/`
-
-**Schema reminder:** planned per-brand fields `drinkTypeFit` + `positioningMismatch` — see `docs/BRAND-OUTPUT-SCHEMA-TODO.md`.
-
-## Pass 2 — Design critic
-
-`review_run` — not built yet.
+Not built yet: a `review_run` design-critic pass (see `docs/AGENT-LAYOUT-PROPOSAL.md`).

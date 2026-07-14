@@ -28,6 +28,42 @@ _COLOR_SWATCH = {
     "required": ["name", "hex", "role", "inspiredBy"],
 }
 
+# One recurring visual "look" observed across competitor packs/sites. Extracted from
+# the attached competitor images BEFORE the palette is invented, so the palette can be
+# grounded in a named theme (e.g. social -> "white base + shiny colour element").
+_DESIGN_THEME = {
+    "type": "object",
+    "additionalProperties": False,
+    "properties": {
+        "id": {"type": "string"},
+        "name": {"type": "string", "description": "Short evocative label, e.g. 'White base + shiny accent'."},
+        "baseTreatment": {"type": "string", "description": "Base/background treatment: white/light, solid/saturated colour, gradient, photographic, etc."},
+        "colorTreatment": {"type": "string", "description": "How colour is used: pastel, bright/saturated, muted, monochrome, duotone."},
+        "finish": {"type": "string", "description": "Surface finish/texture: shiny, gloss, metallic, matte, satin, or a mix."},
+        "typographyFeel": {"type": "string", "description": "Type character: bold sans, elegant serif, playful, condensed, etc."},
+        "energy": {"type": "string", "description": "Overall energy/mood the look projects."},
+        "exampleBrands": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "additionalProperties": False,
+                "properties": {
+                    "brand": {"type": "string"},
+                    "variant": {"type": "string", "description": "Specific product line/variant if the look is line-specific (e.g. 'Juuz shiny line'); empty string otherwise."},
+                },
+                "required": ["brand", "variant"],
+            },
+        },
+        "positioningLeaning": {"type": "integer", "description": "Which positioning this look most reads as: 1=functional, 2=lifestyle/wellness, 3=social."},
+        "relevanceToActiveDirection": {"type": "string", "description": "How much and in what way this theme applies to PEP's active direction."},
+    },
+    "required": [
+        "id", "name", "baseTreatment", "colorTreatment", "finish",
+        "typographyFeel", "energy", "exampleBrands", "positioningLeaning",
+        "relevanceToActiveDirection",
+    ],
+}
+
 _FONT_ENTRY = {
     "type": "object",
     "additionalProperties": False,
@@ -61,74 +97,13 @@ BRAND_IDENTITY_SCHEMA = {
     "type": "object",
     "additionalProperties": False,
     "properties": {
-        "colorPalette": {
-            "type": "object",
-            "additionalProperties": False,
-            "properties": {
-                "primary": {"type": "array", "items": _COLOR_SWATCH},
-                "secondary": {"type": "array", "items": _COLOR_SWATCH},
-                "text": {"type": "array", "items": _COLOR_SWATCH},
-                "background": {"type": "array", "items": _COLOR_SWATCH},
-                "competitorInspiration": {"type": "string"},
-                "rejectPatterns": {"type": "array", "items": {"type": "string"}},
-            },
-            "required": ["primary", "secondary", "text", "background", "competitorInspiration", "rejectPatterns"],
-        },
-        "typographySystem": {
-            "type": "object",
-            "additionalProperties": False,
-            "properties": {
-                "display": _FONT_ENTRY,
-                "body": _FONT_ENTRY,
-                "script": _FONT_ENTRY,
-                "badge": _FONT_ENTRY,
-                "pairingRationale": {"type": "string"},
-                "competitorInspiration": {"type": "string"},
-            },
-            "required": ["display", "body", "script", "badge", "pairingRationale", "competitorInspiration"],
-        },
-        "mockupBriefs": {
+        "observedDesignThemes": {
             "type": "array",
-            "items": _MOCKUP_BRIEF,
-        },
-        "identityMarkdown": {"type": "string"},
-        "logoBrief": {
-            "type": "object",
-            "additionalProperties": False,
-            "properties": {
-                "concept": {"type": "string"},
-                "markDescription": {"type": "string"},
-                "imagePrompts": {"type": "array", "items": _LOGO_IMAGE_PROMPT},
-            },
-            "required": ["concept", "markDescription", "imagePrompts"],
-        },
-        "boardBrief": {
-            # Direction-appropriate elements for the single editorial brand board.
-            # Grounded in the positioning so each direction (functional/lifestyle/
-            # social) gets its own motifs and badges, e.g. social -> "0.0%",
-            # "social serve" + cocktail garnish; functional -> recovery/macro cues.
-            "type": "object",
-            "additionalProperties": False,
-            "properties": {
-                "artDirection": {
-                    "type": "string",
-                    "description": "One sentence describing the board's visual feel for THIS direction (drawn from the positioning mood/designConcept). No colour names or font names.",
-                },
-                "motifs": {
-                    "type": "array",
-                    "items": {"type": "string"},
-                    "description": "3-6 reusable illustration elements suited to this direction (e.g. mango slice, citrus twist, cocktail garnish, sparkle). No leaves/botanical marks.",
-                },
-                "badges": {
-                    "type": "array",
-                    "items": {"type": "string"},
-                    "description": "2-4 SHORT direction-appropriate badge labels justified by the positioning (e.g. social -> '0.0%', 'social serve'; functional -> 'high protein'). Do NOT repeat the factual product badges (protein/calories/gluten-free) which are added automatically.",
-                },
-            },
-            "required": ["artDirection", "motifs", "badges"],
+            "items": _DESIGN_THEME,
+            "description": "2-4 recurring visual looks observed across the attached competitor images, each tagged with the positioning it most reads as.",
         },
     },
-    "required": ["colorPalette", "typographySystem", "mockupBriefs", "identityMarkdown", "logoBrief", "boardBrief"],
+    "required": ["observedDesignThemes"],
 }
 
 # ---------------------------------------------------------------------------

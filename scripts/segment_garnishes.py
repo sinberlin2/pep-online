@@ -1,7 +1,7 @@
 """
 Split the garnish palette into individual transparent cut-outs.
 
-Input : brand/design-concepts/pep-original/marketing/bg_removed/garnishes-citrus-background-removed.png
+Input : brand/inputs/external-designs/pep-original/marketing/bg_removed/garnishes-citrus-background-removed.png
 Output: .../marketing/garnishes/bg_removed/<slug>-background-removed.png
 Output: .../marketing/garnishes/bg_removed/<slug>-background-removed.png
         + .../marketing/garnishes/garnishes.json (manifest)
@@ -22,7 +22,7 @@ from typing import Any
 from PIL import Image, ImageFilter
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-CONCEPT_DIR = PROJECT_ROOT / "brand" / "design-concepts" / "pep-original"
+CONCEPT_DIR = PROJECT_ROOT / "brand" / "inputs" / "external-designs" / "pep-original"
 SOURCE = CONCEPT_DIR / "marketing" / "bg_removed" / "garnishes-citrus-background-removed.png"
 OUT_DIR = CONCEPT_DIR / "marketing" / "garnishes" / "bg_removed"
 MANIFEST = CONCEPT_DIR / "marketing" / "garnishes" / "garnishes.json"

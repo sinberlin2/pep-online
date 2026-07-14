@@ -1,0 +1,15 @@
+{
+  "manualAdded": 1,
+  "attempted": 1,
+  "updated": 1,
+  "errors": [],
+  "brands": [
+    {
+      "brand": "On The Rocks Cocktails",
+      "url": "https://www.otrcocktails.com/"
+    }
+  ],
+  "competitionJsonUrlsUpdated": 0,
+  "competitionJsonBrandsAddedFromManual": 1,
+  "manualRemovedAfterMerge": 1
+}

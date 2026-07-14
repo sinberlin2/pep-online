@@ -32,7 +32,7 @@ def _section_csv(rows: list[dict[str, str]]) -> str:
 
     lines = [
         "## Competition: brand characteristics\n",
-        f"_{len(rows)} rows from company/competition/characteristics.csv_\n",
+        f"_{len(rows)} rows from brand/inputs/competition/characteristics.csv_\n",
     ]
     for row in rows:
         name = row.get("brand_name", "").strip() or "(unnamed)"
@@ -54,12 +54,12 @@ def main() -> None:
     rows = _load_csv_rows()
     board_notes = _read_optional(paths.POSITIONING / "notes.md")
     board_links = _read_optional(paths.POSITIONING / "link.txt")
-    user_research = _read_optional(paths.COMPANY / "USER-RESEARCH.md")
+    user_research = _read_optional(paths.INPUTS / "USER-RESEARCH.md")
     board_png = list(paths.POSITIONING.glob("*.png")) if paths.POSITIONING.is_dir() else []
 
     parts = [
         "# PEP research bundle (for brand agent)\n",
-        "_Auto-generated. Re-run after updating company/ inputs._\n",
+        "_Auto-generated. Re-run after updating brand/inputs/._\n",
         "---\n",
         "## Positioning board (optional PNG/notes)\n",
     ]
@@ -79,14 +79,16 @@ def main() -> None:
     options = _read_optional(paths.POSITIONING_OPTIONS)
     parts.append("---\n## Positioning options (3 directions)\n")
     parts.append(
-        f"_From company/positioning-options.json_\n\n```json\n{options}\n```\n"
+        f"_From brand/inputs/positioning-options.json_\n\n```json\n{options}\n```\n"
         if options
         else "_Run parse_positioning_options.py._\n"
     )
     parts.append("---\n")
     parts.append(_section_csv(rows))
-    parts.append("---\n## Manual notes (USER-RESEARCH.md)\n")
-    parts.append(user_research or "_Empty._\n")
+    # Optional manual notes: only included if a USER-RESEARCH.md is present (kept lean).
+    if user_research:
+        parts.append("---\n## Manual notes (USER-RESEARCH.md)\n")
+        parts.append(user_research)
 
     paths.RESEARCH_BUNDLE.write_text("\n".join(parts), encoding="utf-8")
     print(f"Wrote {paths.RESEARCH_BUNDLE.relative_to(ROOT)}")

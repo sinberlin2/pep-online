@@ -3,7 +3,7 @@ Pass 0 — brand positioning for a chosen product direction (1/2/3).
 
 Usage:
   python scripts/parse_positioning_options.py
-  python scripts/extract_competition_pdf.py   # PDF in company/competition/sources/
+  python scripts/extract_competition_pdf.py   # PDF in brand/inputs/competition/sources/
   python scripts/merge_brand_research.py
   python -m agents.brand_run --positioning 2
   python -m agents.brand_run --positioning lifestyle
@@ -210,7 +210,7 @@ def _default_positioning_arg() -> str:
     slug = choice.get("positioningSlug", "")
     if slug:
         return slug
-    raise SystemExit("Pass --positioning or set company/choice.json positioningSlug")
+    raise SystemExit("Pass --positioning or set brand/inputs/choice.json positioningSlug")
 
 
 def main() -> None:
@@ -218,7 +218,7 @@ def main() -> None:
     parser.add_argument(
         "--positioning",
         default=None,
-        help="1, 2, 3, or slug (default: company/choice.json positioningSlug)",
+        help="1, 2, 3, or slug (default: brand/inputs/choice.json positioningSlug)",
     )
     parser.add_argument(
         "--model",

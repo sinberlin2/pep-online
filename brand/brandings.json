@@ -1,6 +1,6 @@
 {
   "activeSlug": "lifestyle",
-  "assembledAt": "2026-06-13T19:18:49.548813+00:00",
+  "assembledAt": "2026-07-14T08:00:21.511394+00:00",
   "brandings": [
     {
       "slug": "functional-protein",
@@ -33,10 +33,10 @@
       "slug": "pep-original",
       "label": "PEP original flyer design",
       "kind": "from-design",
-      "source": "brand/provided/pep-original",
+      "source": "brand/inputs/external-designs/pep-original",
       "active": false,
       "strategyStatus": "pending (Flow B extraction)",
-      "package": "brand/provided/pep-original/extracted/brand-package.json"
+      "package": "brand/inputs/external-designs/pep-original/extracted/brand-package.json"
     }
   ]
 }

@@ -7,13 +7,13 @@ Usage:
   python scripts/enrich_competitors.py --overwrite-notes
 
 Inputs:
-  company/competition/characteristics.csv
-  company/competition/manual-competitors.csv (optional)
+  brand/inputs/competition/characteristics.csv
+  brand/inputs/competition/manual-competitors.csv (optional)
 
 Outputs:
-  company/competition/characteristics.csv
-  company/competition/competition-extracted.json
-  company/competition/competitor-enrichment-log.json
+  brand/inputs/competition/characteristics.csv
+  brand/inputs/competition/competition-extracted.json
+  brand/inputs/competition/competitor-enrichment-log.json
 """
 from __future__ import annotations
 

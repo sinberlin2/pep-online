@@ -1,18 +1,20 @@
 """
-Generate the single editorial BRAND BOARD (brand-board.png) for a direction.
+Generate the editorial BRAND BOARD (brand-board.png) for a direction.
 
-One polished visual-direction sheet showing the wordmark, a slim-can concept,
-reusable illustration elements, badges, colour-palette swatches (with the real hex
-values), typography direction, and label layout. Palette, fonts, and tagline are
-injected from the generated identity files; motifs, direction badges, and art
-direction come from the identity's boardBrief (grounded in the positioning), so the
-board renders the invented identity per direction rather than hardcoded values.
+Generated DIRECTLY from the strategy (`brand/directions/<slug>/strategy/positioning.json`) plus
+ONE design theme (from `brand/directions/<slug>/identity/design-themes.json`): the image model
+invents a palette + type FROM the theme description and shows them on the board (wordmark, slim
+can, illustration elements, palette swatches, type specimen, badges, label layout). There is no
+separate colour-palette / typography / board-brief JSON — read colours/type off the board by hand.
+
+Pick the theme with --theme <id>; default is the first theme matching the direction's positioning.
 
 Saved to brand/directions/<slug>/identity/images/brand-board.png
 
 Usage:
-  python -m agents.brand_images --positioning 2
-  python -m agents.brand_images --positioning lifestyle --quality hd
+  python -m agents.brand_images --positioning 3
+  python -m agents.brand_images --positioning 3 --theme theme-02
+  python -m agents.brand_images --positioning 3 --quality hd
 """
 from __future__ import annotations
 
@@ -62,78 +64,60 @@ def _dalle(client, *, prompt: str, size: str, quality: str) -> bytes:
 # Brand board (single editorial visual-direction sheet)
 # ---------------------------------------------------------------------------
 
-def _gen_brand_board(client, palette: dict, typography: dict, product: dict, positioning: dict, board_brief: dict, quality: str, images_dir: Path) -> dict | None:
-    """One polished editorial brand board that renders the invented identity:
-    wordmark, slim-can concept, illustration elements, badges, palette swatches, type direction.
+def _pick_theme(themes: list, theme_id: str | None, active_id) -> dict:
+    """Choose the design theme to render. Explicit --theme wins; else the first theme whose
+    positioningLeaning matches the active direction; else the first theme."""
+    if not themes:
+        raise SystemExit("design-themes.json has no themes — run brand_identity first.")
+    if theme_id:
+        for t in themes:
+            if t.get("id") == theme_id or t.get("name") == theme_id:
+                return t
+        raise SystemExit(f"Theme '{theme_id}' not found. Available: {[t.get('id') for t in themes]}")
+    for t in themes:
+        if str(t.get("positioningLeaning")) == str(active_id):
+            return t
+    return themes[0]
 
-    Direction-aware: palette/fonts/tagline come from the identity files, the factual badges
-    come from the product profile, and the motifs / direction badges / art direction come
-    from the identity's boardBrief (which brand_identity grounds in the positioning) — so the
-    same template adapts to each direction (e.g. social -> '0.0%', 'social serve' + cocktail
-    garnish; functional -> recovery cues). Falls back to positioning + neutral defaults when
-    no boardBrief is present."""
-    swatches = []
-    for group in ("primary", "secondary", "background"):
-        for sw in palette.get(group, []):
-            swatches.append(f"{sw['name']} {sw['hex']}")
-    swatch_line = "; ".join(swatches) or "the brand palette"
 
-    display = typography.get("display", {}).get("family", "a confident display")
-    body = typography.get("body", {}).get("family", "a clean supporting sans")
+def _gen_brand_board(client, positioning: dict, theme: dict, product: dict, quality: str, images_dir: Path) -> dict | None:
+    """One editorial brand board generated DIRECTLY from the strategy + ONE design theme.
 
-    tagline = product.get("tagline", "Feel good. Have fun.")
+    The image model invents the palette and typography FROM the theme description — there is
+    no color-palette.json / typography.json / board-brief.json anymore. Colours/type are read
+    off the board later by hand."""
     facts = product.get("productFacts", {})
     protein = facts.get("protein", "7g")
+    tagline = product.get("tagline", "Feel good. Have fun.")
+    occasions = ", ".join(positioning.get("occasions", [])[:5])
+    personality = ", ".join(positioning.get("personalityAdjectives", [])[:8])
+    one_liner = positioning.get("oneLiner", "a premium protein drink for social moments")
 
-    # Factual product badges (always present, direction-neutral) ...
-    badges = [f"{protein} protein"]
-    if facts.get("calories"):
-        badges.append(f"{facts['calories']} cal")
-    if facts.get("glutenFree"):
-        badges.append("gluten-free")
-    # ... plus direction-appropriate badges suggested by the identity boardBrief.
-    for b in board_brief.get("badges", []):
-        if b and b not in badges:
-            badges.append(b)
-    badge_line = ", ".join(f'"{b}"' for b in badges)
+    prompt = f"""Create a polished editorial BRAND BOARD for the drinks brand PEP on a warm off-white background. Include, as labelled zones: a large PEP wordmark, a slim 330ml aluminium can packaging concept, a row of reusable illustration elements, a COLOUR PALETTE swatch row with hex labels, a TYPOGRAPHY DIRECTION specimen, small product badges, and a label-layout panel.
 
-    # Illustration motifs: boardBrief if available, else a neutral flavour-led default.
-    motifs = [m for m in board_brief.get("motifs", []) if m]
-    motif_line = ", ".join(motifs) or "mango slice, coconut half, passionfruit, citrus wedge, sparkle/starburst"
+Brand (from strategy):
+- PEP is {one_liner}
+- Personality: {personality}
+- Social occasions: {occasions}
+- On-pack tagline: "{tagline}"; a small "{protein} protein" badge
 
-    # Art direction: boardBrief if available, else positioning mood + designConcept.
-    art_direction = (board_brief.get("artDirection") or "").strip()
-    if not art_direction:
-        visual = positioning.get("visual", {})
-        art_bits = [visual.get("mood", "").strip(), visual.get("designConcept", "").strip()]
-        art_direction = " ".join(b for b in art_bits if b) or "Premium, clean, flavour-forward."
+Express ONE design direction — INVENT a cohesive premium palette and type FROM this description (do not copy any specific competitor):
+- Look: {theme.get('name', '')} — {theme.get('baseTreatment', '')}
+- Colour: {theme.get('colorTreatment', '')}
+- Finish: {theme.get('finish', '')}
+- Typography: {theme.get('typographyFeel', '')}
+- Energy: {theme.get('energy', '')}
 
-    prompt = f"""Create a polished visual identity board for the brand PEP, including a logo, slim can packaging concept, illustration elements, badges, colour palette, typography direction, and label layout.
+Requirements:
+- Derive 6-8 cohesive palette swatches and a display + supporting type pairing that fit the direction above, and SHOW them on the board (swatches with invented hex labels; a short type specimen).
+- Slim can front-facing with a slight three-quarter angle, flavour-led illustrations, small protein badge.
+- Render "PEP" very clearly and large. No leaves or botanical motifs. Do not invent extra brand names, slogans, taglines, or websites beyond the above. No duplicate or misspelled logos.
 
-Brand: PEP
-
-Composition:
-One clean editorial brand board on a warm off-white background. Include these zones:
-
-1. A large bold PEP wordmark in the upper left, premium confident custom lettering, clean and distinctive.
-2. A hero slim 330ml aluminium can on the right, front-facing with a slight three-quarter angle. The can label uses the PEP wordmark, the tagline "{tagline}", flavour-led illustration motifs, and a small subtle "{protein} protein" badge.
-3. Separate reusable illustration elements: {motif_line}. Flat vector-like illustrations, warm, premium, flavour-forward. No leaves or botanical motifs.
-4. Colour palette swatches with hex labels, using exactly these brand colours: {swatch_line}.
-5. Typography direction: a confident display style (in the spirit of {display}) for the logo and an elegant supporting sans (in the spirit of {body}) for details, with a clear editorial hierarchy.
-6. Small badges: {badge_line}.
-
-Art direction:
-{art_direction} Vector-friendly, graphic, premium.
-
-Text constraints:
-Render "PEP" very clearly and large. Keep other text minimal and readable; do not invent extra brand names, slogans, taglines, or websites beyond what is specified above. No misspelled or duplicate logos. Only use the hex codes and words specified above.
-
-Output intent:
-Beautiful first-pass visual direction sheet that can guide later extraction into reusable logo, fruit icons, label assets, and can mockups.
+Vector-friendly, graphic, premium. A first-pass visual direction sheet.
 """
 
     size = "1536x1024"
-    print(f"  [brand-board] gpt-image-2 ({quality}, {size}) ...")
+    print(f"  [brand-board] gpt-image-2 ({quality}, {size}) from theme '{theme.get('id')}' — {theme.get('name', '')} ...")
     try:
         img_bytes = _dalle(client, prompt=prompt, size=size, quality=quality)
         out_path = images_dir / "brand-board.png"
@@ -145,6 +129,8 @@ Beautiful first-pass visual direction sheet that can guide later extraction into
             "type": "board",
             "size": size,
             "quality": quality,
+            "theme": theme.get("id"),
+            "themeName": theme.get("name"),
             "file": "images/brand-board.png",
             "generatedAt": datetime.now(timezone.utc).isoformat(),
         }
@@ -157,7 +143,7 @@ Beautiful first-pass visual direction sheet that can guide later extraction into
 # Main run
 # ---------------------------------------------------------------------------
 
-def generate(*, slug: str, quality: str = "standard") -> Path:
+def generate(*, slug: str, quality: str = "standard", theme_id: str | None = None) -> Path:
     load_project_env()
     api_key = get_openai_api_key()
 
@@ -165,22 +151,23 @@ def generate(*, slug: str, quality: str = "standard") -> Path:
     client = OpenAI(api_key=api_key)
 
     identity_dir = paths.direction_identity(slug)
-    palette: dict = _read_json(identity_dir / "color-palette.json")  # type: ignore[assignment]
-    typography: dict = _read_json(identity_dir / "typography.json")  # type: ignore[assignment]
     product: dict = _read_json(paths.PRODUCT_PROFILE)  # type: ignore[assignment]
     positioning: dict = _read_json(paths.direction_strategy(slug) / "positioning.json")  # type: ignore[assignment]
-    board_brief: dict = _read_json(identity_dir / "board-brief.json")  # type: ignore[assignment]
+    themes = _read_json(identity_dir / "design-themes.json")
 
-    if not palette:
-        raise SystemExit(f"No color-palette.json found at {identity_dir}. Run brand_identity first.")
+    if not positioning:
+        raise SystemExit(f"No positioning.json for '{slug}'. Run brand_run first.")
+    if not themes:
+        raise SystemExit(f"No design-themes.json at {identity_dir}. Run brand_identity first.")
+    theme = _pick_theme(themes, theme_id, positioning.get("activeId"))  # type: ignore[arg-type]
 
     images_dir = identity_dir / "images"
     images_dir.mkdir(parents=True, exist_ok=True)
 
     manifest = []
 
-    print("\n-- Brand identity board (gpt-image-2) --")
-    result = _gen_brand_board(client, palette, typography, product, positioning, board_brief, quality, images_dir)
+    print("\n-- Brand board (gpt-image-2) --")
+    result = _gen_brand_board(client, positioning, theme, product, quality, images_dir)
     if result:
         manifest.append(result)
 
@@ -206,6 +193,8 @@ def main() -> None:
     parser.add_argument("--positioning", default=None)
     parser.add_argument("--quality", default="standard", choices=["standard", "hd"],
                         help="Image quality: standard (medium) or hd (high)")
+    parser.add_argument("--theme", default=None,
+                        help="Design theme id/name from design-themes.json (default: first theme matching the direction)")
     args = parser.parse_args()
 
     if not args.positioning:
@@ -214,12 +203,12 @@ def main() -> None:
             choice = json.loads(choice_path.read_text(encoding="utf-8"))
             args.positioning = choice.get("positioningSlug", "")
         if not args.positioning:
-            raise SystemExit("Pass --positioning or set company/choice.json positioningSlug")
+            raise SystemExit("Pass --positioning or set brand/inputs/choice.json positioningSlug")
 
     slug = _resolve_slug(args.positioning)
 
     print(f"Generating brand board for [{slug}] ...")
-    out = generate(slug=slug, quality=args.quality)
+    out = generate(slug=slug, quality=args.quality, theme_id=args.theme)
     print(f"\nDone. Assets at: {out}")
 
 

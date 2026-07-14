@@ -71,7 +71,7 @@ def _resolve_positioning_path(positioning_arg: str | None) -> Path:
     if not positioning_arg:
         positioning_arg = _read_json(paths.CHOICE).get("positioningSlug", "")
         if not positioning_arg:
-            raise SystemExit("Pass --positioning or set company/choice.json positioningSlug")
+            raise SystemExit("Pass --positioning or set brand/inputs/choice.json positioningSlug")
     key = positioning_arg.strip().lower()
     aliases = {
         "1": "functional-protein",

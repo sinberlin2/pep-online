@@ -6,13 +6,13 @@
   "brand": "PEP",
   "domain": "pep-drink.com",
   "version": 1,
-  "assembledAt": "2026-06-13T19:18:49.543412+00:00",
+  "assembledAt": "2026-07-14T08:00:21.502157+00:00",
   "strategyStatus": "ready",
   "summary": {
     "name": "PEP",
     "tagline": "Feel good. Have fun.",
-    "oneLiner": "A refreshing, light protein drink that fits your everyday life — wellness without effort, guilt, or gym vibes.",
-    "positioningStatement": "For wellness-focused, identity-driven people who want to make healthier everyday choices without sacrificing enjoyment, PEP is a premium protein drink that feels like a treat and fits effortlessly into brunches, coworking sessions, beach afternoons, and every moment in between. It is the drink that says 'I take care of myself' without shouting about it.",
+    "oneLiner": "PEP is a premium, light, refreshing protein drink for people who want healthier everyday choices to feel like a treat.",
+    "positioningStatement": "PEP is a premium, light, refreshing protein drink for wellness-focused people who want a healthier everyday choice that feels like a treat and fits naturally into brunch, coworking, beach, and afternoon refreshment moments.",
     "primaryColors": [],
     "fonts": {
       "logo": "",
@@ -21,8 +21,8 @@
     }
   },
   "parts": {
-    "positioning": "brand/directions/lifestyle/positioning.json",
-    "designSystem": "brand/directions/lifestyle/design-system.json",
-    "guidelines": "brand/directions/lifestyle/brand-guidelines.md"
+    "positioning": "brand/directions/lifestyle/strategy/positioning.json",
+    "designSystem": "brand/directions/lifestyle/brand-package/design-system.json",
+    "guidelines": "brand/directions/lifestyle/strategy/brand-guidelines.md"
   }
 }

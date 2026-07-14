@@ -1,0 +1,5 @@
+{
+  "_note": "Hand-off map for `npm run site:sync`: copies approved brand assets into site/public/. `{active}` = brand/directions/<activeSlug> (from brandings.json); `to` is relative to site/public/. Add entries here when the website starts using generated brand assets.",
+  "_example": { "from": "{active}/identity/images/brand-board.png", "to": "brand/brand-board.png" },
+  "assets": []
+}

@@ -29,8 +29,8 @@ from PIL import Image, ImageColor
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DESIGN_CONCEPT = "pep-original"
-CONCEPT_REL = f"brand/design-concepts/{DESIGN_CONCEPT}"
-CONCEPT_DIR = PROJECT_ROOT / "brand" / "design-concepts" / DESIGN_CONCEPT
+CONCEPT_REL = f"brand/inputs/external-designs/{DESIGN_CONCEPT}"
+CONCEPT_DIR = PROJECT_ROOT / "brand" / "inputs" / "external-designs" / DESIGN_CONCEPT
 
 # Fixed product assets (always available).
 PRODUCT_ASSETS: dict[str, str] = {
@@ -221,10 +221,10 @@ if __name__ == "__main__":
     preview = render_layout(
         layout, out_path=PROJECT_ROOT / "experiments" / "hero" / "hero-preview.png"
     )
-    (PROJECT_ROOT / "css" / "hero-generated.css").write_text(
+    (PROJECT_ROOT / "site" / "css" / "hero-generated.css").write_text(
         layout_to_css(layout), encoding="utf-8"
     )
     print(f"Rendered {preview}")
-    print("Updated css/hero-generated.css")
+    print("Updated site/css/hero-generated.css")
     print("\nindex.html hero layers:")
     print(html_layer_tags(layout))

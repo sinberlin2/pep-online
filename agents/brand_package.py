@@ -31,11 +31,11 @@ def _rel(path: Path) -> str:
 
 
 def design_concept_slugs() -> list[str]:
-    if not paths.PROVIDED.is_dir():
+    if not paths.EXTERNAL_DESIGNS.is_dir():
         return []
     return sorted(
         p.name
-        for p in paths.PROVIDED.iterdir()
+        for p in paths.EXTERNAL_DESIGNS.iterdir()
         if p.is_dir() and (p / "meta.json").is_file()
     )
 
@@ -153,10 +153,10 @@ def assemble_direction(
 
 
 def assemble_from_design(design_slug: str) -> dict[str, Any]:
-    concept_dir = paths.PROVIDED / design_slug
+    concept_dir = paths.EXTERNAL_DESIGNS / design_slug
     meta = _read_json(concept_dir / "meta.json")
     label = meta.get("label", design_slug)
-    out_dir = paths.PROVIDED / design_slug / "extracted"
+    out_dir = paths.EXTERNAL_DESIGNS / design_slug / "extracted"
     concept_rel = _rel(concept_dir)
     product = _read_json(paths.PRODUCT_PROFILE)
 
@@ -185,7 +185,7 @@ def assemble_from_design(design_slug: str) -> dict[str, Any]:
         f"**Input:** `{concept_rel}/`",
         f"**Output:** `{_rel(out_dir)}/`",
         "",
-        "Generic company facts: `company/product-profile.json`.",
+        "Generic company facts: `brand/inputs/product-profile.json`.",
         "Logo/typography/colours are exploratory — part of this design concept.",
         "",
         "## Key design images",
@@ -229,7 +229,7 @@ def assemble_from_design(design_slug: str) -> dict[str, Any]:
 
 
 def active_slug() -> str:
-    # No active folder anymore; company/choice.json is just an optional "selected
+    # No active folder anymore; brand/inputs/choice.json is just an optional "selected
     # direction" pointer used for cosmetic flagging in the index.
     return _read_json(paths.CHOICE).get("positioningSlug", "")
 
@@ -282,7 +282,7 @@ def run(*, direction: str, design: str | None) -> None:
                 "source": manifest["source"],
                 "active": False,
                 "strategyStatus": manifest["strategyStatus"],
-                "package": _rel(paths.PROVIDED / design_slug / "extracted" / "brand-package.json"),
+                "package": _rel(paths.EXTERNAL_DESIGNS / design_slug / "extracted" / "brand-package.json"),
             }
         )
 

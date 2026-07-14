@@ -6,13 +6,13 @@
   "brand": "PEP",
   "domain": "pep-drink.com",
   "version": 1,
-  "assembledAt": "2026-06-13T19:18:49.539053+00:00",
+  "assembledAt": "2026-07-14T08:00:21.496634+00:00",
   "strategyStatus": "ready",
   "summary": {
     "name": "PEP",
     "tagline": "Feel good. Have fun.",
-    "oneLiner": "A clean, light protein drink for people who want to hit their protein target without the heaviness of a shake.",
-    "positioningStatement": "For disciplined, health-oriented adults who want convenient protein without bulk or gym-bro associations, PEP is a light, refreshing protein drink that slots into daily routines — post-gym, mid-morning, or between meals — with no heaviness, no compromise, and no gimmicks.",
+    "oneLiner": "PEP is a premium, light and refreshing protein drink that helps active people hit their protein goals conveniently, without the heaviness of traditional shakes.",
+    "positioningStatement": "For active, routine-minded people who struggle to hit their protein target, PEP is a premium, light and refreshing protein drink that provides convenient protein without heaviness, helping them feel good and keep moving through their day.",
     "primaryColors": [],
     "fonts": {
       "logo": "",
@@ -21,8 +21,8 @@
     }
   },
   "parts": {
-    "positioning": "brand/directions/functional-protein/positioning.json",
-    "designSystem": "brand/directions/functional-protein/design-system.json",
-    "guidelines": "brand/directions/functional-protein/brand-guidelines.md"
+    "positioning": "brand/directions/functional-protein/strategy/positioning.json",
+    "designSystem": "brand/directions/functional-protein/brand-package/design-system.json",
+    "guidelines": "brand/directions/functional-protein/strategy/brand-guidelines.md"
   }
 }

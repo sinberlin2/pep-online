@@ -4,8 +4,10 @@
     "name": "Brand identity board",
     "type": "board",
     "size": "1536x1024",
-    "quality": "hd",
+    "quality": "standard",
+    "theme": "theme_1",
+    "themeName": "Luminous mood-gradient social can",
     "file": "images/brand-board.png",
-    "generatedAt": "2026-06-15T11:26:38.034301+00:00"
+    "generatedAt": "2026-07-12T11:21:00.221153+00:00"
   }
 ]

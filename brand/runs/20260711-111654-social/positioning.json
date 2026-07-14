@@ -1,0 +1,405 @@
+{
+  "activeId": 3,
+  "activeName": "Better social drink",
+  "activeSlug": "social",
+  "antiReferences": [
+    {
+      "name": "Gym-bro protein RTDs",
+      "why": "They make protein feel like performance, discipline, and body optimization. PEP in this direction must make protein feel social, refreshing, and desirable out of home."
+    },
+    {
+      "name": "drinkpep.com",
+      "why": "Name collision only. That product is an unrelated US energy/probiotic drink and must not be treated as the same brand, product, tone, or positioning."
+    },
+    {
+      "name": "PROTOCHOL",
+      "why": "Although it combines protein with social drinking, the alcohol-plus-protein novelty risks making PEP feel gimmicky and confusing. PEP should be alcohol-free social ritual, not a protein-alcohol hybrid."
+    },
+    {
+      "name": "Clinical functional hydration brands",
+      "why": "They over-index on utility, claims, and ingredient logic. PEP needs emotional ordering power in hospitality and social settings."
+    },
+    {
+      "name": "Kids’ fruity soft drinks",
+      "why": "PEP can be fruity and fun, but it must stay adult, premium, and occasion-worthy."
+    }
+  ],
+  "audience": [
+    "Social, aesthetic, experience-led consumers who want something better to order when they are out.",
+    "People reducing alcohol or choosing alcohol-free options without wanting to feel excluded from the occasion.",
+    "Hospitality guests at bars, restaurants, hotels, festivals, dinners, dates, and rooftop events.",
+    "Consumers who are curious about protein benefits but do not want a gym-coded drink in social moments.",
+    "People who choose drinks emotionally: taste, ritual, packaging presence, and how it feels in the group."
+  ],
+  "brand": "PEP",
+  "brandFitRules": [
+    "Lead with social pleasure, taste, and occasion before nutrition.",
+    "Protein is the feel-good twist, not the headline personality.",
+    "Reject anything that feels gym-first, clinical, medicinal, or performance-obsessed.",
+    "Design and copy must feel natural in bars, restaurants, hotels, and festivals.",
+    "Keep the tone premium, fun, adult, and refreshing.",
+    "Do not imitate alcohol brands directly; borrow ritual confidence, not category clichés.",
+    "If the work does not support “I order this when I go out,” it is off direction.",
+    "Always distinguish pep-drink.com from drinkpep.com."
+  ],
+  "domain": "pep-drink.com",
+  "inLineBrands": [
+    {
+      "adjectives": [
+        "euphoric",
+        "social",
+        "experiential",
+        "trendy",
+        "wellness-aware"
+      ],
+      "category": "Non-Alcoholic Functional Beverages",
+      "designPatterns": [
+        "Mood-led social positioning",
+        "Premium presence with restrained information density",
+        "Occasion-first storytelling",
+        "Functional benefits framed as experience rather than optimization"
+      ],
+      "drinkTypeFit": "Strong social drink fit. Not protein-led, but directly competes for alcohol-free social occasions and premium ordering moments.",
+      "name": "Kin Euphorics",
+      "url": "https://kineuphorics.com/",
+      "why": "Kin proves that functional benefits can be made socially desirable when the brand leads with mood, ritual, and occasion instead of technical nutrition."
+    },
+    {
+      "adjectives": [
+        "innovative",
+        "authentic",
+        "sophisticated",
+        "inclusive",
+        "versatile"
+      ],
+      "category": "Non-alcoholic Spirits / Mocktails",
+      "designPatterns": [
+        "Adult social ritual cues",
+        "Premium hospitality relevance",
+        "Serve-led product storytelling",
+        "Range architecture built around occasions and serves"
+      ],
+      "drinkTypeFit": "Strong social occasion fit. The format is spirit-adjacent rather than protein refreshment, so PEP should learn from the ritual but avoid direct imitation.",
+      "name": "Lyre's",
+      "url": "https://lyres.com/",
+      "why": "Lyre’s is a leading benchmark for making alcohol-free choices feel credible, adult, and socially accepted in hospitality."
+    },
+    {
+      "adjectives": [
+        "sophisticated",
+        "botanical",
+        "alcohol-free",
+        "innovative",
+        "refined"
+      ],
+      "category": "Non-Alcoholic Spirits",
+      "designPatterns": [
+        "Premium non-alcoholic authority",
+        "Ingredient-led sophistication",
+        "Confident simplicity",
+        "Hospitality-ready presentation"
+      ],
+      "drinkTypeFit": "Strong alcohol-free social benchmark. Less direct as a ready-to-drink protein beverage, but highly relevant for premium social credibility.",
+      "name": "Seedlip",
+      "url": "https://www.seedlipdrinks.com/en-us",
+      "why": "Seedlip established that non-alcoholic drinks can have premium pricing power and social status when built around ritual and adult taste."
+    },
+    {
+      "adjectives": [
+        "sophisticated",
+        "refreshing",
+        "adult",
+        "flavorful",
+        "non-alcoholic"
+      ],
+      "category": "Non-alcoholic Mocktails",
+      "designPatterns": [
+        "Cocktail-inspired occasion framing",
+        "Clear adult soft-drink alternative",
+        "Hospitality and retail relevance",
+        "Flavour-led decision making"
+      ],
+      "drinkTypeFit": "Very strong order-choice fit for alcohol-free social settings. Not protein-led, but competes directly against the boring soft drink problem.",
+      "name": "Royal Club Mocktails",
+      "url": "https://www.royalclub.nl/",
+      "why": "Royal Club Mocktails sits close to the exact PEP occasion: an adult, non-alcoholic drink choice for people who want something more exciting than standard soft drinks."
+    },
+    {
+      "adjectives": [
+        "balanced",
+        "distinctive",
+        "adult-oriented",
+        "refreshing",
+        "social"
+      ],
+      "category": "Ginger Ale / Mixer",
+      "designPatterns": [
+        "Adult mixer cues",
+        "Bar and restaurant familiarity",
+        "Simple serve logic",
+        "Distinctive taste positioning"
+      ],
+      "drinkTypeFit": "Strong social soft-drink and mixer fit. Weaker as a full PEP analogue because it is not protein-led or flavour-range-led in the same way.",
+      "name": "Royal Club Ginger Ale",
+      "url": "https://www.royalclub.nl/",
+      "why": "It demonstrates how a soft drink can feel adult and socially acceptable in bar contexts without relying on heavy functional claims."
+    }
+  ],
+  "layoutOnlyReferences": [
+    {
+      "name": "Revized",
+      "patterns": [
+        "Use only for page structure inspiration if needed: strong product-grid clarity, quick flavour navigation, and modular sections.",
+        "Do not borrow its brand tone, ingredient hierarchy, or visual identity."
+      ],
+      "url": ""
+    }
+  ],
+  "occasions": [
+    "Bars",
+    "Restaurants",
+    "Hotels",
+    "Festivals",
+    "Dates",
+    "Dinners",
+    "Rooftop events",
+    "Parties",
+    "First round of the evening",
+    "Alcohol-free social occasions",
+    "Group gatherings",
+    "Premium out-of-home refreshment moments"
+  ],
+  "oneLiner": "PEP is the premium protein drink made for going out: refreshing, fruity, social, and alcohol-free.",
+  "peerBrandsOtherPositionings": [
+    {
+      "drinkTypeFit": "Weak for this direction: functional vitamin drink rather than social hospitality drink.",
+      "name": "HOLY",
+      "positioningMismatch": "Belongs to functional protein drink direction.",
+      "positioning_id": 1,
+      "whyNotActive": "It leads with functional health and protein utility, which would pull PEP toward routine and supplementation rather than social ordering."
+    },
+    {
+      "drinkTypeFit": "Weak: hydration mix rather than ready social drink.",
+      "name": "LMNT",
+      "positioningMismatch": "Belongs to functional protein drink direction.",
+      "positioning_id": 1,
+      "whyNotActive": "Its logic is electrolyte replenishment and dietary function, not pleasure, belonging, or out-of-home ritual."
+    },
+    {
+      "drinkTypeFit": "Weak: BCAA/energy drink for sport and recovery.",
+      "name": "NOCCO",
+      "positioningMismatch": "Belongs to functional protein drink direction.",
+      "positioning_id": 1,
+      "whyNotActive": "It is too performance-led and gym-adjacent for PEP’s better social drink direction."
+    },
+    {
+      "drinkTypeFit": "Partial but problematic: protein plus alcohol creates social relevance, but the alcohol fusion conflicts with PEP’s alcohol-free better-option role.",
+      "name": "PROTOCHOL",
+      "positioningMismatch": "Belongs mainly to functional protein drink direction with novelty social crossover.",
+      "positioning_id": 1,
+      "whyNotActive": "It risks making protein in a social context feel strange or gimmicky, which is the main risk PEP must avoid."
+    },
+    {
+      "drinkTypeFit": "Weak: functional hydration rather than premium social drink.",
+      "name": "VITAMIN WELL",
+      "positioningMismatch": "Belongs to functional protein drink direction.",
+      "positioning_id": 1,
+      "whyNotActive": "It frames the purchase around vitamins and hydration, not social experience or hospitality pricing power."
+    },
+    {
+      "drinkTypeFit": "Moderate: refreshing soda format, but wellness gut-health logic dominates.",
+      "name": "BLOOM",
+      "positioningMismatch": "Belongs to lifestyle upgrade direction.",
+      "positioning_id": 2,
+      "whyNotActive": "It is more about healthier everyday soda replacement than premium out-of-home social ritual."
+    },
+    {
+      "drinkTypeFit": "Moderate: non-alcoholic aperitif/soft drink can support social moments, but its main lane is natural lifestyle upgrade.",
+      "name": "EVER TREE",
+      "positioningMismatch": "Belongs to lifestyle upgrade direction.",
+      "positioning_id": 2,
+      "whyNotActive": "It is useful as inspiration but would pull PEP toward botanical aperitif sophistication rather than fruity protein refreshment."
+    },
+    {
+      "drinkTypeFit": "Moderate: soda replacement, but wellness benefit is primary.",
+      "name": "OLIPOP",
+      "positioningMismatch": "Belongs to lifestyle upgrade direction.",
+      "positioning_id": 2,
+      "whyNotActive": "It competes in everyday gut-health soda, not premium bar, restaurant, and festival ordering."
+    },
+    {
+      "drinkTypeFit": "Moderate: fun soda energy, but mostly an everyday health-conscious soft drink.",
+      "name": "Poppi",
+      "positioningMismatch": "Belongs to lifestyle upgrade direction.",
+      "positioning_id": 2,
+      "whyNotActive": "It is too tied to prebiotic soda and daily lifestyle wellness to define PEP’s social hospitality role."
+    },
+    {
+      "drinkTypeFit": "Moderate: kombucha can act as a premium soft drink alternative, but fermentation and craft wellness dominate.",
+      "name": "Yaya Kombucha",
+      "positioningMismatch": "Unassigned in source; closest to lifestyle/craft wellness rather than active social protein direction.",
+      "positioning_id": 0,
+      "whyNotActive": "It is refreshing and premium, but its credibility comes from organic kombucha craft rather than social protein ritual."
+    },
+    {
+      "drinkTypeFit": "Moderate: craft alternative to alcohol or soda, but kombucha/botanical fermentation is the main frame.",
+      "name": "Walker Brothers",
+      "positioningMismatch": "Unassigned in source; closest to lifestyle/craft wellness rather than active social protein direction.",
+      "positioning_id": 0,
+      "whyNotActive": "Its craft and probiotic cues would move PEP away from accessible premium social refreshment."
+    },
+    {
+      "drinkTypeFit": "Moderate: refreshing kombucha for lifestyle moments, but not a premium hospitality-first drink.",
+      "name": "Alive & Well",
+      "positioningMismatch": "Belongs to lifestyle upgrade direction.",
+      "positioning_id": 2,
+      "whyNotActive": "It is health and wellness-led, whereas PEP social should be occasion and experience-led."
+    },
+    {
+      "drinkTypeFit": "Moderate: alcohol-free canned refreshment, but relaxation and wellness are primary.",
+      "name": "Recess",
+      "positioningMismatch": "Belongs to lifestyle upgrade direction.",
+      "positioning_id": 2,
+      "whyNotActive": "It is more about calm everyday wellness than celebratory out-of-home ritual."
+    },
+    {
+      "drinkTypeFit": "Partial: festive ready-to-drink cocktails and mocktails overlap with social occasions.",
+      "name": "Ole cocktails",
+      "positioningMismatch": "Belongs to lifestyle upgrade direction in source.",
+      "positioning_id": 2,
+      "whyNotActive": "Useful for party energy, but cocktail and alcohol associations could obscure PEP’s own protein-refreshment point of difference."
+    },
+    {
+      "drinkTypeFit": "Partial: strong mindful drinking and dinner-party relevance.",
+      "name": "Ish",
+      "positioningMismatch": "Belongs to lifestyle upgrade direction in source.",
+      "positioning_id": 2,
+      "whyNotActive": "It is closer to imitation spirits and mocktails than to PEP’s fruity protein drink proposition."
+    },
+    {
+      "drinkTypeFit": "Moderate: functional soda can be refreshing, but the purchase logic is health-forward.",
+      "name": "more fiz",
+      "positioningMismatch": "Belongs to lifestyle upgrade direction.",
+      "positioning_id": 2,
+      "whyNotActive": "Its sugar-free and fiber-enriched logic would pull PEP toward wellness claims instead of social desire."
+    },
+    {
+      "drinkTypeFit": "Strong product-format fit for protein refreshment, weak social-positioning fit.",
+      "name": "Juuz",
+      "positioningMismatch": "Belongs to functional protein drink direction.",
+      "positioning_id": 1,
+      "whyNotActive": "It is highly relevant to product feasibility, but its active direction is protein utility rather than premium social ritual."
+    }
+  ],
+  "personalityAdjectives": [
+    "social",
+    "experiential",
+    "premium",
+    "fun",
+    "fruity",
+    "refreshing",
+    "aesthetic",
+    "sophisticated",
+    "inclusive",
+    "playful",
+    "celebratory",
+    "confident",
+    "adult",
+    "balanced",
+    "distinctive",
+    "feel-good"
+  ],
+  "positioningFitTypeMismatch": [
+    {
+      "category": "Premium Fruit Cider",
+      "drinkTypeFit": "Strong occasion and flavour fit, but cider is not PEP’s alcohol-free protein refreshment format.",
+      "name": "Rekorderlig",
+      "positioningMismatch": "Matches the better social drink mindset, but sits in cider rather than protein drink.",
+      "typeMismatch": "Alcoholic or cider-coded fruit refreshment; not PEP’s non-alcoholic protein-led proposition.",
+      "url": "https://rekorderlig.com/",
+      "whyBrandingFits": "Useful for fruit-forward premium social refreshment, festival and outdoor drinking energy, and making flavour feel like the reason to order."
+    },
+    {
+      "category": "Ready-to-Drink Cocktails and Mocktails",
+      "drinkTypeFit": "Strong party and outdoor-event fit, but cocktail logic is not PEP’s core.",
+      "name": "Ole cocktails",
+      "positioningMismatch": "Source places it in lifestyle upgrade, with social overlap.",
+      "typeMismatch": "Cocktail and alcohol association can overpower PEP’s protein refreshment difference.",
+      "url": "https://olecocktails.com/",
+      "whyBrandingFits": "Useful for celebratory convenience, flavour-led serving, and social energy."
+    },
+    {
+      "category": "Non-alcoholic Wineries/Spirits/Mocktails",
+      "drinkTypeFit": "Strong mindful social fit, but spirit and mocktail mimicry is not PEP’s main role.",
+      "name": "Ish",
+      "positioningMismatch": "Source places it in lifestyle upgrade, with strong social overlap.",
+      "typeMismatch": "Imitation spirit/cocktail format differs from PEP’s own protein drink format.",
+      "url": "https://ishspirits.com/",
+      "whyBrandingFits": "Useful for premium alcohol-free confidence, dinner-party relevance, and adult inclusion."
+    },
+    {
+      "category": "Non-alcoholic Aperitif / Soft Drinks",
+      "drinkTypeFit": "Moderate social fit, weaker protein-drink fit.",
+      "name": "EVER TREE",
+      "positioningMismatch": "Source places it in lifestyle upgrade rather than active social direction.",
+      "typeMismatch": "Aperitif and botanical soft drink cues could make PEP feel like a different category.",
+      "url": "https://www.everleafdrinks.com/",
+      "whyBrandingFits": "Useful for sophisticated alcohol-free occasions and premium non-alcoholic serve culture."
+    },
+    {
+      "category": "Kombucha and Botanical Sodas",
+      "drinkTypeFit": "Moderate: can replace alcohol or sugary soda, but fermentation and craft cues dominate.",
+      "name": "Walker Brothers",
+      "positioningMismatch": "Unassigned in source; closer to craft wellness than PEP social.",
+      "typeMismatch": "Kombucha/probiotic craft format is different from light protein refreshment.",
+      "url": "https://drinkwalkerbrothers.com/",
+      "whyBrandingFits": "Useful for adult complexity, craft credibility, and alternative social drinking mindset."
+    },
+    {
+      "category": "Organic Kombucha Beverages",
+      "drinkTypeFit": "Moderate: premium refreshment and mixer potential, but kombucha category logic differs.",
+      "name": "Yaya Kombucha",
+      "positioningMismatch": "Unassigned in source; closer to premium wellness/craft.",
+      "typeMismatch": "Kombucha and fermentation cues are not central to PEP’s protein-led offer.",
+      "url": "https://yayakombucha.com/",
+      "whyBrandingFits": "Useful for premium, authentic, refreshing soft-drink alternatives with flavour variety."
+    }
+  ],
+  "positioningStatement": "PEP is the premium protein drink for going out: an alcohol-free, flavour-led social ritual that helps people feel good and have fun without choosing a boring soft drink.",
+  "version": 1,
+  "visual": {
+    "designConcept": "fun, premium packaging, vibrant, festival vibe, fruity",
+    "mood": "Warm, energetic, sociable, sensory, premium-but-approachable, playful without becoming childish, and made for shared out-of-home moments.",
+    "photography": "Show PEP in real social contexts: hands holding drinks, groups arriving, tables at dinner, festival moments, dates, rooftops, hotel bars, and close-up serving rituals. Photography should feel candid, tactile, flavour-led, and socially alive. Avoid gym scenes, solo nutrition routines, clinical ingredient setups, and isolated product shots that feel like supplement advertising.",
+    "rejectLooks": [
+      "Gym supplement layouts with dense claims and performance cues.",
+      "Clinical wellness layouts that make the drink feel medicinal.",
+      "Overly quiet lifestyle minimalism that removes social energy.",
+      "Childish soft-drink styling.",
+      "Direct imitation of spirit, wine, beer, or cocktail brands.",
+      "Overcrowded packaging that treats every benefit as equally important.",
+      "Hardcore sports energy-drink aggression."
+    ]
+  },
+  "voice": {
+    "avoidWords": [
+      "gains",
+      "bulk",
+      "shred",
+      "macros",
+      "post-workout",
+      "meal replacement",
+      "diet hack",
+      "detox",
+      "cleanse",
+      "clinical",
+      "biohack",
+      "guilt-free",
+      "cheat day",
+      "performance fuel",
+      "medical-grade"
+    ],
+    "tagline": "Feel good. Have fun.",
+    "tone": "Confident, social, playful, premium, flavour-led, and concise. Copy should sound like an invitation to join the moment, not a nutrition lecture."
+  }
+}

@@ -30,8 +30,24 @@ values, and typeface names are invented later by a separate identity agent from 
 - Founders: Lou & Shannon — not drinkpep.com (US energy/probiotic, name collision)
 - Live SKU: Coconut Mango; five flavours coming soon
 - Tagline: Feel good. Have fun.
+- The flavour lineup varies and will grow, so a specific flavour family (e.g. "fruity") is not
+  a *defining* brand trait — describe taste broadly (flavour-led, refreshing) rather than
+  centring one flavour. This is guidance on how to describe PEP, not a banned word (don't add
+  it to `avoidWords`).
 
 ## How to use competition CSV + 3 positionings
+
+**Positioning is an occasion/mindset, not an alcohol stance.** A social drink can be
+alcoholic OR non-alcoholic. Do **not** frame any direction (including social) as
+"non-alcoholic" / "alcohol-free" even when its dimensions mention replacing alcohol, and do
+**not** use alcohol content as the axis that sorts a brand into `inLineBrands` vs
+`positioningFitTypeMismatch`. PEP's own product happens to be non-alcoholic, but that is a
+product attribute, not the organising principle of the direction. Classify peers by shared
+**occasion + broad drink format**; alcoholic social drinks (cocktails, cider, spiked RTDs)
+that share the going-out occasion are valid peers/design references — never demoted or
+rejected for containing alcohol. When a brand *is* a weaker fit, cite the real **format**
+reason (e.g. cider vs protein RTD, powder sachet, meal replacement) — never
+"alcoholic vs non-alcoholic."
 
 - Rows where `positioning_id` **equals active id** and drink type/category is a direct fit
   → primary **inLineBrands** (**strict fit**)
@@ -42,6 +58,13 @@ values, and typeface names are invented later by a separate identity agent from 
 - Add a separate list **`positioningFitTypeMismatch`** for brands that match positioning vibe
   (occasion/mindset/visual language) but are a weaker drink-type match.
   Example: great social ritual brand but wrong core drink format.
+  These brands are a **design-inspiration source**, not rejects: because they nail the
+  positioning, their look is close to what we mean by the design concept. The mismatch is
+  about drink **format** (e.g. cider, spirit, spiked RTD vs PEP's protein drink) — **not**
+  about alcohol; never move a brand here, or into anti-references, merely for being
+  alcoholic. In each entry's `whyBrandingFits`, name the concrete visual/design
+  cues the identity agent should borrow (occasion energy, layout feel, flavour-led hierarchy,
+  serve culture) — stay abstract per the design-tokens rule (no colours/fonts).
 
 ## Outputs
 

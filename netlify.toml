@@ -1,6 +1,6 @@
-# Netlify — static site, no build step
+# Netlify — static site, no build step. Only site/ is deployed (brand/ is the generator).
 [build]
-  publish = "."
+  publish = "site"
 
 [[headers]]
   for = "/*"

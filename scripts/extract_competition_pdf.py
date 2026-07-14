@@ -4,7 +4,7 @@ Extract brands from competition table PDF (colored cells → positioning 1/2/3).
 Uses GPT-4o vision on rendered PDF pages.
 
 Place PDF at:
-  company/competition/sources/drink-competition.pdf
+  brand/inputs/competition/sources/drink-competition.pdf
 
 Usage:
   python scripts/extract_competition_pdf.py

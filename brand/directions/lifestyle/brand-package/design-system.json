@@ -3,15 +3,17 @@
   "source": "from positioning.visual (Flow A — invented look)",
   "colors": {},
   "typography": {},
-  "mood": "Minimal, pastel, warm and airy. Cream, peach, soft yellow, and deep green. Premium but never cold. Light but never bland.",
-  "photography": "Bright natural light, real everyday settings — café tables, open-air terraces, sunny windowsills, picnic rugs. Aspirational but accessible. Inclusive groups or solo moments. No gym, no night scenes, no clinical white studio.",
-  "typographyDirection": "Didot for the wordmark (elegant, confident), Montserrat for labels and body (clear, modern), Brittany Signature for the tagline and script accents (warmth, personality). Avoid heavy sans-serifs or 'action' fonts.",
+  "mood": "Airy, relaxed, refreshing, premium-but-approachable, unhurried, feel-good, and socially easy.",
+  "photography": "Real lifestyle moments: café tables, coworking breaks, beach or park refreshment, hands sharing cans, flavour-led close-ups, and casual out-of-home scenes. People should look natural, relaxed, and health-conscious rather than posed like athletes or nightlife talent.",
+  "typographyDirection": "",
   "rejectLooks": [
-    "Bold aggressive fitness branding",
-    "High-saturation energy drink palettes",
-    "Sports or gym-centric imagery",
-    "Clinical or medicinal label layouts",
-    "Juvenile or kids'-soda branding",
-    "Nightclub or festival neon"
+    "Dense supplement-style layouts.",
+    "Aggressive sports nutrition energy.",
+    "Clinical or medicinal presentation.",
+    "Overly technical benefit grids as the main impression.",
+    "Childish soda styling.",
+    "Nightlife-first or festival-first atmosphere.",
+    "Heavy meal-replacement cues.",
+    "Generic wellness imagery with no taste or occasion specificity."
   ]
 }

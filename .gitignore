@@ -11,4 +11,10 @@ node_modules/
 .venv-wsl/
 
 # Large research PDFs (keep local; export characteristics.csv instead)
-brand/research/*.pdf
+brand/inputs/**/*.pdf
+
+# Regenerable pipeline image outputs (rebuild via npm scripts; recipes/JSON are committed).
+# competitor packshots  -> npm run brand:competitor-images  (uses image-overrides.json)
+# generated brand boards -> npm run brand:images            (from strategy + a design theme)
+brand/inputs/competition/images/
+brand/directions/*/identity/images/

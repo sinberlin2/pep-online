@@ -1,33 +1,23 @@
-# Brand output schema — planned extension
+# Brand output schema — status
 
-**Reminder:** Extend `agents/brand_schemas.py` and regenerate direction packs so every competitor entry includes explicit fit labels.
+**Mostly shipped.** The per-brand fit fields below are live in `agents/brand_schemas.py` and
+populated by `brand_run` (see any `brand/directions/<slug>/strategy/positioning.json`).
 
-## Target fields (per brand object)
+## Per-brand fit fields (shipped)
 
-| Field | Meaning |
-|-------|---------|
-| `drinkTypeFit` | How well drink category/type matches active direction (e.g. strong / partial / weak) |
-| `positioningMismatch` | Why occasion/branding does **not** match active direction (when drink type may still fit) |
-| `typeMismatch` | Legacy alias kept in `positioningFitTypeMismatch` items — consider renaming to `drinkTypeMismatch` only in a future schema version |
+| Field | Where | Meaning |
+|-------|-------|---------|
+| `drinkTypeFit` | all three brand lists | how well the drink category/type matches the direction |
+| `positioningMismatch` | `positioningFitTypeMismatch`, `peerBrandsOtherPositionings` | why occasion/branding doesn't match the direction |
+| `typeMismatch` | `positioningFitTypeMismatch` | drink-type mismatch (kept as-is; the brands are still used as *design* inspiration) |
 
-## Lists to keep
+## Brand lists (shipped)
 
 - `inLineBrands` — strict fit: **positioning + drink type**
-- `positioningFitTypeMismatch` — branding/occasion fit, drink type off
-- `peerBrandsOtherPositionings` — mainly another Mural column (`positioning_id`)
+- `positioningFitTypeMismatch` — branding/occasion fit, drink type off (design-inspiration tier)
+- `peerBrandsOtherPositionings` — mainly another positioning column
 
-## Also reflect in exports
+## Open (optional)
 
-- `brand-guidelines.md` — human-readable split (done manually in prose today)
-- `positioning.json` — machine-readable (partially populated after next `brand_run`)
-
-## Next implementation step
-
-1. Update `agents/prompts/brand_strategist.md` to require `drinkTypeFit` + `positioningMismatch` on every brand entry.
-2. Bump `positioning.version` in schema when fields are stable.
-3. Re-run: `python -m agents.brand_all --set-active 2` (or per direction).
-
-## PDF export
-
-Brand guideline markups PDF: `brand/research/exports/PEP-brand-guidelines.pdf`  
-Regenerate after guideline edits: `python scripts/generate_brand_guidelines_pdf.py`
+- Consider renaming `typeMismatch` → `drinkTypeMismatch` in a future `positioning.version` bump.
+- Shareable guideline exports (`npm run brand:export`) → HTML / PDF / PNG.

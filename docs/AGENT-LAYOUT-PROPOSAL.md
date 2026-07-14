@@ -1,5 +1,12 @@
 # Proposal: AI layout & brand-composition agent (PEP Online)
 
+> **Historical design proposal — not the current source of truth.** Of the flow below, only
+> **Pass 1 (concept)** is built today: `agents.concept_run` (`npm run concept`). The **review**
+> and **refine** passes are not built. Some paths are pre-restructure — the website now lives
+> in `site/` (`site/site/css/styles.css`), and `brand.json` is superseded by per-direction identity
+> outputs under `brand/directions/<slug>/identity/`. For the current pipeline see
+> **[docs/WORKFLOW.md](WORKFLOW.md)**; kept for the concept→build→review design thinking.
+
 **Status:** Draft v2 — whole-site concept + review loop  
 **Default provider:** **OpenAI (ChatGPT API)**  
 **Goal:** Use ChatGPT in two distinct roles—first to **conceive the whole website** (informed by similar drink brands), then again to **review the built design** for harmony—before (or alongside) fine-tuning hero assets.
@@ -34,7 +41,7 @@ These are **two separate API runs** with different system prompts—not one chat
                              ▼
 ┌──────────────────────────────────────────────────────────────────┐
 │  BUILD — implement concept on dev (Cursor / implementer agent)    │
-│  Output: updated index.html, for-venues.html, css/styles.css      │
+│  Output: updated index.html, for-venues.html, site/css/styles.css      │
 │  Then: npm start + Playwright → desktop + mobile screenshots      │
 └────────────────────────────┬─────────────────────────────────────┘
                              ▼
@@ -284,14 +291,14 @@ OpenAI returns structured **hero/carousel** variant JSON only; validator enforce
 | `brand/README.md`, `identity/typography.md` | Rules and usage |
 | `brand/research/directions/provided/assets/flavours/flavours.json` | Carousel colors/order |
 | `marketing/originals/design-reference-full.png` | Visual target (multimodal) |
-| Current `index.html` + `css/styles.css` | Baseline structure |
+| Current `index.html` + `site/css/styles.css` | Baseline structure |
 | Asset manifest | Allowed image paths only |
 
 **Agent outputs:**
 
 - `experiments/variants/*.json` — layout/composition specs
 - `experiments/runs/<timestamp>/report.md` — what changed, why, risks
-- Optional: patch to `css/styles.css` only for **section order** or **spacing tokens** if you add CSS variables for spacing
+- Optional: patch to `site/css/styles.css` only for **section order** or **spacing tokens** if you add CSS variables for spacing
 
 **Human-in-the-loop (required):**
 

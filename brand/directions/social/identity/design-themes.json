@@ -1,0 +1,163 @@
+[
+  {
+    "baseTreatment": "Gradient or atmospheric colour field wrapped across the pack, often with a simple central logo/wordmark and minimal secondary copy.",
+    "colorTreatment": "Bright but polished blends: sunset oranges, pinks, yellows, lilacs, fresh greens; expressive rather than clinical, often using flavour/mood colour as the main asset.",
+    "energy": "High-energy, social, photogenic and mood-led; feels made for warm occasions, aperitif moments, festivals, rooftops, and pre-going-out rituals.",
+    "exampleBrands": [
+      {
+        "brand": "Kin Euphorics",
+        "variant": "Kin Spritz"
+      },
+      {
+        "brand": "Recess",
+        "variant": "Lime Citrus Mood"
+      },
+      {
+        "brand": "PROTOCHOL",
+        "variant": "Swolberry visual burst"
+      }
+    ],
+    "finish": "Glossy/shiny can or photographic shine; gradients appear luminous and drink-like rather than flat matte.",
+    "id": "theme_1",
+    "name": "Luminous mood-gradient social can",
+    "positioningLeaning": 3,
+    "relevanceToActiveDirection": "Highly relevant for the Better social drink direction because it makes function feel emotional, flavour-led and occasion-worthy. PEP could borrow the idea of colour as mood/occasion signal and a polished, photogenic finish, while avoiding direct Kin-style serif/logo composition or any exact gradient recipe.",
+    "typographyFeel": "Large, confident display branding with restrained supporting sans; can range from elegant expressive type to clean uppercase functional captions."
+  },
+  {
+    "baseTreatment": "Premium bottle or can presentation with a clear label panel, bar-style hierarchy, serve photography, glassware, garnish, and hospitality cues.",
+    "colorTreatment": "Adult, rich and appetising: aperitif reds/oranges, deep greens, black, cream, gold, pale cocktail pinks; colour tends to cue serve/flavour rather than health benefit.",
+    "energy": "Sophisticated, ritual-led and orderable; feels like something for bars, hotels, terraces and dinner occasions rather than everyday wellness routines.",
+    "exampleBrands": [
+      {
+        "brand": "Lyre's",
+        "variant": "Italian Orange / Classico serve world"
+      },
+      {
+        "brand": "On The Rocks Cocktails",
+        "variant": "Cosmopolitan"
+      },
+      {
+        "brand": "Royal Club",
+        "variant": "Mocktails G&T"
+      },
+      {
+        "brand": "Royal Club",
+        "variant": "Ginger Ale"
+      },
+      {
+        "brand": "Ish",
+        "variant": "London Botanical"
+      },
+      {
+        "brand": "Everleaf",
+        "variant": "Forest"
+      }
+    ],
+    "finish": "Mixed but premium: glossy glass, metallic foils/caps, shiny drink liquid, gold accents, and satin/cream paper labels.",
+    "id": "theme_2",
+    "name": "Premium bar-ritual label system",
+    "positioningLeaning": 3,
+    "relevanceToActiveDirection": "Very relevant as an occasion cue: it shows how a non- or better-for-you drink can earn adult social credibility. PEP should borrow the confidence, serve logic, premium shine and hospitality framing, but not become spirits-coded, overly classic, or copy label shapes/crests/medallions.",
+    "typographyFeel": "Elegant serif or heritage serif paired with small uppercase sans; structured, premium, sometimes slightly vintage or cocktail-menu-like."
+  },
+  {
+    "baseTreatment": "Full-can saturated colour or bright flavour-colour base, often with oversized fruit graphics, large badges, bubbles, droplets and playful compositional movement.",
+    "colorTreatment": "Bold, juicy and high-contrast: yellows, pinks, greens, reds, turquoise; flavour is communicated instantly through saturated colour and graphic fruit.",
+    "energy": "Fun, refreshing, accessible and highly visible; supermarket-soda energy with social uplift, more casual than cocktail-premium but strong in flavour appeal.",
+    "exampleBrands": [
+      {
+        "brand": "Poppi",
+        "variant": "Lemonade"
+      },
+      {
+        "brand": "Bloom Pop",
+        "variant": "Shirley Temple"
+      },
+      {
+        "brand": "more fiz",
+        "variant": "Lemon Lime"
+      },
+      {
+        "brand": "NOCCO",
+        "variant": "Golden Soleil Exotic Raspberry"
+      },
+      {
+        "brand": "OLIPOP",
+        "variant": "Blackberry Vanilla"
+      }
+    ],
+    "finish": "Mostly glossy aluminium with visible condensation or shine; some illustrations are flat, but the pack photography reads cold, wet and refreshing.",
+    "id": "theme_3",
+    "name": "Juicy saturated flavour-pop",
+    "positioningLeaning": 2,
+    "relevanceToActiveDirection": "Relevant selectively: it provides the festival-ready vibrancy, flavour immediacy and shelf/hand visibility PEP needs. However, PEP should temper the soda-pop playfulness with more premium social polish so it does not become childish, generic wellness soda, or purely everyday soft drink.",
+    "typographyFeel": "Playful bold display type, rounded serifs or chunky sans, oversized wordmarks, curved text and friendly flavour naming."
+  },
+  {
+    "baseTreatment": "White, cream or pale pastel base with botanical/fruit illustration, craft textures, and more open space around the brand and flavour information.",
+    "colorTreatment": "Muted natural palettes with soft greens, pale blues, creams, botanical accents, hand-drawn fruit/flower tones; less saturated than the social soda references.",
+    "energy": "Calm, natural, crafted and wellness-adjacent; feels garden-party, organic, artisan or relaxed lifestyle rather than high-energy nightlife.",
+    "exampleBrands": [
+      {
+        "brand": "Olé Cocktail Co.",
+        "variant": "Paloma"
+      },
+      {
+        "brand": "Rekorderlig",
+        "variant": "Strawberry-Lime"
+      },
+      {
+        "brand": "Alive & Well",
+        "variant": "The Garden Kombucha Passion Flower & Aloe"
+      },
+      {
+        "brand": "Walker Brothers",
+        "variant": "Watermelon Mint"
+      },
+      {
+        "brand": "Yaya Kombucha",
+        "variant": "Pink Elderflower"
+      }
+    ],
+    "finish": "Mostly matte or satin label/can artwork, sometimes with light metallic can edges; less overtly glossy than the soda and cocktail references.",
+    "id": "theme_4",
+    "name": "Light botanical craft refreshment",
+    "positioningLeaning": 2,
+    "relevanceToActiveDirection": "Moderately relevant for freshness and ingredient/flavour cues, especially if PEP needs to feel lighter and more approachable. It should not be the dominant look for this direction because it can drift into wellness kombucha, natural soda, or quiet craft rather than premium, expressive social energy.",
+    "typographyFeel": "A mix of hand-drawn illustration, friendly serif, script or informal sans; softer, more artisanal and less commanding."
+  },
+  {
+    "baseTreatment": "Clinical or industrial pack systems with hard blocks, vertical type, macro/benefit hierarchy, monochrome panels or performance-led colour splits.",
+    "colorTreatment": "High-contrast functional palettes: black/white/grey with sharp yellow, blue, red or metallic accents; colour often signals variant or intensity rather than occasion.",
+    "energy": "Rational, performance-focused, disciplined and utility-led; feels like electrolyte, energy, gym, recovery or supplementation more than a social drink.",
+    "exampleBrands": [
+      {
+        "brand": "LMNT",
+        "variant": "Lemonade Salt sachet"
+      },
+      {
+        "brand": "VITAMIN WELL",
+        "variant": "Reload"
+      },
+      {
+        "brand": "Juuz",
+        "variant": "Protein Limo Lemon"
+      },
+      {
+        "brand": "NOCCO",
+        "variant": "Golden Soleil Exotic Raspberry"
+      },
+      {
+        "brand": "PROTOCHOL",
+        "variant": "Swolberry"
+      }
+    ],
+    "finish": "Mixed glossy and metallic surfaces, with hard-edged industrial print; some packs use condensation but the overall read remains functional rather than sensorial.",
+    "id": "theme_5",
+    "name": "Functional macro-block utility",
+    "positioningLeaning": 1,
+    "relevanceToActiveDirection": "Low relevance as a core visual theme and mostly an anti-reference. PEP may borrow only the clarity of small functional facts, but should avoid dense claims, gym-coded hierarchy, aggressive vertical typography, and protein/electrolyte utility as the main design story.",
+    "typographyFeel": "Condensed bold sans, blocky uppercase, technical labels, dense information stacks and strong grid logic."
+  }
+]
